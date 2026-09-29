@@ -1,0 +1,12 @@
+{
+  "id": 211772219,
+  "full_name": "astral-sh/uv",
+  "html_url": "https://github.com/astral-sh/uv",
+  "description": "An extremely fast Python package and project manager, written in Rust.",
+  "language": "Rust",
+  "stargazers_count": 101234,
+  "forks_count": 8901,
+  "open_issues_count": 1204,
+  "topics": ["python", "packaging", "resolver", "uv"],
+  "archived": false
+}

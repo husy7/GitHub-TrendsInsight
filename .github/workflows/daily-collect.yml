@@ -1,0 +1,38 @@
+name: daily-collect
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          version: "0.5.x"
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Run collector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: uv run python scripts/collect.py --period daily
+
+      - name: Run analysis
+        run: uv run python scripts/analyze.py --days 30
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: processed-data
+          path: data/processed/

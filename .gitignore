@@ -1,0 +1,23 @@
+# 环境与密钥
+.env
+.venv/
+
+# Python 产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 采集原始数据（体积大，不入库）
+data/raw/
+
+# 本地数据库
+data/*.db
+
+# 编辑器
+.idea/
+.vscode/
