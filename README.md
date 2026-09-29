@@ -8,12 +8,16 @@
 
 ## 2. 仪表板截图与部署链接
 
+![仪表板截图](docs/dashboard.png)
+
+截图取自 `2026-09-29` 的真实采集结果: 概览卡片 (本周期新增 13,492 Star / 覆盖语言 5 / 趋势仓库 8)、
+语言占比分布、Star Velocity Top 10 和仓库详情。
+
 | 项目 | 状态 |
 |---|---|
 | 部署链接 | 待补充 (Streamlit Community Cloud URL) |
-| 截图 | 待补充 (`docs/dashboard.png`) |
 
-截图需要用 **真实采集数据** 生成, 步骤:
+在自己的环境复现这张截图:
 
 ```bash
 # 1. 配置 token 并连续采集 (至少 8 天才能算出 star_velocity_7d)
