@@ -604,11 +604,21 @@ on:
     - cron: "30 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-collect
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
@@ -622,6 +632,13 @@ jobs:
       - name: Sync dependencies
         run: uv sync --frozen
 
+      - name: Quality gate
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run mypy src
+          uv run pytest -q
+
       - name: Run collector
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
@@ -629,6 +646,18 @@ jobs:
 
       - name: Run analysis
         run: uv run python scripts/analyze.py --days 30
+
+      - name: Commit snapshots back to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/trends.db data/processed
+          if git diff --cached --quiet; then
+            echo "no snapshot changes to commit"
+          else
+            git commit -m "chore: daily snapshot $(date -u +%F) [skip ci]"
+            git push
+          fi
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -641,6 +670,10 @@ jobs:
 - 禁止 `pip install -r requirements.txt`。
 - 必须 `uv sync --frozen`。
 - 采集脚本读取的 env 名是 `GITHUB_TOKEN`，Actions 中通过 `GITHUB_TOKEN: ${{ secrets.GH_PAT }}` 映射。
+- Runner 是临时的，工作流**必须**把 `data/trends.db` 与 `data/processed/` 回写仓库
+  （`permissions: contents: write` + `chore: daily snapshot ... [skip ci]` 提交后再 `git push`），
+  否则跨天时间序列与 `rank_momentum` 会在第二天丢失，Streamlit Cloud 也读不到数据。
+- `data/raw/` 不入库（体积大，只保留本地/runner 上的 90 天归档）。
 
 ---
 
@@ -736,25 +769,29 @@ uv run pytest -q
 
 ## 17. README 骨架（必须按此结构）
 
-README 必须包含以下 6 段，顺序固定：
+README 按 GitHub 通用规范组织，必须包含以下内容，顺序固定：
 
-1. **一句话介绍**：项目做什么、面向什么岗位。
-2. **仪表板截图 + 部署链接**。
-3. **架构图**：GitHub Actions → 采集 → SQLite → 分析 → Streamlit。
-4. **快速开始**：仅使用 uv 命令（`uv sync` / `uv run ...`）。
-5. **分析结论**：至少 3 条可量化发现（例如“过去 30 天 Rust 趋势仓库数上升 X%”）。
-6. **面试问答**：包含以下固定问题与回答：
-   - GitHub 没有 Trending API，你怎么做？
-   - Rate Limit 怎么处理？
-   - Star Velocity 怎么算？
-   - 你的分析和直接看 Trending 页面有什么区别？
-   - 为什么这个项目适合数据采集 / 数据分析实习？
-   - 为什么用 uv 而不是 pip / poetry？
+1. **标题 + 徽章 + 一句话介绍**：CI 状态、Python 版本、uv、License 徽章；一句话说明项目做什么、面向什么岗位。
+2. **关键信息表 + 仪表板截图**：数据源 / 采集窗口 / 调度 / 质量；截图必须来自真实采集结果，并链接最新报告。
+3. **目录（Table of Contents）**：锚点链接到各段。
+4. **功能特性**：能力清单，逐条能对应到代码或口径。
+5. **架构图（mermaid）**：GitHub Actions → 采集 → SQLite → 分析 → 报告 → 回写仓库 → Streamlit。
+6. **快速开始**：环境要求 → 安装（uv）→ 环境变量表 → 采集 / 分析 → 启动仪表板。
+7. **使用说明**：`collect.py` / `analyze.py` 参数表 + 产物清单。
+8. **目录结构**：目录树。
+9. **自动化与数据持久化**：`daily-collect.yml` 步骤、回写仓库、`GH_PAT` 配置。
+10. **数据与指标口径**：指标定义与缺失处理表。
+11. **分析结论**：至少 3 条可量化发现（例如“过去 30 天 Rust 趋势仓库数上升 X%”）。
+12. **开发与测试**：`ruff` / `mypy` / `pytest` 命令、覆盖率门槛与当前规模。
+13. **文档 / 路线图 / 贡献 / 许可证**：链接 `docs/interview.md` 与 `LICENSE`。
 
-关于 uv 的回答要点：
-- uv 集成 Python 版本管理、虚拟环境、锁文件、工具运行。
-- `uv.lock` 保证本地与 CI 一致。
-- `uv run` 消除“忘记激活环境”类问题。
-- 安装与解析速度显著快于 pip。
-
-简历描述必须量化：采集天数、覆盖仓库数 / 语言数、仪表板访问量、识别出的高速增长仓库数。
+规则：
+- 命令块统一用 ```bash + uv 命令；图表用 ```mermaid；参数、产物、指标口径用表格。
+- 面试问答可以写在 README，也可以放 `docs/interview.md`（README 必须有入口链接），
+  必须覆盖：没有 Trending API 怎么采、Rate Limit 怎么处理、Star Velocity 怎么算、
+  与直接看 Trending 页面的区别、为什么适合数据采集 / 数据分析实习、为什么用 uv、
+  临时 runner 如何持久化数据。
+- 关于 uv 的回答要点：集成 Python 版本管理、虚拟环境、锁文件、工具运行；`uv.lock` 保证本地与 CI 一致；
+  `uv run` 消除“忘记激活环境”类问题；安装与解析速度显著快于 pip。
+- 简历描述必须量化：采集天数、覆盖仓库数 / 语言数、仪表板访问量、识别出的高速增长仓库数。
+- 数字禁止编造：结论必须标注 `snapshot_date`，并能由 `data/processed/` 的产物复现。
