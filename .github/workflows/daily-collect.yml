@@ -17,16 +17,17 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      # 先确认 secret 已注入: 否则采集会因为空 token 报一个难懂的错。
-      - name: Validate required secret
+      # GH_PAT 优先; 缺失时回退内置 GITHUB_TOKEN (1,000 req/hr, 本项目约 40 请求/次足够),
+      # 并发 warning 提醒把 secret 补上, 避免任务因为配置问题整天挂掉。
+      - name: Resolve collection token
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          if [ -z "$GH_PAT" ]; then
-            echo "::error title=Missing GH_PAT secret::在 Settings → Secrets and variables → Actions → Secrets 添加名称精确为 GH_PAT 的 token (不要加到 Variables, 也不要只挂在 Environment 上)"
-            exit 1
+          if [ -n "$GH_PAT" ]; then
+            echo "GH_PAT 已注入 (length=${#GH_PAT})"
+          else
+            echo "::warning title=GH_PAT secret 未生效::本次回退到内置 GITHUB_TOKEN (1,000 req/hr)。请确认 GH_PAT 加在 Settings → Secrets and variables → Actions 的 Secrets 页签, 而不是 Variables 或 Environment。"
           fi
-          echo "GH_PAT 已注入 (length=${#GH_PAT})"
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -54,7 +55,7 @@ jobs:
 
       - name: Run collector
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
         run: uv run python scripts/collect.py --period daily,weekly,monthly
 
       - name: Run analysis

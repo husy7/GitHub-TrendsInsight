@@ -615,15 +615,15 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Validate required secret
+      - name: Resolve collection token
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          if [ -z "$GH_PAT" ]; then
-            echo "::error title=Missing GH_PAT secret::在 Settings → Secrets and variables → Actions → Secrets 添加名称精确为 GH_PAT 的 token"
-            exit 1
+          if [ -n "$GH_PAT" ]; then
+            echo "GH_PAT 已注入 (length=${#GH_PAT})"
+          else
+            echo "::warning title=GH_PAT secret 未生效::本次回退到内置 GITHUB_TOKEN (1,000 req/hr)"
           fi
-          echo "GH_PAT 已注入 (length=${#GH_PAT})"
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -651,7 +651,7 @@ jobs:
 
       - name: Run collector
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
         run: uv run python scripts/collect.py --period daily,weekly,monthly
 
       - name: Run analysis
@@ -684,8 +684,9 @@ jobs:
   （`permissions: contents: write` + `chore: daily snapshot ... [skip ci]` 提交后再 `git push`），
   否则跨天时间序列与 `rank_momentum` 会在第二天丢失，Streamlit Cloud 也读不到数据。
 - `data/raw/` 不入库（体积大，只保留本地/runner 上的 90 天归档）。
-- `GH_PAT` 必须是仓库级 **Secrets**（不是 Variables、不是 Environment），名称精确为 `GH_PAT`；
-  工作流第一步 `Validate required secret` 会在缺失时直接失败并给出提示。
+- `GH_PAT` 优先（仓库级 **Secrets**，不是 Variables、不是 Environment）。
+  取不到时工作流回退到内置 `secrets.GITHUB_TOKEN`（1,000 req/hr，本项目每天约 40 个请求足够），
+  并在日志里发 warning 提醒补 secret；两个 token 都读同一个 env 名 `GITHUB_TOKEN`。
 
 ---
 
