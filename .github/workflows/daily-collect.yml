@@ -5,11 +5,22 @@ on:
     - cron: "30 0 * * *"
   workflow_dispatch:
 
+# 回写快照需要写权限；同一时间只跑一个采集任务，避免并发写数据库。
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-collect
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
@@ -23,6 +34,13 @@ jobs:
       - name: Sync dependencies
         run: uv sync --frozen
 
+      - name: Quality gate
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run mypy src
+          uv run pytest -q
+
       - name: Run collector
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
@@ -30,6 +48,20 @@ jobs:
 
       - name: Run analysis
         run: uv run python scripts/analyze.py --days 30
+
+      # runner 是临时的: 必须把 SQLite 时间序列与分析产物写回仓库,
+      # 否则每天的 rank_momentum / 历史对比都会在第二天丢失。
+      - name: Commit snapshots back to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/trends.db data/processed
+          if git diff --cached --quiet; then
+            echo "no snapshot changes to commit"
+          else
+            git commit -m "chore: daily snapshot $(date -u +%F) [skip ci]"
+            git push
+          fi
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
