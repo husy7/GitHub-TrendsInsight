@@ -17,8 +17,10 @@ from trends.analysis.metrics import star_velocity_column
 from trends.analysis.reports import (
     DEFAULT_PROCESSED_DIR,
     STAR_VELOCITY_WINDOWS,
+    build_markdown_report,
     build_metrics_frame,
     export_language_share,
+    export_markdown_report,
     export_metrics_frame,
     export_rank_momentum,
     export_star_velocity_top,
@@ -34,6 +36,7 @@ from trends.logging_setup import setup_logging
 from trends.storage.db import (
     get_engine,
     init_db,
+    load_latest_repo_details,
     load_repo_snapshots,
     load_trending_snapshots,
     upsert_repo_metrics,
@@ -110,6 +113,14 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
         paths.append(export_rank_momentum(trending_period, period, language, output_dir))
     for window_days in STAR_VELOCITY_WINDOWS:
         paths.append(export_star_velocity_top(metrics_frame, window_days, output_dir))
+    report = build_markdown_report(
+        trending,
+        metrics_frame,
+        period=primary_period,
+        language=language,
+        details=load_latest_repo_details(engine),
+    )
+    paths.append(export_markdown_report(report, primary_period, output_dir))
     for path in paths:
         logger.info("report ready: %s", path)
 

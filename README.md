@@ -36,7 +36,7 @@ flowchart LR
     B -->|"HTML 卡片 + GET /repos/{owner}/{repo}"| C["原始响应<br/>data/raw/YYYY-MM-DD/*.gz<br/>保留 90 天"]
     B --> D["SQLite<br/>trending_snapshots<br/>repo_snapshots<br/>failed_repos"]
     D --> E["分析层<br/>analysis/metrics.py<br/>纯函数: velocity / momentum / share"]
-    E --> F["repo_metrics + data/processed/*.csv"]
+    E --> F["repo_metrics<br/>data/processed/*.csv<br/>trending_report_&lt;period&gt;.md"]
     F --> G["Streamlit 仪表板<br/>只读本地快照, 不打 GitHub API"]
     D --> G
 ```
@@ -69,6 +69,7 @@ cp .env.example .env  # 填入 GITHUB_TOKEN=ghp_xxx
 # 采集 + 分析 (默认 TRENDING_PERIOD=daily,weekly,monthly, 三个窗口一次采完)
 uv run python scripts/collect.py --period daily,weekly,monthly --language ""
 uv run python scripts/analyze.py --days 30
+# 产物: data/processed/trending_report_daily.md (Markdown 报告) + repo_metrics.csv 等
 
 # 仪表板
 uv run streamlit run src/trends/dashboard/app.py
@@ -97,6 +98,10 @@ uv run pytest --cov=trends --cov-report=term-missing   # fail_under = 70
 以下结论来自 **2026-09-29 的真实快照** (由本项目的解析器直接读取 GitHub Trending 三个窗口得到)。
 其中 1~4 条是单日快照事实, 第 5 条对比了 daily 与 weekly 两个窗口, 说明"当天增速"和"近 7 天平均增速"
 是两件不同的事 —— 这正是只采 daily 榜单看不出来的信息。
+
+> 同样的内容会由 `scripts/analyze.py` 导出成 `data/processed/trending_report_daily.md`,
+> 包含概况、Star Velocity Top 10、Rank Momentum、语言占比和每个仓库的 **描述 + 链接 + topics**,
+> 适合直接贴进 PR / Issue 或提交到仓库当作品集材料 (CI 里作为 artifact 上传)。
 
 1. **榜单集中度**: daily 全语言榜单 8 个仓库当日合计新增 **13,492 Star**, 相对榜单总 Star 存量
    296,989 的 **4.5%**; 其中 Top 3 (`vectorize-io/hindsight` +4,561、`debpalash/VoiceStudio` +3,221、

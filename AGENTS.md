@@ -502,6 +502,8 @@ def compute_period_star_velocity(
 ### 8.2 输出位置
 
 - `data/processed/` 下 CSV（`daily_language_share.csv` 等）。
+- `data/processed/trending_report_<period>.md`：人类可读的 Markdown 报告，包含概览、
+  Star Velocity Top N、Rank Momentum、语言占比、仓库明细（`description` + `url` 链接 + topics）。
 - 或写入 SQLite `repo_metrics` 表。
 - 仪表板只读 processed / `repo_metrics`，禁止直接打 GitHub API。
 

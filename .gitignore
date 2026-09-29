@@ -17,6 +17,7 @@ data/raw/
 
 # 分析产物（可重算，CI 以 artifact 形式上传）
 data/processed/*.csv
+data/processed/*.md
 
 # 本地数据库
 data/*.db
