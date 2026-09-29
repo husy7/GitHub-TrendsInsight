@@ -32,6 +32,7 @@ from trends.storage.db import (
     init_db,
     load_latest_repo_details,
     load_repo_metrics,
+    load_repo_snapshots,
     load_trending_snapshots,
 )
 
@@ -47,14 +48,15 @@ def load_frames(
     database_url: str,
     period: str,
     days: int,
-) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Read the three tables the dashboard needs (no network access)."""
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Read the tables the dashboard needs (no network access)."""
     engine = get_engine(database_url)
     init_db(engine)
     trending = load_trending_snapshots(engine, period=period, days=days)
     metrics = load_repo_metrics(engine, days=days)
     details = load_latest_repo_details(engine)
-    return trending, metrics, details
+    snapshots = load_repo_snapshots(engine, days=days)
+    return trending, metrics, details, snapshots
 
 
 @st.cache_data(ttl=300, show_spinner=False)
@@ -154,22 +156,71 @@ def _two_day_star_gain(trending: pd.DataFrame) -> float | None:
     return float(diff.sum())
 
 
-def language_trend_figure(trending: pd.DataFrame, period: str) -> object:
-    share = compute_language_share(trending, period)
+def language_share_by_repo(trending: pd.DataFrame, snapshots: pd.DataFrame) -> pd.DataFrame:
+    """按仓库主语言 (`repo_snapshots.language`) 计算每日语言占比。
+
+    `trending_snapshots.language` 存的是榜单筛选值 (不筛选时为空字符串), 直接用它
+    统计会让“全部”模式下的占比图变成空图, 所以图表改用仓库主语言。
+    """
+    columns = ["snapshot_date", "language", "language_share"]
+    scope = trending.loc[:, ["repo_full_name", "snapshot_date"]].drop_duplicates()
+    if scope.empty or snapshots.empty:
+        return pd.DataFrame(columns=columns)
+    merged = scope.merge(
+        snapshots.loc[:, ["repo_full_name", "snapshot_date", "language"]],
+        on=["repo_full_name", "snapshot_date"],
+        how="left",
+    )
+    merged["language"] = merged["language"].fillna("").astype(str).str.strip().str.lower()
+    totals = merged.groupby("snapshot_date").size().rename("_total")
+    counts = merged.loc[merged["language"] != ""].groupby(["snapshot_date", "language"]).size()
+    if counts.empty:
+        return pd.DataFrame(columns=columns)
+    share = (
+        counts.rename("_count")
+        .reset_index()
+        .merge(totals.reset_index(), on="snapshot_date", how="left")
+    )
+    share["language_share"] = share["_count"] / share["_total"]
+    return share.loc[:, columns].sort_values(["snapshot_date", "language"])
+
+
+def language_trend_figure(
+    trending: pd.DataFrame,
+    snapshots: pd.DataFrame,
+    period: str,
+) -> object:
+    share = language_share_by_repo(trending, snapshots)
+    if share.empty:
+        # 还没有 repo_snapshots 时退回榜单筛选口径, 至少不显示空白图。
+        share = compute_language_share(trending, period)
+        share = share.loc[share["language"] != ""]
     if share.empty:
         return None
-    share = share.loc[share["language"] != ""]
     top_languages = share.groupby("language")["language_share"].mean().nlargest(6).index.tolist()
     plot_frame = share.loc[share["language"].isin(top_languages)].sort_values("snapshot_date")
-    figure = px.line(
-        plot_frame,
-        x="snapshot_date",
-        y="language_share",
-        color="language",
-        markers=True,
-        labels={"snapshot_date": "快照日期", "language_share": "语言占比", "language": "语言"},
-        title="语言占比趋势 (Top 6)",
-    )
+    labels = {"snapshot_date": "快照日期", "language_share": "语言占比", "language": "语言"}
+    if plot_frame["snapshot_date"].nunique() < 2:
+        # 只有一天数据时折线画不出趋势, 直接给分布柱状图。
+        latest_day = plot_frame["snapshot_date"].max()
+        plot_frame = plot_frame.loc[plot_frame["snapshot_date"] == latest_day]
+        figure = px.bar(
+            plot_frame.sort_values("language_share", ascending=False),
+            x="language",
+            y="language_share",
+            labels=labels,
+            title=f"语言占比分布 (按仓库主语言 · {latest_day})",
+        )
+    else:
+        figure = px.line(
+            plot_frame,
+            x="snapshot_date",
+            y="language_share",
+            color="language",
+            markers=True,
+            labels=labels,
+            title="语言占比趋势 (Top 6, 按仓库主语言)",
+        )
     figure.update_layout(legend_title_text="语言", height=380)
     return figure
 
@@ -241,7 +292,7 @@ def main() -> None:
         days = st.selectbox("时间范围 (天)", TIME_RANGE_OPTIONS, index=1)
         window_days = st.radio("Star Velocity 窗口", WINDOW_OPTIONS, index=0, horizontal=True)
 
-    trending, metrics, details = load_frames(settings.database_url, period, int(days))
+    trending, metrics, details, snapshots = load_frames(settings.database_url, period, int(days))
     if trending.empty:
         st.warning(
             "还没有该 period 的快照数据, 先运行 "
@@ -267,7 +318,7 @@ def main() -> None:
     card_three.metric("覆盖语言数", f"{covered_language_count(latest_trending, details)}")
     card_four.metric("趋势仓库数", f"{latest_trending['repo_full_name'].nunique()}")
 
-    figure = language_trend_figure(trending, period)
+    figure = language_trend_figure(trending, snapshots, period)
     if figure is not None:
         st.plotly_chart(figure)
 

@@ -120,6 +120,8 @@ def test_dashboard_renders_overview_cards_from_sqlite(
     # 仓库详情卡片也会渲染 stars / forks / open_issues / language。
     detail_labels = [metric.label for metric in app.metric[3:]]
     assert detail_labels == ["stars", "forks", "open_issues", "language"]
+    # 语言占比图 + Star Velocity 图, 两张都要渲染出来 (不能是空白图)。
+    assert len(app.get("plotly_chart")) == 2
     # 筛选器默认值: period=daily (30 天窗口), 详情默认选第一个仓库。
     selectbox_values = {box.value for box in app.selectbox}
     assert {"daily", 30, "全部", "a/one"} <= selectbox_values
