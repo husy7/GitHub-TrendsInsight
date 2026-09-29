@@ -1,6 +1,6 @@
 # GitHub Trending 洞察报告 · 2026-09-29
 
-- 生成时间 (UTC): `2026-09-29T08:32:48Z`
+- 生成时间 (UTC): `2026-09-29T09:46:06Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
 - snapshot_date: `2026-09-29` · 仓库数: 8
