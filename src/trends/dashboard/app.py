@@ -172,11 +172,11 @@ def main() -> None:
 
     figure = language_trend_figure(trending, period)
     if figure is not None:
-        st.plotly_chart(figure, use_container_width=True)
+        st.plotly_chart(figure)
 
     velocity = velocity_figure(metrics_latest, int(window_days))
     if velocity is not None:
-        st.plotly_chart(velocity, use_container_width=True)
+        st.plotly_chart(velocity)
     else:
         st.info(
             "还没有可用的 Star Velocity 结果, 运行 `uv run python scripts/analyze.py --days 30` 生成。"
@@ -193,7 +193,6 @@ def main() -> None:
             latest_trending.loc[
                 :, ["rank", "repo_full_name", "stars", "forks", "language", "description"]
             ].sort_values("rank"),
-            use_container_width=True,
             hide_index=True,
         )
 
