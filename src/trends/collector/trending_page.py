@@ -36,7 +36,7 @@ DESCRIPTION_SELECTOR = "p.col-9"
 LANGUAGE_SELECTOR = 'span[itemprop="programmingLanguage"]'
 STARS_SELECTOR = 'a[href$="/stargazers"]'
 FORKS_SELECTOR = 'a[href$="/forks"]'
-STARS_TODAY_SELECTOR = "span.d-inline-block.float-sm-right"
+STARS_IN_PERIOD_SELECTOR = "span.d-inline-block.float-sm-right"
 
 _NUMBER_PATTERN = re.compile(r"(\d[\d,]*(?:\.\d+)?\s*[kKmM]?)")
 _SUFFIX_MULTIPLIERS = {"k": 1_000, "m": 1_000_000}
@@ -53,7 +53,7 @@ class TrendingEntry:
     language: str | None
     stars: int | None
     forks: int | None
-    stars_today: int | None
+    stars_in_period: int | None
 
 
 def build_trending_url(
@@ -120,7 +120,8 @@ def parse_trending_html(
     """Parse trending cards into `TrendingEntry` rows.
 
     `period` and `language` are carried through unchanged; the language
-    filter cannot be recovered from the HTML itself.
+    filter cannot be recovered from the HTML itself. `stars_in_period` 就是
+    卡片右侧的区间增量: daily 是"今日", weekly 是"近 7 天", monthly 是"近 30 天"。
     """
     soup = BeautifulSoup(html, "html.parser")
     entries: list[TrendingEntry] = []
@@ -139,7 +140,9 @@ def parse_trending_html(
                 language=normalize_language(language_text) or None,
                 stars=parse_number(_tag_text(article.select_one(STARS_SELECTOR))),
                 forks=parse_number(_tag_text(article.select_one(FORKS_SELECTOR))),
-                stars_today=parse_number(_tag_text(article.select_one(STARS_TODAY_SELECTOR))),
+                stars_in_period=parse_number(
+                    _tag_text(article.select_one(STARS_IN_PERIOD_SELECTOR))
+                ),
             )
         )
     logger.info(

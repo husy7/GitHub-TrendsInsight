@@ -25,10 +25,10 @@ from trends.analysis.reports import (
     to_repo_metrics,
 )
 from trends.config import (
-    TRENDING_PERIODS,
     Settings,
     get_settings,
     normalize_language,
+    parse_periods,
 )
 from trends.logging_setup import setup_logging
 from trends.storage.db import (
@@ -45,7 +45,11 @@ logger = logging.getLogger(__name__)
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Analyze collected trending snapshots")
     parser.add_argument("--days", type=int, default=30)
-    parser.add_argument("--period", choices=list(TRENDING_PERIODS), default=None)
+    parser.add_argument(
+        "--period",
+        default=None,
+        help="逗号分隔的 period 组合, 例如 daily,weekly,monthly 或 all (默认取 TRENDING_PERIOD)",
+    )
     parser.add_argument("--language", default=None, help="语言筛选值, 空字符串表示全部")
     parser.add_argument("--database-url", default=None)
     parser.add_argument("--output-dir", default=str(DEFAULT_PROCESSED_DIR))
@@ -61,7 +65,7 @@ def star_source(trending: pd.DataFrame, snapshots: pd.DataFrame) -> pd.DataFrame
 
 
 def run(args: argparse.Namespace, settings: Settings) -> int:
-    period = args.period or settings.trending_period
+    periods = parse_periods(args.period) if args.period is not None else settings.trending_periods
     raw_language = args.language if args.language is not None else settings.trending_language
     language = normalize_language(raw_language)
     database_url = args.database_url or settings.database_url
@@ -71,32 +75,52 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
     engine = get_engine(database_url)
     init_db(engine)
 
-    trending = load_trending_snapshots(engine, period=period, days=days)
-    if trending.empty:
-        logger.error("no trending_snapshots for period=%s within %d days", period, days)
+    frames: dict[str, pd.DataFrame] = {}
+    for period in periods:
+        trending_period = load_trending_snapshots(engine, period=period, days=days)
+        if not trending_period.empty:
+            frames[period] = trending_period
+    if not frames:
+        logger.error("no trending_snapshots for periods=%s within %d days", ",".join(periods), days)
         return 1
+    # repo_metrics 主键是 (repo_full_name, snapshot_date), 只能存一份:
+    # 用 daily 榜单圈定仓库范围 (没有 daily 时退回第一个有数据的窗口)。
+    primary_period = "daily" if "daily" in frames else next(iter(frames))
+    trending = frames[primary_period]
     snapshots = load_repo_snapshots(engine, days=days + max(STAR_VELOCITY_WINDOWS))
     stars = star_source(trending, snapshots)
 
-    metrics_frame = build_metrics_frame(trending, stars, period=period, language=language)
+    # 指标层需要同时看到所有窗口: 7d/30d 速度来自 weekly/monthly 的区间增量。
+    all_periods = pd.concat(frames.values(), ignore_index=True)
+    metrics_frame = build_metrics_frame(
+        all_periods, stars, period=primary_period, language=language
+    )
     rows = to_repo_metrics(metrics_frame)
     written = upsert_repo_metrics(engine, rows)
-    logger.info("repo_metrics upserted=%d (period=%s, language=%r)", written, period, language)
+    logger.info(
+        "repo_metrics upserted=%d (primary period=%s, language=%r)",
+        written,
+        primary_period,
+        language,
+    )
 
-    paths = [
-        export_metrics_frame(metrics_frame, output_dir),
-        export_language_share(trending, period, output_dir),
-        export_rank_momentum(trending, period, language, output_dir),
-    ]
+    paths = [export_metrics_frame(metrics_frame, output_dir)]
+    for period, trending_period in frames.items():
+        paths.append(export_language_share(trending_period, period, output_dir))
+        paths.append(export_rank_momentum(trending_period, period, language, output_dir))
     for window_days in STAR_VELOCITY_WINDOWS:
-        paths.append(export_star_velocity_top(stars, window_days, output_dir))
+        paths.append(export_star_velocity_top(metrics_frame, window_days, output_dir))
     for path in paths:
         logger.info("report ready: %s", path)
 
     for window_days in STAR_VELOCITY_WINDOWS:
         column = star_velocity_column(window_days)
-        if column in metrics_frame.columns and metrics_frame[column].notna().any():
-            top = metrics_frame.sort_values(column, ascending=False).head(3)
+        if column in metrics_frame.columns:
+            ranked = metrics_frame.dropna(subset=[column])
+        else:
+            ranked = metrics_frame.iloc[0:0]
+        if not ranked.empty:
+            top = ranked.sort_values(column, ascending=False).head(3)
             logger.info(
                 "%s top3: %s",
                 column,

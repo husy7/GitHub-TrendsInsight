@@ -21,6 +21,7 @@ from sqlalchemy import Engine
 from trends.config import utc_snapshot_date
 from trends.storage.db import (
     get_engine,
+    init_db,
     insert_repo_snapshots,
     insert_trending_snapshots,
     load_failed_repos,
@@ -77,9 +78,10 @@ def test_collect_then_analyze_end_to_end(
     raw_dir = tmp_path / "raw"
     output_dir = tmp_path / "processed"
 
-    respx.get("https://github.com/trending?since=daily").mock(
-        return_value=httpx.Response(200, text=trending_daily_html)
-    )
+    for period in ("daily", "weekly", "monthly"):
+        respx.get(f"https://github.com/trending?since={period}").mock(
+            return_value=httpx.Response(200, text=trending_daily_html)
+        )
 
     def repo_handler(request: httpx.Request) -> httpx.Response:
         repo_full_name = request.url.path.removeprefix("/repos/")
@@ -94,7 +96,7 @@ def test_collect_then_analyze_end_to_end(
     exit_code = collect_script.main(
         [
             "--period",
-            "daily",
+            "daily,weekly,monthly",
             "--language",
             "",
             "--database-url",
@@ -106,44 +108,23 @@ def test_collect_then_analyze_end_to_end(
     assert exit_code == 0
 
     snapshot_date = utc_snapshot_date()
-    trending = load_trending_snapshots(engine, period="daily")
-    assert sorted(trending["repo_full_name"]) == sorted(DAILY_REPOS)
+    trending = load_trending_snapshots(engine)
+    assert set(trending["period"]) == {"daily", "weekly", "monthly"}
+    assert sorted(set(trending["repo_full_name"])) == sorted(DAILY_REPOS)
+    assert len(trending) == 12  # 4 个仓库 x 3 个窗口
     assert set(trending["snapshot_date"]) == {snapshot_date}
-    assert trending["language"].tolist() == [""] * 4
+    assert set(trending["language"]) == {""}
+    # 卡片上的区间新增落库到 stars_in_period。
+    assert trending["stars_in_period"].notna().all()
     assert load_failed_repos(engine).empty
 
-    # 原始响应按天归档, gzip + repos/ 子目录。
-    assert (raw_dir / snapshot_date / "trending_daily_all.gz").exists()
+    # 原始响应按天归档, 每个窗口一份; 仓库详情跨窗口去重只请求一次。
+    for period in ("daily", "weekly", "monthly"):
+        assert (raw_dir / snapshot_date / f"trending_{period}_all.gz").exists()
     assert len(list((raw_dir / snapshot_date / "repos").glob("*.gz"))) == 4
 
-    # 造一天前与七天前的快照, 让 Star Velocity / rank_momentum 都有基线。
-    seven_days_ago = utc_snapshot_date(datetime.now(tz=UTC) - timedelta(days=7))
+    # 再补一天前的主榜单快照, 让 rank_momentum 有前一天可比。
     yesterday = utc_snapshot_date(datetime.now(tz=UTC) - timedelta(days=1))
-    baseline: list[RepoSnapshot] = []
-    for index, (repo_full_name, stars) in enumerate(sorted(DAILY_REPOS.items())):
-        baseline.append(
-            RepoSnapshot(
-                repo_full_name=repo_full_name,
-                snapshot_date=seven_days_ago,
-                stars=stars - 70 * (index + 1),
-                forks=1,
-                open_issues=1,
-                language="python",
-                topics_json="[]",
-            )
-        )
-        baseline.append(
-            RepoSnapshot(
-                repo_full_name=repo_full_name,
-                snapshot_date=yesterday,
-                stars=stars - 5,
-                forks=1,
-                open_issues=1,
-                language="python",
-                topics_json="[]",
-            )
-        )
-    insert_repo_snapshots(engine, baseline)
     insert_trending_snapshots(
         engine,
         [
@@ -155,6 +136,7 @@ def test_collect_then_analyze_end_to_end(
                 repo_full_name=repo_full_name,
                 stars=stars - 5,
                 forks=None,
+                stars_in_period=None,
                 description=None,
                 url=f"https://github.com/{repo_full_name}",
             )
@@ -168,7 +150,7 @@ def test_collect_then_analyze_end_to_end(
                 "--days",
                 "30",
                 "--period",
-                "daily",
+                "daily,weekly,monthly",
                 "--language",
                 "",
                 "--database-url",
@@ -181,21 +163,82 @@ def test_collect_then_analyze_end_to_end(
     )
 
     assert (output_dir / "repo_metrics.csv").exists()
-    assert (output_dir / "daily_language_share.csv").exists()
-    assert (output_dir / "rank_momentum_daily_all.csv").exists()
+    for period in ("daily", "weekly", "monthly"):
+        assert (output_dir / f"language_share_{period}.csv").exists()
+        assert (output_dir / f"rank_momentum_{period}_all.csv").exists()
 
     metrics = load_repo_metrics(engine, days=30)
     assert len(metrics) == 8
+    # 7d/30d 速度来自 weekly/monthly 卡片的区间增量, 首次采集当天即可算出。
     assert metrics["star_velocity_7d"].notna().sum() == 4
+    assert metrics["star_velocity_30d"].notna().sum() == 4
     assert metrics["rank_momentum"].notna().sum() == 4
 
     velocity = pd.read_csv(output_dir / "star_velocity_top7d.csv")
     assert set(velocity["repo_full_name"]) == set(DAILY_REPOS)
-    assert velocity["star_velocity_7d"].max() == pytest.approx(40.0)
+    assert velocity["star_velocity_7d"].max() == pytest.approx(1234 / 7)
+    monthly = pd.read_csv(output_dir / "star_velocity_top30d.csv")
+    assert monthly["star_velocity_30d"].max() == pytest.approx(1234 / 30)
 
-    share = pd.read_csv(output_dir / "daily_language_share.csv")
+    share = pd.read_csv(output_dir / "language_share_daily.csv")
     latest_share = share.loc[share["snapshot_date"] == snapshot_date]
     assert latest_share["language_share"].tolist() == [1.0]
+
+
+def test_analyze_falls_back_to_snapshot_history(
+    analyze_script: ModuleType,
+    temp_engine: tuple[Engine, str],
+    tmp_path: Path,
+) -> None:
+    """没有区间增量 (老数据) 时, 7d 速度仍可用历史快照差分算出来。"""
+    engine, database_url = temp_engine
+    init_db(engine)
+    output_dir = tmp_path / "processed"
+    today = utc_snapshot_date()
+    seven_days_ago = utc_snapshot_date(datetime.now(tz=UTC) - timedelta(days=7))
+
+    insert_trending_snapshots(
+        engine,
+        [
+            TrendingSnapshot(
+                snapshot_date=today,
+                period="daily",
+                language="",
+                rank=1,
+                repo_full_name="a/one",
+                stars=170,
+                forks=None,
+                stars_in_period=None,
+                description=None,
+                url="https://github.com/a/one",
+            )
+        ],
+    )
+    insert_repo_snapshots(
+        engine,
+        [
+            RepoSnapshot("a/one", seven_days_ago, 100, 1, 1, "python", "[]"),
+            RepoSnapshot("a/one", today, 170, 1, 1, "python", "[]"),
+        ],
+    )
+
+    exit_code = analyze_script.main(
+        [
+            "--days",
+            "30",
+            "--period",
+            "daily",
+            "--language",
+            "",
+            "--database-url",
+            database_url,
+            "--output-dir",
+            str(output_dir),
+        ]
+    )
+    assert exit_code == 0
+    velocity = pd.read_csv(output_dir / "star_velocity_top7d.csv")
+    assert velocity["star_velocity_7d"].tolist() == [10.0]
 
 
 def test_collect_without_token_reports_error(

@@ -9,6 +9,7 @@ from sqlalchemy import Engine, text
 from trends.config import utc_snapshot_date
 from trends.storage.db import (
     get_engine,
+    init_db,
     insert_repo_snapshots,
     insert_trending_snapshots,
     load_failed_repos,
@@ -28,6 +29,7 @@ def trending_row(
     rank: int = 1,
     period: str = "daily",
     language: str = "python",
+    stars_in_period: int | None = None,
 ) -> TrendingSnapshot:
     return TrendingSnapshot(
         snapshot_date=snapshot_date,
@@ -37,6 +39,7 @@ def trending_row(
         repo_full_name=repo_full_name,
         stars=100,
         forks=10,
+        stars_in_period=stars_in_period,
         description="a description",
         url=f"https://github.com/{repo_full_name}",
     )
@@ -71,6 +74,57 @@ def test_insert_trending_snapshots_is_idempotent(engine: Engine) -> None:
     assert insert_trending_snapshots(engine, [row]) == 0
     frame = load_trending_snapshots(engine)
     assert len(frame) == 1
+
+
+def test_stars_in_period_round_trip(engine: Engine) -> None:
+    insert_trending_snapshots(engine, [trending_row(stars_in_period=700)])
+    frame = load_trending_snapshots(engine)
+    assert frame.iloc[0]["stars_in_period"] == 700
+
+
+def test_init_db_migrates_legacy_table_and_keeps_rows(tmp_path: Path) -> None:
+    """老库没有 stars_in_period 时, init_db 补列且不丢历史行。"""
+    engine = get_engine(f"sqlite:///{tmp_path / 'legacy.db'}")
+    with engine.begin() as connection:
+        connection.exec_driver_sql(
+            """
+            CREATE TABLE trending_snapshots (
+                id              INTEGER PRIMARY KEY AUTOINCREMENT,
+                snapshot_date   TEXT    NOT NULL,
+                period          TEXT    NOT NULL,
+                language        TEXT    NOT NULL DEFAULT '',
+                rank            INTEGER NOT NULL,
+                repo_full_name  TEXT    NOT NULL,
+                stars           INTEGER,
+                forks           INTEGER,
+                description     TEXT,
+                url             TEXT    NOT NULL,
+                created_at      TEXT    NOT NULL DEFAULT (datetime('now')),
+                UNIQUE (repo_full_name, snapshot_date, period, language)
+            )
+            """
+        )
+        connection.exec_driver_sql(
+            "INSERT INTO trending_snapshots "
+            "(snapshot_date, period, language, rank, repo_full_name, url) "
+            "VALUES ('2026-09-01', 'daily', '', 1, 'a/one', 'https://github.com/a/one')"
+        )
+
+    init_db(engine)
+
+    with engine.connect() as connection:
+        columns = {
+            str(row[1])
+            for row in connection.exec_driver_sql("PRAGMA table_info(trending_snapshots)")
+        }
+    assert "stars_in_period" in columns
+    legacy_rows = load_trending_snapshots(engine)
+    assert len(legacy_rows) == 1
+    assert legacy_rows.iloc[0]["repo_full_name"] == "a/one"
+
+    # 迁移后可以正常写入新列。
+    assert insert_trending_snapshots(engine, [trending_row(stars_in_period=42)]) == 1
+    engine.dispose()
 
 
 def test_insert_trending_snapshots_empty_sequence(engine: Engine) -> None:

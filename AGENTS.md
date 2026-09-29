@@ -14,6 +14,7 @@
 | 30 日星标速度 | `star_velocity_30d` | `velocity_30d`, `sv30` |
 | 排名动量 | `rank_momentum` | `momentum`, `rank_delta` |
 | 语言占比 | `language_share` | `lang_share` |
+| 周期内新增 Star | `stars_in_period` | `stars_today`, `stars_this_week`, `stars_this_month` |
 | 环境变量（本地） | `GITHUB_TOKEN` | `GH_TOKEN`, `GH_PAT`（仅 Actions secret 使用） |
 | Actions secret | `GH_PAT` | `GITHUB_TOKEN`（避免与内置混淆） |
 
@@ -163,6 +164,7 @@ uv lock --upgrade
 
 # 运行脚本
 uv run python scripts/collect.py --period daily --language ""
+uv run python scripts/collect.py --period daily,weekly,monthly   # 三窗口一次采完
 uv run python scripts/analyze.py --days 30
 uv run streamlit run src/trends/dashboard/app.py
 
@@ -284,7 +286,7 @@ exclude_lines = [
 GITHUB_TOKEN=
 DATABASE_URL=sqlite:///data/trends.db
 LOG_LEVEL=INFO
-TRENDING_PERIOD=daily
+TRENDING_PERIOD=daily,weekly,monthly
 TRENDING_LANGUAGE=
 HTTP_TIMEOUT=15
 MAX_RETRIES=5
@@ -315,7 +317,7 @@ User-Agent: github-trends-insight
 
 采集流程：
 1. 抓取 `https://github.com/trending`，URL 参数：
-   - `since=daily|weekly|monthly`
+   - `since=daily|weekly|monthly`（daily 卡片的增量是"今日"，weekly 是"近 7 天"，monthly 是"近 30 天"）
    - `spoken_language_code=`（可空）
    - 语言筛选通过路径：`https://github.com/trending/python?since=daily`
 2. 对候选仓库调用 `GET /repos/{owner}/{repo}` 补详情。
@@ -333,7 +335,7 @@ User-Agent: github-trends-insight
 | 语言 | `span[itemprop="programmingLanguage"]` | 可为空 |
 | Star 总数 | 第一个 `a[href$="/stargazers"]` 的数字 | 需去逗号 |
 | Fork 总数 | 第一个 `a[href$="/forks"]` 的数字 | 需去逗号 |
-| 今日 Star | `span.d-inline-block.float-sm-right` | 形如 `1,234 stars today` |
+| 周期内新增 Star | `span.d-inline-block.float-sm-right` | 写入 `stars_in_period`，形如 `1,234 stars today` / `10,518 stars this week` / `19,771 stars this month` |
 
 数字解析规则：
 - 去掉 `,` 与空格。
@@ -384,6 +386,7 @@ CREATE TABLE IF NOT EXISTS trending_snapshots (
     repo_full_name  TEXT    NOT NULL,
     stars           INTEGER,
     forks           INTEGER,
+    stars_in_period INTEGER,
     description     TEXT,
     url             TEXT    NOT NULL,
     created_at      TEXT    NOT NULL DEFAULT (datetime('now')),
@@ -473,6 +476,19 @@ def compute_language_share(
     Output columns: snapshot_date, language, language_share
     language_share = 当日该语言仓库数 / 当日全部趋势仓库数。
     """
+
+def compute_period_star_velocity(
+    trending: pd.DataFrame,
+    period: str,
+    window_days: int,
+) -> pd.DataFrame:
+    """
+    Input columns:  repo_full_name, snapshot_date, stars_in_period, period
+    Output columns: repo_full_name, snapshot_date, star_velocity_{window_days}d
+    star_velocity = stars_in_period / window_days。
+    周期增量口径 (weekly=近 7 天, monthly=近 30 天), 首次采集当天即可算出,
+    不依赖历史快照。缺失 stars_in_period 的行省略。
+    """
 ```
 
 规则：
@@ -480,6 +496,8 @@ def compute_language_share(
 - 数据不足时整行省略，不写 `NA`、不写 0。
 - 函数必须无副作用、无 IO。
 - 新增指标必须同步：本文件、`metrics.py`、测试、仪表板、README。
+- `build_metrics_frame` 的 7d/30d 速度优先用周期增量口径（weekly/monthly），
+  缺失时才回退到 `compute_star_velocity` 的历史快照差分。
 
 ### 8.2 输出位置
 
@@ -603,7 +621,7 @@ jobs:
       - name: Run collector
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: uv run python scripts/collect.py --period daily
+        run: uv run python scripts/collect.py --period daily,weekly,monthly
 
       - name: Run analysis
         run: uv run python scripts/analyze.py --days 30

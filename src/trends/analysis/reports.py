@@ -11,6 +11,7 @@ import pandas as pd
 
 from trends.analysis.metrics import (
     compute_language_share,
+    compute_period_star_velocity,
     compute_rank_momentum,
     compute_star_velocity,
     star_velocity_column,
@@ -21,7 +22,8 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_PROCESSED_DIR = Path("data/processed")
 STAR_VELOCITY_WINDOWS: tuple[int, ...] = (7, 30)
-LANGUAGE_SHARE_FILENAME = "daily_language_share.csv"
+# 每个速度窗口优先用哪个榜单的区间增量: weekly = 近 7 天, monthly = 近 30 天。
+STAR_VELOCITY_PERIODS: dict[int, str] = {7: "weekly", 30: "monthly"}
 METRICS_FILENAME = "repo_metrics.csv"
 
 
@@ -33,6 +35,11 @@ def star_velocity_filename(window_days: int) -> str:
 def rank_momentum_filename(period: str, language: str) -> str:
     """CSV name for one `period`/`language` pair."""
     return f"rank_momentum_{period}_{language or 'all'}.csv"
+
+
+def language_share_filename(period: str) -> str:
+    """CSV name for one `period`, e.g. `language_share_daily.csv`."""
+    return f"language_share_{period}.csv"
 
 
 def write_dataframe(frame: pd.DataFrame, path: Path) -> Path:
@@ -48,25 +55,31 @@ def export_language_share(
     period: str,
     output_dir: Path = DEFAULT_PROCESSED_DIR,
 ) -> Path:
-    """Write `daily_language_share.csv` for `period`."""
+    """Write `language_share_{period}.csv` for `period`."""
     share = compute_language_share(trending, period)
-    return write_dataframe(share, output_dir / LANGUAGE_SHARE_FILENAME)
+    return write_dataframe(share, output_dir / language_share_filename(period))
 
 
 def export_star_velocity_top(
-    snapshots: pd.DataFrame,
+    metrics_frame: pd.DataFrame,
     window_days: int,
     output_dir: Path = DEFAULT_PROCESSED_DIR,
     top_n: int = 10,
 ) -> Path:
-    """Write the latest-day `star_velocity_{window_days}d` top `top_n` rows."""
+    """Write the latest-day `star_velocity_{window_days}d` top `top_n` rows.
+
+    输入是 `build_metrics_frame` 的结果: 其中 7d/30d 速度已优先采用周期增量口径。
+    """
     velocity_column = star_velocity_column(window_days)
-    velocity = compute_star_velocity(snapshots, window_days)
     path = output_dir / star_velocity_filename(window_days)
-    if velocity.empty:
-        return write_dataframe(velocity, path)
-    latest_day = velocity["snapshot_date"].max()
-    top = velocity.loc[velocity["snapshot_date"] == latest_day]
+    columns = ["repo_full_name", "snapshot_date", velocity_column]
+    if metrics_frame.empty or velocity_column not in metrics_frame.columns:
+        return write_dataframe(pd.DataFrame(columns=columns), path)
+    frame = metrics_frame.loc[:, columns].dropna(subset=[velocity_column])
+    if frame.empty:
+        return write_dataframe(pd.DataFrame(columns=columns), path)
+    latest_day = frame["snapshot_date"].max()
+    top = frame.loc[frame["snapshot_date"] == latest_day]
     top = top.sort_values(velocity_column, ascending=False, kind="stable").head(top_n)
     return write_dataframe(top, path)
 
@@ -89,7 +102,11 @@ def build_metrics_frame(
     period: str,
     language: str,
 ) -> pd.DataFrame:
-    """Join every §8.1 metric into one frame keyed by repo + `snapshot_date`."""
+    """Join every §8.1 metric into one frame keyed by repo + `snapshot_date`.
+
+    7d/30d 速度优先使用周期增量口径 (weekly/monthly), 缺失时才回退历史快照差分。
+    因此 `trending` 应传入包含全部 period 的 frame, `period`/`language` 只决定输出范围。
+    """
     scope = trending.loc[
         (trending["period"] == period) & (trending["language"] == language),
         ["repo_full_name", "snapshot_date"],
@@ -97,7 +114,7 @@ def build_metrics_frame(
     frame = scope.reset_index(drop=True)
     for window_days in STAR_VELOCITY_WINDOWS:
         column = star_velocity_column(window_days)
-        velocity = compute_star_velocity(snapshots, window_days)
+        velocity = _combined_velocity(trending, snapshots, window_days)
         if velocity.empty:
             frame[column] = pd.NA
             continue
@@ -128,6 +145,28 @@ def build_metrics_frame(
         .sort_values(["repo_full_name", "snapshot_date"], kind="stable")
         .reset_index(drop=True)
     )
+
+
+def _combined_velocity(
+    trending: pd.DataFrame,
+    snapshots: pd.DataFrame,
+    window_days: int,
+) -> pd.DataFrame:
+    """周期增量口径优先, 缺失处回退到历史快照差分。"""
+    column = star_velocity_column(window_days)
+    pieces: list[pd.DataFrame] = []
+    source_period = STAR_VELOCITY_PERIODS.get(window_days)
+    # 老数据/手工构造的 frame 可能没有 stars_in_period: 直接走历史差分口径。
+    if source_period is not None and "stars_in_period" in trending.columns:
+        pieces.append(compute_period_star_velocity(trending, source_period, window_days))
+    pieces.append(compute_star_velocity(snapshots, window_days))
+    usable = [piece for piece in pieces if not piece.empty]
+    if not usable:
+        return pd.DataFrame(columns=["repo_full_name", "snapshot_date", column])
+    combined = pd.concat(usable, ignore_index=True)
+    return combined.drop_duplicates(
+        subset=["repo_full_name", "snapshot_date"], keep="first"
+    ).reset_index(drop=True)
 
 
 def _optional_float(value: Any) -> float | None:

@@ -7,6 +7,7 @@ import pytest
 
 from trends.analysis.metrics import (
     compute_language_share,
+    compute_period_star_velocity,
     compute_rank_momentum,
     compute_star_velocity,
     star_velocity_column,
@@ -84,6 +85,49 @@ def test_star_velocity_rejects_non_positive_window() -> None:
 def test_star_velocity_requires_columns() -> None:
     with pytest.raises(ValueError, match="missing required columns"):
         compute_star_velocity(pd.DataFrame({"repo_full_name": ["a/b"]}), 7)
+
+
+def period_trending_frame(rows: list[tuple[str, str, int, str, str, int | None]]) -> pd.DataFrame:
+    return pd.DataFrame(rows, columns=[*TRENDING_FIELDS, "stars_in_period"])
+
+
+def test_period_star_velocity_divides_increment_by_window() -> None:
+    frame = period_trending_frame(
+        [
+            ("a/one", "2026-09-29", 1, "weekly", "python", 700),
+            ("b/two", "2026-09-29", 2, "weekly", "python", 70),
+        ]
+    )
+    result = compute_period_star_velocity(frame, "weekly", 7)
+    assert list(result.columns) == ["repo_full_name", "snapshot_date", "star_velocity_7d"]
+    assert result["star_velocity_7d"].tolist() == [100.0, 10.0]
+
+
+def test_period_star_velocity_uses_requested_period_only() -> None:
+    frame = period_trending_frame(
+        [
+            ("a/one", "2026-09-29", 1, "weekly", "python", 700),
+            ("b/two", "2026-09-29", 2, "daily", "python", 70),
+        ]
+    )
+    assert compute_period_star_velocity(frame, "monthly", 30).empty
+    daily = compute_period_star_velocity(frame, "daily", 7)
+    assert daily["repo_full_name"].tolist() == ["b/two"]
+
+
+def test_period_star_velocity_skips_rows_without_increment() -> None:
+    frame = period_trending_frame([("a/one", "2026-09-29", 1, "weekly", "python", None)])
+    assert compute_period_star_velocity(frame, "weekly", 7).empty
+
+
+def test_period_star_velocity_empty_input_and_errors() -> None:
+    empty = compute_period_star_velocity(period_trending_frame([]), "weekly", 7)
+    assert empty.empty
+    assert list(empty.columns) == ["repo_full_name", "snapshot_date", "star_velocity_7d"]
+    with pytest.raises(ValueError, match="window_days"):
+        compute_period_star_velocity(period_trending_frame([]), "weekly", 0)
+    with pytest.raises(ValueError, match="missing required columns"):
+        compute_period_star_velocity(pd.DataFrame({"repo_full_name": ["a/b"]}), "weekly", 7)
 
 
 def test_rank_momentum_uses_previous_snapshot_date() -> None:

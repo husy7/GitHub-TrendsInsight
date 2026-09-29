@@ -30,10 +30,54 @@ def seed_database(database_url: str) -> None:
     insert_trending_snapshots(
         engine,
         [
-            TrendingSnapshot(yesterday, "daily", "python", 1, "a/one", 100, 10, "d", "u"),
-            TrendingSnapshot(yesterday, "daily", "rust", 2, "b/two", 200, 20, "d", "u"),
-            TrendingSnapshot(today, "daily", "python", 2, "a/one", 150, 12, "d", "u"),
-            TrendingSnapshot(today, "daily", "rust", 1, "b/two", 250, 22, "d", "u"),
+            TrendingSnapshot(
+                snapshot_date=yesterday,
+                period="daily",
+                language="python",
+                rank=1,
+                repo_full_name="a/one",
+                stars=100,
+                forks=10,
+                stars_in_period=50,
+                description="d",
+                url="u",
+            ),
+            TrendingSnapshot(
+                snapshot_date=yesterday,
+                period="daily",
+                language="rust",
+                rank=2,
+                repo_full_name="b/two",
+                stars=200,
+                forks=20,
+                stars_in_period=60,
+                description="d",
+                url="u",
+            ),
+            TrendingSnapshot(
+                snapshot_date=today,
+                period="daily",
+                language="python",
+                rank=2,
+                repo_full_name="a/one",
+                stars=150,
+                forks=12,
+                stars_in_period=200,
+                description="d",
+                url="u",
+            ),
+            TrendingSnapshot(
+                snapshot_date=today,
+                period="daily",
+                language="rust",
+                rank=1,
+                repo_full_name="b/two",
+                stars=250,
+                forks=22,
+                stars_in_period=100,
+                description="d",
+                url="u",
+            ),
         ],
     )
     insert_repo_snapshots(
@@ -66,15 +110,14 @@ def test_dashboard_renders_overview_cards_from_sqlite(
     app.run()
 
     assert not app.exception
-    overview = {metric.label: metric.value for metric in app.metric[:4]}
+    overview = {metric.label: metric.value for metric in app.metric[:3]}
     assert overview == {
-        "总 Star (最新快照)": "400",
-        "今日新增 Star": "+100",
+        "本周期新增 Star": "+300",
         "覆盖语言数": "2",
         "趋势仓库数": "2",
     }
     # 仓库详情卡片也会渲染 stars / forks / open_issues / language。
-    detail_labels = [metric.label for metric in app.metric[4:]]
+    detail_labels = [metric.label for metric in app.metric[3:]]
     assert detail_labels == ["stars", "forks", "open_issues", "language"]
     # 筛选器默认值: period=daily (30 天窗口), 详情默认选第一个仓库。
     selectbox_values = {box.value for box in app.selectbox}

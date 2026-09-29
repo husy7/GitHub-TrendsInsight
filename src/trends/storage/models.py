@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS trending_snapshots (
     repo_full_name  TEXT    NOT NULL,
     stars           INTEGER,
     forks           INTEGER,
+    stars_in_period INTEGER,
     description     TEXT,
     url             TEXT    NOT NULL,
     created_at      TEXT    NOT NULL DEFAULT (datetime('now')),
@@ -89,6 +90,7 @@ class TrendingSnapshot:
     repo_full_name: str
     stars: int | None
     forks: int | None
+    stars_in_period: int | None
     description: str | None
     url: str
 

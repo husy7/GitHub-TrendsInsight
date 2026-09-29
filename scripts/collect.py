@@ -16,12 +16,16 @@ import httpx
 
 from trends.collector.github_api import GitHubApiClient
 from trends.collector.rate_limit import CollectorError
-from trends.collector.trending_page import fetch_trending_html, parse_trending_html
+from trends.collector.trending_page import (
+    TrendingEntry,
+    fetch_trending_html,
+    parse_trending_html,
+)
 from trends.config import (
-    TRENDING_PERIODS,
     Settings,
     get_settings,
     normalize_language,
+    parse_periods,
     utc_snapshot_date,
 )
 from trends.logging_setup import setup_logging
@@ -47,7 +51,11 @@ def safe_name(value: str) -> str:
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Collect GitHub trending snapshots")
-    parser.add_argument("--period", choices=list(TRENDING_PERIODS), default=None)
+    parser.add_argument(
+        "--period",
+        default=None,
+        help="逗号分隔的 period 组合, 例如 daily,weekly,monthly 或 all (默认取 TRENDING_PERIOD)",
+    )
     parser.add_argument("--language", default=None, help="语言筛选值, 空字符串表示全部")
     parser.add_argument("--spoken-language-code", default="")
     parser.add_argument("--database-url", default=None)
@@ -56,7 +64,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 
 def run(args: argparse.Namespace, settings: Settings) -> int:
-    period = args.period or settings.trending_period
+    periods = parse_periods(args.period) if args.period is not None else settings.trending_periods
     raw_language = args.language if args.language is not None else settings.trending_language
     language = normalize_language(raw_language)
     database_url = args.database_url or settings.database_url
@@ -69,26 +77,32 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
     engine = get_engine(database_url)
     init_db(engine)
 
+    # 先抓完所有窗口再落库: 任一窗口解析为空就整体失败, 不写半截数据。
+    collected: list[tuple[str, list[TrendingEntry]]] = []
     with httpx.Client(timeout=settings.http_timeout) as http_client:
-        html = fetch_trending_html(
-            http_client,
-            period=period,
-            language=language,
-            spoken_language_code=args.spoken_language_code,
-            max_retries=settings.max_retries,
-            base_delay=settings.base_delay,
-            max_delay=settings.max_delay,
-        )
-    save_raw_response(
-        raw_dir,
-        snapshot_date,
-        f"trending_{period}_{safe_name(language)}",
-        html.encode("utf-8"),
-    )
-
-    entries = parse_trending_html(html, period=period, language=language)
-    if not entries:
-        raise CollectorError("trending page returned no repositories: check selectors or network")
+        for period in periods:
+            html = fetch_trending_html(
+                http_client,
+                period=period,
+                language=language,
+                spoken_language_code=args.spoken_language_code,
+                max_retries=settings.max_retries,
+                base_delay=settings.base_delay,
+                max_delay=settings.max_delay,
+            )
+            save_raw_response(
+                raw_dir,
+                snapshot_date,
+                f"trending_{period}_{safe_name(language)}",
+                html.encode("utf-8"),
+            )
+            entries = parse_trending_html(html, period=period, language=language)
+            if not entries:
+                raise CollectorError(
+                    f"trending page returned no repositories (period={period}): "
+                    "check selectors or network"
+                )
+            collected.append((period, entries))
 
     trending_rows = [
         TrendingSnapshot(
@@ -99,21 +113,27 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
             repo_full_name=entry.repo_full_name,
             stars=entry.stars,
             forks=entry.forks,
+            stars_in_period=entry.stars_in_period,
             description=entry.description,
             url=entry.url,
         )
+        for period, entries in collected
         for entry in entries
     ]
     inserted = insert_trending_snapshots(engine, trending_rows)
     logger.info(
-        "trending_snapshots inserted=%d/%d (snapshot_date=%s, period=%s, language=%r)",
+        "trending_snapshots inserted=%d/%d (snapshot_date=%s, periods=%s, language=%r)",
         inserted,
         len(trending_rows),
         snapshot_date,
-        period,
+        ",".join(period for period, _entries in collected),
         language,
     )
 
+    # 同一仓库可能同时出现在多个窗口: 详情只请求一次。
+    repo_names = list(
+        dict.fromkeys(entry.repo_full_name for _period, entries in collected for entry in entries)
+    )
     repo_rows: list[RepoSnapshot] = []
     with GitHubApiClient(
         token=settings.github_token,
@@ -122,14 +142,14 @@ def run(args: argparse.Namespace, settings: Settings) -> int:
         base_delay=settings.base_delay,
         max_delay=settings.max_delay,
     ) as api:
-        for entry in entries:
-            details = api.get_repo(entry.repo_full_name, snapshot_date=snapshot_date)
-            payload = api.raw_payload(entry.repo_full_name)
+        for repo_full_name in repo_names:
+            details = api.get_repo(repo_full_name, snapshot_date=snapshot_date)
+            payload = api.raw_payload(repo_full_name)
             if payload is not None:
                 save_raw_response(
                     raw_dir,
                     snapshot_date,
-                    f"repo_{safe_name(entry.repo_full_name)}",
+                    f"repo_{safe_name(repo_full_name)}",
                     payload,
                     subdirectory="repos",
                 )

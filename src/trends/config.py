@@ -8,10 +8,12 @@ AGENTS.md §0 术语表是命名的唯一来源: 字段名必须使用 `repo_ful
 
 from __future__ import annotations
 
+import re
 from datetime import UTC, datetime
 from functools import lru_cache
 from typing import Literal
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 PROJECT_NAME = "github-trends-insight"
@@ -74,6 +76,24 @@ def utc_snapshot_date(moment: datetime | None = None) -> str:
     return current.astimezone(UTC).strftime("%Y-%m-%d")
 
 
+def parse_periods(value: str | None) -> tuple[TrendingPeriod, ...]:
+    """Parse `daily,weekly,monthly` (or `all`) into canonical period order.
+
+    `None`/空字符串/`all` 都表示三个窗口全都要; 未登记的取值直接报错,
+    避免采集脚本静默跳过某个窗口。
+    """
+    if value is None:
+        return TRENDING_PERIODS
+    parts = [part.strip().lower() for part in re.split(r"[,\s]+", value) if part.strip()]
+    if not parts or "all" in parts:
+        return TRENDING_PERIODS
+    unsupported = sorted({part for part in parts if part not in TRENDING_PERIODS})
+    if unsupported:
+        raise ValueError(f"unsupported period(s): {', '.join(unsupported)}")
+    selected: list[TrendingPeriod] = [known for known in TRENDING_PERIODS if known in parts]
+    return tuple(selected) or TRENDING_PERIODS
+
+
 class Settings(BaseSettings):
     """Runtime settings loaded from environment variables and `.env`."""
 
@@ -87,7 +107,7 @@ class Settings(BaseSettings):
     github_token: str = ""
     database_url: str = DEFAULT_DATABASE_URL
     log_level: str = "INFO"
-    trending_period: TrendingPeriod = "daily"
+    trending_period: str = "daily,weekly,monthly"
     trending_language: str = ""
     http_timeout: float = DEFAULT_HTTP_TIMEOUT
     max_retries: int = DEFAULT_MAX_RETRIES
@@ -103,6 +123,17 @@ class Settings(BaseSettings):
             "Authorization": f"Bearer {self.github_token}",
             "User-Agent": USER_AGENT,
         }
+
+    @field_validator("trending_period")
+    @classmethod
+    def _validate_trending_period(cls, value: str) -> str:
+        parse_periods(value)
+        return value
+
+    @property
+    def trending_periods(self) -> tuple[TrendingPeriod, ...]:
+        """`TRENDING_PERIOD` 展开后的 period 列表 (`daily,weekly,monthly`)。"""
+        return parse_periods(self.trending_period)
 
 
 @lru_cache(maxsize=1)

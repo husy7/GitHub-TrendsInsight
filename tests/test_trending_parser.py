@@ -46,6 +46,8 @@ def test_build_trending_url_quotes_special_language() -> None:
         ("3M", 3_000_000),
         ("1,234 stars today", 1234),
         ("0 stars today", 0),
+        ("10,518 stars this week", 10_518),
+        ("19,771 stars this month", 19_771),
         ("", None),
         ("  ", None),
         ("no digits here", None),
@@ -66,7 +68,7 @@ def test_parse_daily_fixture(trending_daily_html: str) -> None:
     assert first.url == "https://github.com/openai/whisper"
     assert first.stars == 12_345
     assert first.forks == 1_234
-    assert first.stars_today == 1_234
+    assert first.stars_in_period == 1_234
     assert first.language == "python"
     assert first.description == "Robust Speech Recognition via Large-Scale Weak Supervision"
 
@@ -89,10 +91,10 @@ def test_parse_python_fixture(trending_python_html: str) -> None:
         "pandas-dev/pandas",
         "numpy/numpy",
     ]
-    assert entries[0].stars_today == 0
+    assert entries[0].stars_in_period == 0
     assert entries[1].description is None
     assert entries[2].language is None
-    assert entries[2].stars_today is None
+    assert entries[2].stars_in_period is None
 
 
 def test_parse_html_without_cards_returns_empty_list() -> None:

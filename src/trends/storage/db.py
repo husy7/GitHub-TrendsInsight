@@ -9,7 +9,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pandas as pd
-from sqlalchemy import Engine, TextClause, create_engine, text
+from sqlalchemy import Connection, Engine, TextClause, create_engine, text
 
 from trends.storage.models import (
     SCHEMA_STATEMENTS,
@@ -26,14 +26,19 @@ _INSERT_TRENDING_SNAPSHOTS = text(
     """
     INSERT INTO trending_snapshots (
         snapshot_date, period, language, rank, repo_full_name,
-        stars, forks, description, url
+        stars, forks, stars_in_period, description, url
     ) VALUES (
         :snapshot_date, :period, :language, :rank, :repo_full_name,
-        :stars, :forks, :description, :url
+        :stars, :forks, :stars_in_period, :description, :url
     )
     ON CONFLICT (repo_full_name, snapshot_date, period, language) DO NOTHING
     """
 )
+
+# 老库缺少的新列在这里补齐 (AGENTS.md §14.2: 迁移使用新列, 不覆盖历史数据)。
+_COLUMN_MIGRATIONS: dict[str, tuple[tuple[str, str], ...]] = {
+    "trending_snapshots": (("stars_in_period", "INTEGER"),),
+}
 
 _INSERT_REPO_SNAPSHOTS = text(
     """
@@ -87,11 +92,25 @@ def get_engine(database_url: str) -> Engine:
 
 
 def init_db(engine: Engine) -> None:
-    """Create every table and index from AGENTS.md §7.5. Safe to re-run."""
+    """Create every table/index from AGENTS.md §7.5 and apply column migrations."""
     with engine.begin() as connection:
         for statement in SCHEMA_STATEMENTS:
             connection.execute(text(statement))
+        _apply_column_migrations(connection)
     logger.debug("database schema ensured")
+
+
+def _apply_column_migrations(connection: Connection) -> None:
+    """Add columns introduced after the first release to an existing database."""
+    for table, columns in _COLUMN_MIGRATIONS.items():
+        existing = {
+            str(row[1]) for row in connection.exec_driver_sql(f"PRAGMA table_info({table})")
+        }
+        for column, column_type in columns:
+            if column in existing:
+                continue
+            logger.info("migrating %s: adding column %s", table, column)
+            connection.exec_driver_sql(f"ALTER TABLE {table} ADD COLUMN {column} {column_type}")
 
 
 _RowModel = TrendingSnapshot | RepoSnapshot | RepoMetrics | FailedRepo

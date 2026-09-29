@@ -7,7 +7,13 @@ from datetime import UTC, datetime, timedelta, timezone
 
 import pytest
 
-from trends.config import Settings, get_settings, normalize_language, utc_snapshot_date
+from trends.config import (
+    Settings,
+    get_settings,
+    normalize_language,
+    parse_periods,
+    utc_snapshot_date,
+)
 
 
 @pytest.mark.parametrize(
@@ -45,7 +51,8 @@ def test_utc_snapshot_date_matches_iso_format() -> None:
 
 def test_settings_defaults_match_agents_md() -> None:
     settings = Settings(_env_file=None)
-    assert settings.trending_period == "daily"
+    assert settings.trending_period == "daily,weekly,monthly"
+    assert settings.trending_periods == ("daily", "weekly", "monthly")
     assert settings.trending_language == ""
     assert settings.http_timeout == 15.0
     assert settings.max_retries == 5
@@ -81,3 +88,33 @@ def test_github_headers_follow_agents_md() -> None:
 
 def test_get_settings_is_cached() -> None:
     assert get_settings() is get_settings()
+
+
+@pytest.mark.parametrize(
+    ("value", "expected"),
+    [
+        (None, ("daily", "weekly", "monthly")),
+        ("", ("daily", "weekly", "monthly")),
+        ("all", ("daily", "weekly", "monthly")),
+        ("daily", ("daily",)),
+        ("weekly,daily", ("daily", "weekly")),
+        ("monthly weekly", ("weekly", "monthly")),
+        ("DAILY", ("daily",)),
+        ("daily,daily", ("daily",)),
+    ],
+)
+def test_parse_periods(value: str | None, expected: tuple[str, ...]) -> None:
+    assert parse_periods(value) == expected
+
+
+def test_parse_periods_rejects_unknown_values() -> None:
+    with pytest.raises(ValueError, match="unsupported period"):
+        parse_periods("yearly")
+    with pytest.raises(ValueError, match="unsupported period"):
+        parse_periods("daily,yearly")
+
+
+def test_settings_expand_multi_period_env(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("TRENDING_PERIOD", "weekly,monthly")
+    settings = Settings(_env_file=None)
+    assert settings.trending_periods == ("weekly", "monthly")

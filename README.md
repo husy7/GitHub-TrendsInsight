@@ -1,11 +1,10 @@
 # github-trends-insight
 
-## 1. 一句话介绍
+## 1.介绍
 
 每天定时抓取 GitHub Trending 榜单与仓库详情, 落库成可对比的历史时间序列, 计算 **Star Velocity**、
 **Rank Momentum**、**语言占比** 等指标, 并用 Streamlit 仪表板回答问题:
 “今天涨得最快的仓库是谁、它比一周前快了多少、哪些语言正在上升”。
-项目面向 **数据采集 / 数据分析实习** 岗位, 重点展示数据管道、指标设计、幂等存储与可视化能力。
 
 ## 2. 仪表板截图与部署链接
 
@@ -45,6 +44,9 @@ flowchart LR
 数据流要点:
 
 1. GitHub 没有 Trending API, 所以榜单走 HTML 解析 (§7.2 选择器), 仓库详情走 REST API。
+   Trending 也**没有历史回填**接口, 但 `daily` / `weekly` / `monthly` 三张榜单的卡片自带
+   区间增量 (`stars today` / `stars this week` / `stars this month`), 所以 7 天与 30 天速度
+   在首次采集当天就能算出来, 不必等 8 天。
 2. 所有 API 请求带 Token 并按 `MAX_RETRIES=5` / `BASE_DELAY=2` / `MAX_DELAY=60` 指数退避;
    403/429 优先读 `Retry-After`, 404 直接记入 `failed_repos` 不重试。
 3. `repo_full_name + snapshot_date + period + language` 唯一, 历史快照只追加不覆盖, 重复采集幂等。
@@ -64,8 +66,8 @@ uv sync
 # 配置 token: 本地变量名必须是 GITHUB_TOKEN
 cp .env.example .env  # 填入 GITHUB_TOKEN=ghp_xxx
 
-# 采集 + 分析
-uv run python scripts/collect.py --period daily --language ""
+# 采集 + 分析 (默认 TRENDING_PERIOD=daily,weekly,monthly, 三个窗口一次采完)
+uv run python scripts/collect.py --period daily,weekly,monthly --language ""
 uv run python scripts/analyze.py --days 30
 
 # 仪表板
@@ -92,8 +94,9 @@ uv run pytest --cov=trends --cov-report=term-missing   # fail_under = 70
 
 ## 5. 分析结论
 
-以下 4 条结论来自 **2026-09-29 的真实单日快照** (由本项目的解析器直接读取 GitHub Trending 页面得到)。
-7~30 天的趋势结论需要连续采集后用 `uv run python scripts/analyze.py --days 30` 生成。
+以下结论来自 **2026-09-29 的真实快照** (由本项目的解析器直接读取 GitHub Trending 三个窗口得到)。
+其中 1~4 条是单日快照事实, 第 5 条对比了 daily 与 weekly 两个窗口, 说明"当天增速"和"近 7 天平均增速"
+是两件不同的事 —— 这正是只采 daily 榜单看不出来的信息。
 
 1. **榜单集中度**: daily 全语言榜单 8 个仓库当日合计新增 **13,492 Star**, 相对榜单总 Star 存量
    296,989 的 **4.5%**; 其中 Top 3 (`vectorize-io/hindsight` +4,561、`debpalash/VoiceStudio` +3,221、
@@ -106,6 +109,10 @@ uv run pytest --cov=trends --cov-report=term-missing   # fail_under = 70
 4. **增速 vs 存量**: 当日新增最快的 `vectorize-io/hindsight` (+4,561 Star, 存量 41,527) 单日增速约 **11%/天**,
    而榜单总 Star 最大的 `paperclipai/paperclip` (93,376) 当日增速约 **3.4%/天** ——
    Star Velocity 与 Star 总数排序明显不同, 这正是只看 Trending 页面看不到的差异。
+5. **单日 vs 近 7 天**: `vectorize-io/hindsight` 近 7 天新增 **15,537 Star** (2,219.6/天), 而它当天新增
+   **4,561 Star** —— 当日速度是近 7 天均值的 **2.05 倍**, 说明它正在加速; 相反 `anthropics/financial-services`
+   近 7 天新增 2,381 (340.1/天), 属于持续缓慢上榜型。`star_velocity_7d` 因此优先采用 weekly 窗口的
+   区间增量口径, 缺失时才回退到历史快照差分。
 
 ## 6. 面试问答
 
@@ -124,10 +131,16 @@ uv run pytest --cov=trends --cov-report=term-missing   # fail_under = 70
 同一采集任务内同一仓库只请求一次详情。Token 缺失时直接报错退出, 不做任何绕过。
 
 **Q3. Star Velocity 怎么算?**
-`star_velocity_{window_days}d = (stars(T) - stars(T - window_days 天)) / window_days`,
-单位是“Star/天”。只有当数据集中恰好存在 `T - window_days` 那天的快照时才计算,
-否则整行省略; 缺失值写 `NULL` 而不是 0。榜单排名变化另算 `rank_momentum = 前一 snapshot_date 的 rank - 当日 rank`,
-正数表示排名上升, 无前一日数据同样整行省略。
+两种口径, 单位都是"Star/天":
+
+- **周期增量口径 (优先)**: `star_velocity_{n}d = stars_in_period / n`, 其中 `stars_in_period`
+  取自 weekly 榜单的"stars this week" / monthly 榜单的"stars this month", 首次采集当天即可算出。
+- **历史快照口径 (回退)**: `(stars(T) - stars(T - n 天)) / n`, 只有恰好存在 `T - n` 天快照时才计算。
+
+两种情况缺失都整行省略, 写 `NULL` 而不是 0。排名变化另算
+`rank_momentum = 前一 snapshot_date 的 rank - 当日 rank` (正数=上升), 无前一日数据同样省略。
+产物文件按窗口命名: `language_share_<period>.csv`、`rank_momentum_<period>_<language>.csv`、
+`star_velocity_top7d.csv` / `star_velocity_top30d.csv`。
 
 **Q4. 你的分析和直接看 Trending 页面有什么区别?**
 页面只给“此刻”的名次和今日增量; 本项目把每天的榜单落库成时间序列, 于是能算:

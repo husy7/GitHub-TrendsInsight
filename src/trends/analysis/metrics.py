@@ -12,6 +12,7 @@ import pandas as pd
 
 SNAPSHOT_COLUMNS = ("repo_full_name", "snapshot_date", "stars")
 TRENDING_COLUMNS = ("repo_full_name", "snapshot_date", "rank", "period", "language")
+PERIOD_TRENDING_COLUMNS = ("repo_full_name", "snapshot_date", "stars_in_period", "period")
 LANGUAGE_SHARE_COLUMNS = ("language", "snapshot_date", "period")
 
 
@@ -148,3 +149,42 @@ def compute_language_share(
         }
     )
     return result.sort_values(["snapshot_date", "language"], kind="stable").reset_index(drop=True)
+
+
+def compute_period_star_velocity(
+    trending: pd.DataFrame,
+    period: str,
+    window_days: int,
+) -> pd.DataFrame:
+    """
+    Input columns:  repo_full_name, snapshot_date, stars_in_period, period
+    Output columns: repo_full_name, snapshot_date, star_velocity_{window_days}d
+    star_velocity = stars_in_period / window_days。
+
+    周期增量口径: weekly 榜单给的是近 7 天增量, monthly 是近 30 天增量, 所以首次
+    采集当天就能算出速度, 不必等历史快照。缺失 `stars_in_period` 的行整体省略。
+    """
+    _require_columns(trending, PERIOD_TRENDING_COLUMNS, "compute_period_star_velocity")
+    if window_days <= 0:
+        raise ValueError("window_days must be a positive integer")
+    velocity_column = star_velocity_column(window_days)
+    output_columns = ["repo_full_name", "snapshot_date", velocity_column]
+    if trending.empty:
+        return _empty_frame(output_columns)
+    subset = trending.loc[
+        (trending["period"] == period) & trending["stars_in_period"].notna(),
+        ["repo_full_name", "snapshot_date", "stars_in_period"],
+    ]
+    if subset.empty:
+        return _empty_frame(output_columns)
+    subset = subset.drop_duplicates(subset=["repo_full_name", "snapshot_date"], keep="last")
+    result = pd.DataFrame(
+        {
+            "repo_full_name": subset["repo_full_name"],
+            "snapshot_date": subset["snapshot_date"],
+            velocity_column: subset["stars_in_period"].astype("float64") / float(window_days),
+        }
+    )
+    return result.sort_values(["repo_full_name", "snapshot_date"], kind="stable").reset_index(
+        drop=True
+    )

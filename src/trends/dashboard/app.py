@@ -46,10 +46,25 @@ def load_frames(
     return trending, metrics, details
 
 
-def daily_star_gain(trending: pd.DataFrame) -> float | None:
-    """最新快照相对前一快照的 Star 增量合计 (只统计两天都出现的仓库)."""
+def period_star_gain(trending: pd.DataFrame) -> float | None:
+    """最新快照的区间新增合计: daily=今日, weekly=近 7 天, monthly=近 30 天。
+
+    优先用卡片上的 `stars_in_period` (区间真实增量); 老数据该列全为空时,
+    退回用相邻两天的 stars 差分近似。
+    """
     if trending.empty:
         return None
+    latest_day = trending["snapshot_date"].max()
+    latest = trending.loc[trending["snapshot_date"] == latest_day]
+    if "stars_in_period" in latest.columns:
+        values = latest["stars_in_period"].dropna()
+        if not values.empty:
+            return float(values.sum())
+    return _two_day_star_gain(trending)
+
+
+def _two_day_star_gain(trending: pd.DataFrame) -> float | None:
+    """没有 stars_in_period 时的近似口径: 相邻两天都出现的仓库的 stars 差分。"""
     frame = trending.loc[:, ["repo_full_name", "snapshot_date", "stars"]].dropna(subset=["stars"])
     if frame.empty:
         return None
@@ -87,6 +102,19 @@ def language_trend_figure(trending: pd.DataFrame, period: str) -> object:
     )
     figure.update_layout(legend_title_text="语言", height=380)
     return figure
+
+
+def covered_language_count(latest_trending: pd.DataFrame, details: pd.DataFrame) -> int:
+    """当前榜单仓库覆盖的语言数。
+
+    `trending_snapshots.language` 存的是榜单语言筛选值 (不筛选时是空字符串),
+    所以覆盖语言数要取 `repo_snapshots.language` 这个仓库主语言。
+    """
+    names = set(latest_trending["repo_full_name"])
+    if not details.empty:
+        scoped = details.loc[details["repo_full_name"].isin(names), "language"].dropna()
+        return int(scoped.nunique())
+    return int(latest_trending["language"].replace("", pd.NA).nunique())
 
 
 def velocity_figure(metrics: pd.DataFrame, window_days: int) -> object:
@@ -146,7 +174,8 @@ def main() -> None:
     trending, metrics, details = load_frames(settings.database_url, period, int(days))
     if trending.empty:
         st.warning(
-            "还没有该 period 的快照数据, 先运行 `uv run python scripts/collect.py --period daily`。"
+            "还没有该 period 的快照数据, 先运行 "
+            "`uv run python scripts/collect.py --period daily,weekly,monthly`。"
         )
         return
 
@@ -158,16 +187,14 @@ def main() -> None:
 
     latest_day = trending["snapshot_date"].max()
     latest_trending = trending.loc[trending["snapshot_date"] == latest_day]
-    gain = daily_star_gain(trending)
-    total_stars = latest_trending["stars"].sum()
+    gain = period_star_gain(trending)
     metrics_latest = (
         metrics.loc[metrics["snapshot_date"] == latest_day] if not metrics.empty else metrics
     )
 
-    card_one, card_two, card_three, card_four = st.columns(4)
-    card_one.metric("总 Star (最新快照)", f"{total_stars:,.0f}")
-    card_two.metric("今日新增 Star", "—" if gain is None else f"{gain:+,.0f}")
-    card_three.metric("覆盖语言数", f"{latest_trending['language'].replace('', pd.NA).nunique()}")
+    card_two, card_three, card_four = st.columns(3)
+    card_two.metric("本周期新增 Star", "—" if gain is None else f"{gain:+,.0f}")
+    card_three.metric("覆盖语言数", f"{covered_language_count(latest_trending, details)}")
     card_four.metric("趋势仓库数", f"{latest_trending['repo_full_name'].nunique()}")
 
     figure = language_trend_figure(trending, period)
@@ -191,7 +218,16 @@ def main() -> None:
     with st.expander("原始趋势快照 (最新一天)"):
         st.dataframe(
             latest_trending.loc[
-                :, ["rank", "repo_full_name", "stars", "forks", "language", "description"]
+                :,
+                [
+                    "rank",
+                    "repo_full_name",
+                    "stars",
+                    "forks",
+                    "stars_in_period",
+                    "language",
+                    "description",
+                ],
             ].sort_values("rank"),
             hide_index=True,
         )
