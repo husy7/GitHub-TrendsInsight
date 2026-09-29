@@ -212,6 +212,10 @@ github-trends-insight/
 3. 工作流用 `GITHUB_TOKEN: ${{ secrets.GH_PAT }}` 映射；采集脚本始终读取 `GITHUB_TOKEN`，
    避免与内置 `secrets.GITHUB_TOKEN`（限额过低）混淆。
 
+> 排错：如果运行日志里出现 `GITHUB_TOKEN is missing`，或日志 `env:` 段落里 `GITHUB_TOKEN:` 是空值，
+> 说明 secret 没被解析到 —— 检查它是否加在 **Secrets**（而不是 Variables）、名称是否精确为 `GH_PAT`、
+> 是否加在本仓库上（工作流第一步 `Validate required secret` 会先报这个错）。
+
 > 本地跑 `collect.py` / `analyze.py` 同样会修改受版本控制的 `data/trends.db` 与 `data/processed/`，
 > 想同步就 `git commit` 即可。
 

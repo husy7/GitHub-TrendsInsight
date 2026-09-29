@@ -17,6 +17,17 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
+      # 先确认 secret 已注入: 否则采集会因为空 token 报一个难懂的错。
+      - name: Validate required secret
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_PAT" ]; then
+            echo "::error title=Missing GH_PAT secret::在 Settings → Secrets and variables → Actions → Secrets 添加名称精确为 GH_PAT 的 token (不要加到 Variables, 也不要只挂在 Environment 上)"
+            exit 1
+          fi
+          echo "GH_PAT 已注入 (length=${#GH_PAT})"
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:

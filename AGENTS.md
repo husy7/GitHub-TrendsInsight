@@ -615,6 +615,16 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
+      - name: Validate required secret
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_PAT" ]; then
+            echo "::error title=Missing GH_PAT secret::在 Settings → Secrets and variables → Actions → Secrets 添加名称精确为 GH_PAT 的 token"
+            exit 1
+          fi
+          echo "GH_PAT 已注入 (length=${#GH_PAT})"
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -674,6 +684,8 @@ jobs:
   （`permissions: contents: write` + `chore: daily snapshot ... [skip ci]` 提交后再 `git push`），
   否则跨天时间序列与 `rank_momentum` 会在第二天丢失，Streamlit Cloud 也读不到数据。
 - `data/raw/` 不入库（体积大，只保留本地/runner 上的 90 天归档）。
+- `GH_PAT` 必须是仓库级 **Secrets**（不是 Variables、不是 Environment），名称精确为 `GH_PAT`；
+  工作流第一步 `Validate required secret` 会在缺失时直接失败并给出提示。
 
 ---
 
