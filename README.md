@@ -73,6 +73,7 @@ uv run python scripts/analyze.py --days 30
 
 # 仪表板
 uv run streamlit run src/trends/dashboard/app.py
+# 仪表板底部有“导出报告”区块: 下载 analyze.py 生成的 Markdown 报告与 CSV, 并支持页内预览
 
 # 质量门禁
 uv run ruff check .

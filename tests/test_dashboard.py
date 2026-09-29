@@ -6,6 +6,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pytest
+import streamlit as st
 from sqlalchemy import Engine
 from streamlit.testing.v1 import AppTest
 
@@ -136,3 +137,43 @@ def test_dashboard_shows_hint_when_database_is_empty(
 
     assert not app.exception
     assert any("还没有该 period 的快照数据" in warning.value for warning in app.warning)
+
+
+def test_dashboard_exports_analyze_report(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    database_url = f"sqlite:///{tmp_path / 'trends.db'}"
+    seed_database(database_url)
+    processed = tmp_path / "data" / "processed"
+    processed.mkdir(parents=True)
+    (processed / "trending_report_daily.md").write_text("# 报告测试标记\n", encoding="utf-8")
+    (processed / "repo_metrics.csv").write_text("repo_full_name\n", encoding="utf-8")
+    monkeypatch.setenv("DATABASE_URL", database_url)
+    monkeypatch.chdir(tmp_path)
+    get_settings.cache_clear()
+    st.cache_data.clear()
+
+    app = AppTest.from_file(str(DASHBOARD_PATH), default_timeout=60)
+    app.run()
+
+    assert not app.exception
+    labels = [button.label for button in app.get("download_button")]
+    assert any("下载 Markdown 报告" in label for label in labels)
+    assert any("repo_metrics.csv" in label for label in labels)
+    assert any("报告测试标记" in item.value for item in app.markdown)
+
+
+def test_dashboard_hints_when_report_is_missing(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    database_url = f"sqlite:///{tmp_path / 'trends.db'}"
+    seed_database(database_url)
+    monkeypatch.setenv("DATABASE_URL", database_url)
+    monkeypatch.chdir(tmp_path)
+    get_settings.cache_clear()
+    st.cache_data.clear()
+
+    app = AppTest.from_file(str(DASHBOARD_PATH), default_timeout=60)
+    app.run()
+
+    assert not app.exception
+    assert any("还没有报告文件" in info.value for info in app.info)
+    assert not list(app.get("download_button"))

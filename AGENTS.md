@@ -522,6 +522,8 @@ def compute_period_star_velocity(
    - `period`（daily / weekly / monthly）
    - 时间范围（最近 7 / 30 / 90 天）
 5. 仓库详情：点击查看 stars / forks / open_issues / topics。
+6. 导出报告：下载 `analyze.py` 生成的 `trending_report_<period>.md` 与同目录 CSV，
+   并在页面内预览 Markdown（只读本地 processed 文件，不触发采集）。
 
 要求：
 - 使用 `st.cache_data` 缓存读取。

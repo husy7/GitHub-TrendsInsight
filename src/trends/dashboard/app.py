@@ -10,12 +10,22 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
 from trends.analysis.metrics import compute_language_share, star_velocity_column
+from trends.analysis.reports import (
+    DEFAULT_PROCESSED_DIR,
+    METRICS_FILENAME,
+    STAR_VELOCITY_WINDOWS,
+    language_share_filename,
+    markdown_report_filename,
+    rank_momentum_filename,
+    star_velocity_filename,
+)
 from trends.config import get_settings
 from trends.storage.db import (
     get_engine,
@@ -27,6 +37,7 @@ from trends.storage.db import (
 
 WINDOW_OPTIONS = (7, 30)
 TIME_RANGE_OPTIONS = (7, 30, 90)
+EXPORT_DIR = Path(DEFAULT_PROCESSED_DIR)
 
 st.set_page_config(page_title="GitHub Trends Insight", page_icon="📈", layout="wide")
 
@@ -44,6 +55,65 @@ def load_frames(
     metrics = load_repo_metrics(engine, days=days)
     details = load_latest_repo_details(engine)
     return trending, metrics, details
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def load_report_files(directory: str, period: str, language: str) -> dict[str, bytes]:
+    """读取 `analyze.py` 生成的产物 (Markdown 报告 + CSV), 缺失的跳过。
+
+    只读本地文件, 不触发采集, 因此不违反 §9“页面加载不得打 GitHub API”。
+    """
+    base = Path(directory)
+    names = [
+        markdown_report_filename(period),
+        METRICS_FILENAME,
+        language_share_filename(period),
+        rank_momentum_filename(period, language),
+        *(star_velocity_filename(window) for window in STAR_VELOCITY_WINDOWS),
+    ]
+    files: dict[str, bytes] = {}
+    for name in names:
+        path = base / name
+        if path.is_file():
+            files[name] = path.read_bytes()
+    return files
+
+
+def render_export_section(period: str, language: str) -> None:
+    """导出 `analyze.py` 的报告: Markdown 主报告 + 相关 CSV 下载按钮。"""
+    st.subheader("导出报告")
+    files = load_report_files(str(EXPORT_DIR), period, language)
+    report_name = markdown_report_filename(period)
+    report = files.get(report_name)
+    if report is None:
+        st.info(
+            "还没有报告文件, 先在终端运行 "
+            f"`uv run python scripts/analyze.py --days 30 --period {period}` 生成。"
+        )
+        return
+
+    st.download_button(
+        "⬇️ 下载 Markdown 报告 (.md)",
+        data=report,
+        file_name=report_name,
+        mime="text/markdown",
+        key=f"download_{report_name}",
+    )
+    with st.expander("预览报告", expanded=False):
+        st.markdown(report.decode("utf-8"))
+
+    csv_names = sorted(name for name in files if name != report_name)
+    if csv_names:
+        st.caption("同时导出 analyze.py 生成的明细数据:")
+        columns = st.columns(min(len(csv_names), 3))
+        for index, name in enumerate(csv_names):
+            columns[index % len(columns)].download_button(
+                f"⬇️ {name}",
+                data=files[name],
+                file_name=name,
+                mime="text/csv",
+                key=f"download_{name}",
+            )
 
 
 def period_star_gain(trending: pd.DataFrame) -> float | None:
@@ -231,6 +301,8 @@ def main() -> None:
             ].sort_values("rank"),
             hide_index=True,
         )
+
+    render_export_section(period, "" if language == "全部" else language)
 
 
 main()
