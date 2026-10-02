@@ -1,5 +1,7 @@
 repo_full_name,snapshot_date,rank_momentum
+DietrichGebert/ponytail,2026-10-02,4
 NVIDIA/OpenShell,2026-10-01,1
+NVIDIA/OpenShell,2026-10-02,-2
 NawfalMotii79/PLFM_RADAR,2026-10-01,-12
 VectifyAI/PageIndex,2026-10-01,-6
 byoungd/up,2026-10-01,-7
@@ -7,8 +9,13 @@ cs341-illinois/coursebook,2026-09-30,-4
 debpalash/VoiceStudio,2026-09-30,0
 debpalash/VoiceStudio,2026-10-01,-1
 dream-num/univer,2026-09-30,-5
+firebase/firebase-ios-sdk,2026-10-02,7
+heygen-com/hyperframes,2026-10-02,1
+mattpocock/skills,2026-10-02,7
+mksglu/context-mode,2026-10-02,-4
 mvschwarz/openrig,2026-09-30,1
 mvschwarz/openrig,2026-10-01,3
+mvschwarz/openrig,2026-10-02,-2
 paperclipai/paperclip,2026-09-30,-2
 t8y2/dbx,2026-10-01,-10
 vectorize-io/hindsight,2026-09-30,0
