@@ -1,146 +1,140 @@
-# GitHub Trending 洞察报告 · 2026-10-06
+# GitHub Trending 洞察报告 · 2026-10-07
 
-- 生成时间 (UTC): `2026-10-06T06:43:48Z`
+- 生成时间 (UTC): `2026-10-07T06:19:58Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-10-06` · 仓库数: 13
+- snapshot_date: `2026-10-07` · 仓库数: 12
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 13 |
-| 榜单 Star 合计 | 572,808 |
-| 本周期新增 Star | +8,848 |
-| 覆盖语言数 | 6 |
+| 趋势仓库数 | 12 |
+| 榜单 Star 合计 | 767,248 |
+| 本周期新增 Star | +11,083 |
+| 覆盖语言数 | 7 |
 | 有 7 天速度的仓库数 | 5 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | python | 92,118 | +1,155 | 814.7 | — | +0 |
-| 2 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | shell | 157,410 | +744 | 302.3 | — | — |
-| 3 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | typescript | 25,707 | +485 | 239.1 | — | +5 |
-| 4 | [caddyserver/caddy](https://github.com/caddyserver/caddy) | go | 77,253 | +515 | 97.6 | — | +2 |
-| 5 | [cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os) | typescript | 11,101 | +101 | 94.7 | — | -1 |
+| 1 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | javascript | 77,858 | +616 | 741.0 | — | -3 |
+| 2 | [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym) | javascript | 5,992 | +1,419 | 474.0 | — | -2 |
+| 3 | [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) | c++ | 7,006 | +949 | 439.0 | — | +1 |
+| 4 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | python | 54,538 | +326 | 330.4 | 904.3 | — |
+| 5 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | typescript | 97,288 | +534 | 300.6 | — | -4 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | +11 | 排名上升 |
-| [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | +5 | 排名上升 |
-| [caddyserver/caddy](https://github.com/caddyserver/caddy) | +2 | 排名上升 |
-| [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | +2 | 排名上升 |
-| [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | +1 | 排名上升 |
-| [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | +0 | 排名不变 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | +10 | 排名上升 |
+| [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | +2 | 排名上升 |
+| [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) | +1 | 排名上升 |
+| [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | +0 | 排名不变 |
 | [tester-army/e2e](https://github.com/tester-army/e2e) | +0 | 排名不变 |
-| [cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os) | -1 | 排名下滑 |
+| [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym) | -2 | 排名下滑 |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | -3 | 排名下滑 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | -4 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| typescript | 4 | 30.8% |
-| python | 3 | 23.1% |
-| c++ | 2 | 15.4% |
-| javascript | 2 | 15.4% |
-| go | 1 | 7.7% |
-| shell | 1 | 7.7% |
+| typescript | 3 | 25.0% |
+| javascript | 2 | 16.7% |
+| python | 2 | 16.7% |
+| shell | 2 | 16.7% |
+| c++ | 1 | 8.3% |
+| cuda | 1 | 8.3% |
+| html | 1 | 8.3% |
 
 ## 5. 仓库明细
 
 ### 1. [tester-army/e2e](https://github.com/tester-army/e2e)
 
 - 描述: Next generation e2e testing framework for web and mobile apps.
-- 指标: stars 5,162 · forks 218 · open_issues 51 · language typescript
-- 本周期新增 (daily): +1,398 Star
+- 指标: stars 6,594 · forks 292 · open_issues 75 · language typescript
+- 本周期新增 (daily): +1,725 Star
 - topics: `e2e`, `e2e-testing`, `end-to-end-testing`, `mobile`, `mobile-testing`, `playwright`, `web`
 
-### 2. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+### 2. [mattpocock/skills](https://github.com/mattpocock/skills)
 
-- 描述: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More
-- 指标: stars 96,733 · forks 8,534 · open_issues 87 · language typescript
-- 本周期新增 (daily): +534 Star
-- topics: `ai`, `ai-agents`, `ai-memory`, `anthropic`, `artificial-intelligence`, `chromadb`, `claude`, `claude-agent-sdk`, `claude-agents`, `claude-code`, `claude-code-plugin`, `claude-skills`, `embeddings`, `long-term-memory`, `mem0`, `memory-engine`, `openmemory`, `rag`, `sqlite`, `supermemory`
+- 描述: Skills for Real Engineers. Straight from my .agents directory.
+- 指标: stars 278,428 · forks 23,314 · open_issues 324 · language shell
+- 本周期新增 (daily): +889 Star
+- topics: —
 
 ### 3. [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
 
 - 描述: Give your agent CAD superpowers.
-- 指标: stars 17,560 · forks 1,777 · open_issues 35 · language python
-- 本周期新增 (daily): +437 Star
+- 指标: stars 18,101 · forks 1,810 · open_issues 39 · language python
+- 本周期新增 (daily): +619 Star
 - topics: `agents`, `ai-agents`, `cad`, `mechanical-engineering`, `robotics`, `step`, `stl`, `stp`, `text-to-cad`
 
-### 4. [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
-
-- 描述: —
-- 指标: stars 25,707 · forks 6,615 · open_issues 2,490 · language typescript
-- 本周期新增 (daily): +485 Star
-- topics: —
-
-### 5. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
+### 4. [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5)
 
 - 描述: Tool for automatic PS5 executables porting to Linux and Windows
-- 指标: stars 5,136 · forks 376 · open_issues 121 · language c++
-- 本周期新增 (daily): +997 Star
+- 指标: stars 7,006 · forks 525 · open_issues 192 · language c++
+- 本周期新增 (daily): +949 Star
 - topics: `anyps5`, `dynamic-library`, `game-porting`, `ps5`, `ps5-tools`, `spir-v`, `vulkan`
 
-### 6. [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+### 5. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
-- 描述: Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.
-- 指标: stars 92,118 · forks 8,082 · open_issues 213 · language python
-- 本周期新增 (daily): +1,155 Star
-- topics: `agent-infrastructure`, `ai-agent`, `ai-search`, `automation`, `bilibili`, `claude-code`, `cli`, `cursor`, `free-api`, `llm-tools`, `mcp`, `python`, `reddit-scraper`, `twitter-scraper`, `web-scraper`, `xiaohongshu`, `youtube-transcript`
-
-### 7. [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
-
-- 描述: World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.
-- 指标: stars 64,241 · forks 8,141 · open_issues 355 · language python
-- 本周期新增 (daily): +742 Star
-- topics: `agent`, `agentic-ai`, `ai`, `claude`, `copilot`, `cursor`, `elevenlabs`, `ffmpeg`, `flux`, `image-generation`, `open-source`, `openai`, `python`, `remotion`, `stable-diffusion`, `text-to-speech`, `text-to-video`, `video-generation`, `video-production`
-
-### 8. [caddyserver/caddy](https://github.com/caddyserver/caddy)
-
-- 描述: Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
-- 指标: stars 77,253 · forks 5,080 · open_issues 281 · language go
-- 本周期新增 (daily): +515 Star
-- topics: `acme`, `automatic-https`, `caddy`, `caddyfile`, `go`, `golang`, `http`, `http-server`, `http3`, `https`, `privacy`, `reverse-proxy`, `security`, `tls`, `web-server`
-
-### 9. [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym)
-
-- 描述: Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.
-- 指标: stars 4,533 · forks 682 · open_issues 135 · language javascript
-- 本周期新增 (daily): +1,433 Star
-- topics: `bodyweight`, `docker`, `fitness`, `fitness-tracker`, `gym`, `health`, `mcp`, `nodejs`, `passkeys`, `progressive-web-applications`, `pwa`, `react`, `self-hosted`, `self-hosting`, `vite`, `webauthn`, `weightlifting`, `workout-tracker`
-
-### 10. [cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os)
-
-- 描述: Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.
-- 指标: stars 11,101 · forks 1,315 · open_issues 132 · language typescript
-- 本周期新增 (daily): +101 Star
+- 描述: The design language that makes your AI harness better at design.
+- 指标: stars 77,858 · forks 4,633 · open_issues 56 · language javascript
+- 本周期新增 (daily): +616 Star
 - topics: —
 
-### 11. [Stremio/stremio-web](https://github.com/Stremio/stremio-web)
+### 6. [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 
-- 描述: Stremio - Freedom to Stream
-- 指标: stars 14,350 · forks 1,636 · open_issues 69 · language javascript
-- 本周期新增 (daily): +111 Star
-- topics: `hacktoberfest`, `stremio`
+- 描述: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More
+- 指标: stars 97,288 · forks 8,572 · open_issues 102 · language typescript
+- 本周期新增 (daily): +534 Star
+- topics: `ai`, `ai-agents`, `ai-memory`, `anthropic`, `artificial-intelligence`, `chromadb`, `claude`, `claude-agent-sdk`, `claude-agents`, `claude-code`, `claude-code-plugin`, `claude-skills`, `embeddings`, `long-term-memory`, `mem0`, `memory-engine`, `openmemory`, `rag`, `sqlite`, `supermemory`
 
-### 12. [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
+### 7. [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
+
+- 描述: A skill to stop your coding agent from burying the answer. ADHD-friendly output.
+- 指标: stars 54,538 · forks 3,133 · open_issues 72 · language python
+- 本周期新增 (daily): +326 Star
+- topics: `adhd`, `claude-`, `claude-code-plugin`, `claude-skills`, `developer-tools`, `productivity`
+
+### 8. [morluto/rea](https://github.com/morluto/rea)
+
+- 描述: Reverse engineer anything with agents, from app behavior down to native binaries.
+- 指标: stars 10,474 · forks 1,156 · open_issues 81 · language typescript
+- 本周期新增 (daily): +2,956 Star
+- topics: `agent-skills`, `ai-agent-tools`, `ai-agents`, `binary-analysis`, `cli`, `coding-agents`, `cordis`, `ctf`, `decompiler`, `disassembler`, `dsh`, `dsh-plugin`, `ghidra`, `hopper`, `mcp`, `mcp-server`, `model-context-protocol`, `reverse-engineering`, `reverse-engineering-tools`, `static-analysis`
+
+### 9. [deepseek-ai/DeepGEMM](https://github.com/deepseek-ai/DeepGEMM)
+
+- 描述: DeepGEMM: clean and efficient BLAS kernel library on GPU
+- 指标: stars 8,781 · forks 1,385 · open_issues 151 · language cuda
+- 本周期新增 (daily): +199 Star
+- topics: —
+
+### 10. [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 
 - 描述: A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
-- 指标: stars 157,410 · forks 25,384 · open_issues 184 · language shell
-- 本周期新增 (daily): +744 Star
+- 指标: stars 157,976 · forks 25,462 · open_issues 166 · language shell
+- 本周期新增 (daily): +623 Star
 - topics: —
 
-### 13. [M-Abozaid/esp32-c3-adblock](https://github.com/M-Abozaid/esp32-c3-adblock)
+### 11. [DuarteSantos8/openGym](https://github.com/DuarteSantos8/openGym)
 
-- 描述: Pi-hole-class DNS ad-blocker on a $2 ESP32-C3 (no PSRAM): 537k domains as 40-bit FNV-1a hashes in flash, binary-searched. UDP DNS sinkhole + web dashboard.https://youtube.com/shorts/RaxszOUMi8E?feature=share
-- 指标: stars 1,504 · forks 129 · open_issues 12 · language c++
-- 本周期新增 (daily): +196 Star
-- topics: `adblocker`, `arduino`, `dns`, `dns-sinkhole`, `esp32`, `esp32-c3`, `iot`, `pi-hole`, `platformio`
+- 描述: Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.
+- 指标: stars 5,992 · forks 814 · open_issues 167 · language javascript
+- 本周期新增 (daily): +1,419 Star
+- topics: `bodyweight`, `docker`, `fitness`, `fitness-tracker`, `gym`, `health`, `mcp`, `nodejs`, `passkeys`, `progressive-web-applications`, `pwa`, `react`, `self-hosted`, `self-hosting`, `vite`, `webauthn`, `weightlifting`, `workout-tracker`
+
+### 12. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
+
+- 描述: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.
+- 指标: stars 44,212 · forks 2,849 · open_issues 88 · language html
+- 本周期新增 (daily): +228 Star
+- topics: `agent-skills`, `claude-code`, `codex`, `data-visualization`, `diagrams`, `drawio`, `mermaid`, `svg`
 
 ## 6. 口径与方法
 

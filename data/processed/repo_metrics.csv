@@ -6,6 +6,7 @@ DietrichGebert/ponytail,2026-10-03,,1040.4333333333334,-3.0,1.0
 DietrichGebert/ponytail,2026-10-04,,1018.2,3.0,1.0
 DietrichGebert/ponytail,2026-10-05,,1015.5333333333333,-3.0,1.0
 DuarteSantos8/openGym,2026-10-06,,,,1.0
+DuarteSantos8/openGym,2026-10-07,474.0,,-2.0,1.0
 Effect-TS/effect,2026-10-03,,,,1.0
 Effect-TS/effect,2026-10-04,66.57142857142857,,12.0,1.0
 Friedrich-M/UniMate,2026-10-02,,,,1.0
@@ -34,13 +35,16 @@ affaan-m/ECC,2026-10-04,,890.8,,1.0
 anthropics/claude-code,2026-10-04,,194.7,,1.0
 antirez/ds4,2026-10-05,,,,1.0
 averygan/reclip,2026-09-30,,,,1.0
+ayghri/i-have-adhd,2026-10-07,330.42857142857144,904.3,,1.0
 boykopovar/AnyPS5,2026-10-06,,,,1.0
+boykopovar/AnyPS5,2026-10-07,439.0,,1.0,1.0
 byoungd/up,2026-09-29,,,,1.0
 byoungd/up,2026-10-01,,,-7.0,1.0
 caddyserver/caddy,2026-10-05,,,,1.0
 caddyserver/caddy,2026-10-06,97.57142857142857,,2.0,1.0
 calesthio/OpenMontage,2026-10-05,,,,1.0
 calesthio/OpenMontage,2026-10-06,,,1.0,1.0
+cathrynlavery/diagram-design,2026-10-07,,,,1.0
 cloudflare/cloudflare-os,2026-10-04,,,,1.0
 cloudflare/cloudflare-os,2026-10-06,94.71428571428571,,-1.0,1.0
 colbymchenry/codegraph,2026-10-01,,,,1.0
@@ -54,12 +58,14 @@ cursor/plugins,2026-10-03,,99.73333333333333,-8.0,1.0
 debpalash/VoiceStudio,2026-09-29,1138.857142857143,1020.3666666666667,,1.0
 debpalash/VoiceStudio,2026-09-30,1817.4285714285713,,0.0,1.0
 debpalash/VoiceStudio,2026-10-01,2169.4285714285716,,-1.0,1.0
+deepseek-ai/DeepGEMM,2026-10-07,,,,1.0
 dream-num/univer,2026-09-29,,,,1.0
 dream-num/univer,2026-09-30,,,-5.0,1.0
 earendil-works/pi,2026-10-02,,,,1.0
 earendil-works/pi,2026-10-04,,,-4.0,1.0
 earthtojake/text-to-cad,2026-10-05,,,,1.0
 earthtojake/text-to-cad,2026-10-06,,,2.0,1.0
+earthtojake/text-to-cad,2026-10-07,,,0.0,1.0
 firebase/firebase-ios-sdk,2026-10-01,,,,1.0
 firebase/firebase-ios-sdk,2026-10-02,,,7.0,1.0
 garrytan/gstack,2026-10-05,,,,1.0
@@ -76,6 +82,7 @@ mattpocock/skills,2026-10-01,,,,1.0
 mattpocock/skills,2026-10-02,,,7.0,1.0
 mattpocock/skills,2026-10-03,,,-4.0,1.0
 mattpocock/skills,2026-10-04,,,-6.0,1.0
+mattpocock/skills,2026-10-07,,,10.0,1.0
 meituan-longcat/LongCat-Video,2026-10-04,,,,1.0
 michael-denyer/pstack-claude,2026-10-05,,,,1.0
 mksglu/context-mode,2026-10-01,,138.83333333333334,,1.0
@@ -83,7 +90,9 @@ mksglu/context-mode,2026-10-02,,149.0,-4.0,1.0
 mksglu/context-mode,2026-10-03,,157.6,-2.0,1.0
 mksglu/context-mode,2026-10-04,,165.93333333333334,-3.0,1.0
 modelcontextprotocol/servers,2026-10-01,,,,1.0
+morluto/rea,2026-10-07,,,,1.0
 msitarzewski/agency-agents,2026-10-06,302.2857142857143,,,1.0
+msitarzewski/agency-agents,2026-10-07,,,2.0,1.0
 mvschwarz/openrig,2026-09-29,,,,1.0
 mvschwarz/openrig,2026-09-30,,,1.0,1.0
 mvschwarz/openrig,2026-10-01,,,3.0,1.0
@@ -102,6 +111,7 @@ pbakaus/impeccable,2026-10-02,386.2857142857143,,,1.0
 pbakaus/impeccable,2026-10-03,446.2857142857143,,9.0,1.0
 pbakaus/impeccable,2026-10-04,473.0,,3.0,1.0
 pbakaus/impeccable,2026-10-05,606.0,,0.0,1.0
+pbakaus/impeccable,2026-10-07,741.0,,-3.0,1.0
 pingdotgg/t3code,2026-10-04,,,,1.0
 pingdotgg/t3code,2026-10-05,186.28571428571428,,-2.0,1.0
 pingdotgg/t3code,2026-10-06,239.14285714285714,,5.0,1.0
@@ -111,9 +121,11 @@ t8y2/dbx,2026-09-30,,,,1.0
 t8y2/dbx,2026-10-01,,,-10.0,1.0
 tester-army/e2e,2026-10-05,,,,1.0
 tester-army/e2e,2026-10-06,,,0.0,1.0
+tester-army/e2e,2026-10-07,,,0.0,1.0
 thedotmack/claude-mem,2026-10-04,,,,1.0
 thedotmack/claude-mem,2026-10-05,,,-5.0,1.0
 thedotmack/claude-mem,2026-10-06,,,11.0,1.0
+thedotmack/claude-mem,2026-10-07,300.57142857142856,,-4.0,1.0
 tile-ai/tilelang,2026-10-02,68.71428571428571,,,1.0
 vectorize-io/hindsight,2026-09-29,2219.5714285714284,,,1.0
 vectorize-io/hindsight,2026-09-30,2480.714285714286,688.0,0.0,1.0
