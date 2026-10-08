@@ -4,6 +4,7 @@ DietrichGebert/ponytail,2026-10-03,-3
 DietrichGebert/ponytail,2026-10-04,3
 DietrichGebert/ponytail,2026-10-05,-3
 DuarteSantos8/openGym,2026-10-07,-2
+DuarteSantos8/openGym,2026-10-08,-2
 Effect-TS/effect,2026-10-04,12
 JuliusBrussee/caveman,2026-10-04,-3
 NVIDIA/OpenShell,2026-10-01,1
@@ -16,10 +17,14 @@ Panniantong/Agent-Reach,2026-10-05,0
 Panniantong/Agent-Reach,2026-10-06,0
 VectifyAI/PageIndex,2026-10-01,-6
 addyosmani/agent-skills,2026-10-05,-2
+addyosmani/agent-skills,2026-10-08,6
+ayghri/i-have-adhd,2026-10-08,3
 boykopovar/AnyPS5,2026-10-07,1
+boykopovar/AnyPS5,2026-10-08,1
 byoungd/up,2026-10-01,-7
 caddyserver/caddy,2026-10-06,2
 calesthio/OpenMontage,2026-10-06,1
+cathrynlavery/diagram-design,2026-10-08,7
 cloudflare/cloudflare-os,2026-10-06,-1
 colbymchenry/codegraph,2026-10-03,1
 coreyhaines31/marketingskills,2026-10-05,5
@@ -40,9 +45,11 @@ mattpocock/skills,2026-10-02,7
 mattpocock/skills,2026-10-03,-4
 mattpocock/skills,2026-10-04,-6
 mattpocock/skills,2026-10-07,10
+mattpocock/skills,2026-10-08,0
 mksglu/context-mode,2026-10-02,-4
 mksglu/context-mode,2026-10-03,-2
 mksglu/context-mode,2026-10-04,-3
+morluto/rea,2026-10-08,7
 msitarzewski/agency-agents,2026-10-07,2
 mvschwarz/openrig,2026-09-30,1
 mvschwarz/openrig,2026-10-01,3
@@ -61,7 +68,9 @@ pingdotgg/t3code,2026-10-06,5
 t8y2/dbx,2026-10-01,-10
 tester-army/e2e,2026-10-06,0
 tester-army/e2e,2026-10-07,0
+tester-army/e2e,2026-10-08,-11
 thedotmack/claude-mem,2026-10-05,-5
 thedotmack/claude-mem,2026-10-06,11
 thedotmack/claude-mem,2026-10-07,-4
+thedotmack/claude-mem,2026-10-08,-2
 vectorize-io/hindsight,2026-09-30,0
