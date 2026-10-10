@@ -8,11 +8,14 @@ DietrichGebert/ponytail,2026-10-05,-3
 DietrichGebert/ponytail,2026-10-06,1
 DietrichGebert/ponytail,2026-10-07,0
 DietrichGebert/ponytail,2026-10-08,0
+DietrichGebert/ponytail,2026-10-10,-5
 JustVugg/colibri,2026-10-08,3
+JustVugg/colibri,2026-10-10,3
 NVIDIA/OpenShell,2026-10-05,1
 NVIDIA/OpenShell,2026-10-06,1
 NVIDIA/OpenShell,2026-10-07,1
 NVIDIA/OpenShell,2026-10-08,0
+NVIDIA/OpenShell,2026-10-10,1
 NVIDIA/SkillSpector,2026-10-01,-1
 NVIDIA/SkillSpector,2026-10-02,-2
 NVIDIA/SkillSpector,2026-10-03,0
@@ -33,6 +36,7 @@ Tencent/WeKnora,2026-10-05,0
 Tencent/WeKnora,2026-10-06,-2
 Tencent/WeKnora,2026-10-07,0
 Tencent/WeKnora,2026-10-08,-2
+Tencent/WeKnora,2026-10-10,1
 TencentCloud/Octop,2026-10-02,3
 TencentCloud/Octop,2026-10-03,1
 TencentCloud/Octop,2026-10-04,0
@@ -40,6 +44,8 @@ TencentCloud/Octop,2026-10-05,2
 TencentCloud/Octop,2026-10-06,0
 TencentCloud/Octop,2026-10-07,1
 TencentCloud/Octop,2026-10-08,1
+TencentCloud/Octop,2026-10-10,1
+addyosmani/agent-skills,2026-10-10,3
 affaan-m/ECC,2026-10-01,0
 affaan-m/ECC,2026-10-02,0
 affaan-m/ECC,2026-10-03,0
@@ -48,10 +54,12 @@ affaan-m/ECC,2026-10-05,0
 affaan-m/ECC,2026-10-06,0
 affaan-m/ECC,2026-10-07,0
 affaan-m/ECC,2026-10-08,0
+affaan-m/ECC,2026-10-10,-2
 agent-substrate/substrate,2026-10-05,-2
 agent-substrate/substrate,2026-10-06,1
 agent-substrate/substrate,2026-10-07,-1
 agent-substrate/substrate,2026-10-08,2
+agent-substrate/substrate,2026-10-10,1
 alibaba/open-code-review,2026-09-30,2
 alibaba/open-code-review,2026-10-01,0
 alibaba/open-code-review,2026-10-02,0
@@ -61,6 +69,7 @@ alibaba/open-code-review,2026-10-05,0
 alibaba/open-code-review,2026-10-06,0
 alibaba/open-code-review,2026-10-07,1
 alibaba/open-code-review,2026-10-08,0
+alibaba/open-code-review,2026-10-10,0
 anthropics/claude-code,2026-10-02,1
 anthropics/claude-code,2026-10-03,0
 anthropics/claude-code,2026-10-04,2
@@ -68,6 +77,7 @@ anthropics/claude-code,2026-10-05,0
 anthropics/claude-code,2026-10-06,0
 anthropics/claude-code,2026-10-07,3
 anthropics/claude-code,2026-10-08,-1
+anthropics/claude-code,2026-10-10,1
 anthropics/financial-services,2026-09-30,1
 anthropics/financial-services,2026-10-01,1
 anthropics/financial-services,2026-10-02,0
@@ -77,6 +87,7 @@ anthropics/financial-services,2026-10-05,1
 anthropics/financial-services,2026-10-06,1
 anthropics/financial-services,2026-10-07,0
 anthropics/financial-services,2026-10-08,1
+anthropics/financial-services,2026-10-10,1
 anthropics/knowledge-work-plugins,2026-10-01,0
 anthropics/knowledge-work-plugins,2026-10-03,2
 anthropics/knowledge-work-plugins,2026-10-04,0
@@ -84,6 +95,7 @@ anthropics/knowledge-work-plugins,2026-10-05,-1
 anthropics/knowledge-work-plugins,2026-10-06,0
 anthropics/knowledge-work-plugins,2026-10-07,2
 anthropics/knowledge-work-plugins,2026-10-08,-3
+anthropics/knowledge-work-plugins,2026-10-10,11
 ayghri/i-have-adhd,2026-09-30,10
 ayghri/i-have-adhd,2026-10-01,1
 ayghri/i-have-adhd,2026-10-02,0
@@ -102,6 +114,7 @@ bilawalsidhu/gods-eye-view,2026-10-05,0
 bilawalsidhu/gods-eye-view,2026-10-06,0
 bilawalsidhu/gods-eye-view,2026-10-07,-1
 bilawalsidhu/gods-eye-view,2026-10-08,0
+bilawalsidhu/gods-eye-view,2026-10-10,-4
 cursor/plugins,2026-09-30,0
 cursor/plugins,2026-10-01,-1
 cursor/plugins,2026-10-02,-2
@@ -111,6 +124,8 @@ cursor/plugins,2026-10-05,1
 cursor/plugins,2026-10-06,0
 cursor/plugins,2026-10-07,1
 cursor/plugins,2026-10-08,0
+cursor/plugins,2026-10-10,-2
+debpalash/VoiceStudio,2026-10-10,6
 every-app/open-seo,2026-09-30,-2
 fmtlib/fmt,2026-10-02,-5
 heygen-com/hyperframes,2026-10-01,2
@@ -121,6 +136,7 @@ heygen-com/hyperframes,2026-10-05,0
 heygen-com/hyperframes,2026-10-06,1
 heygen-com/hyperframes,2026-10-07,-1
 heygen-com/hyperframes,2026-10-08,-4
+heygen-com/hyperframes,2026-10-10,1
 jingyaogong/minimind,2026-10-02,-4
 longbridge/gpui-kit,2026-10-01,-3
 longbridge/gpui-kit,2026-10-02,0
@@ -133,6 +149,7 @@ max-sixty/worktrunk,2026-10-05,1
 max-sixty/worktrunk,2026-10-06,-2
 max-sixty/worktrunk,2026-10-07,0
 max-sixty/worktrunk,2026-10-08,-2
+max-sixty/worktrunk,2026-10-10,2
 mksglu/context-mode,2026-10-01,2
 mksglu/context-mode,2026-10-02,-1
 mksglu/context-mode,2026-10-03,1
@@ -141,6 +158,7 @@ mksglu/context-mode,2026-10-05,-1
 mksglu/context-mode,2026-10-06,-2
 mksglu/context-mode,2026-10-07,-1
 mksglu/context-mode,2026-10-08,-2
+mksglu/context-mode,2026-10-10,-4
 paperclipai/paperclip,2026-10-01,3
 paperclipai/paperclip,2026-10-02,1
 paperclipai/paperclip,2026-10-03,2
@@ -149,6 +167,7 @@ paperclipai/paperclip,2026-10-05,0
 paperclipai/paperclip,2026-10-06,2
 paperclipai/paperclip,2026-10-07,0
 paperclipai/paperclip,2026-10-08,1
+paperclipai/paperclip,2026-10-10,1
 superdesigndev/treg,2026-09-30,-1
 superdesigndev/treg,2026-10-01,0
 superdesigndev/treg,2026-10-02,0
@@ -161,6 +180,7 @@ tashfeenahmed/freellmapi,2026-10-05,0
 tashfeenahmed/freellmapi,2026-10-06,2
 tashfeenahmed/freellmapi,2026-10-07,0
 tashfeenahmed/freellmapi,2026-10-08,0
+tashfeenahmed/freellmapi,2026-10-10,2
 trycua/cua,2026-10-01,-1
 trycua/cua,2026-10-02,1
 trycua/cua,2026-10-03,1
@@ -169,6 +189,7 @@ trycua/cua,2026-10-05,-1
 trycua/cua,2026-10-06,0
 trycua/cua,2026-10-07,1
 trycua/cua,2026-10-08,-1
+trycua/cua,2026-10-10,2
 tt-a1i/archify,2026-09-30,1
 tt-a1i/archify,2026-10-01,-1
 tt-a1i/archify,2026-10-02,-1
@@ -186,3 +207,4 @@ vectorize-io/hindsight,2026-10-05,0
 vectorize-io/hindsight,2026-10-06,2
 vectorize-io/hindsight,2026-10-07,0
 vectorize-io/hindsight,2026-10-08,1
+vectorize-io/hindsight,2026-10-10,0
