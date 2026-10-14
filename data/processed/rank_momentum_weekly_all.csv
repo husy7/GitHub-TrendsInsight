@@ -7,6 +7,7 @@ Effect-TS/effect,2026-10-05,2
 Effect-TS/effect,2026-10-06,-1
 EpicGames/raddebugger,2026-10-11,3
 EpicGames/raddebugger,2026-10-12,-2
+EpicGames/raddebugger,2026-10-14,1
 FxEmbed/FxEmbed,2026-09-30,-3
 FxEmbed/FxEmbed,2026-10-01,3
 FxEmbed/FxEmbed,2026-10-02,-1
@@ -49,6 +50,7 @@ boykopovar/AnyPS5,2026-10-10,1
 boykopovar/AnyPS5,2026-10-11,0
 boykopovar/AnyPS5,2026-10-12,0
 boykopovar/AnyPS5,2026-10-13,0
+boykopovar/AnyPS5,2026-10-14,0
 cloudflare/security-audit-skill,2026-09-30,-8
 cursor/plugins,2026-10-07,12
 cursor/plugins,2026-10-08,-1
@@ -56,6 +58,7 @@ cursor/plugins,2026-10-10,-1
 cursor/plugins,2026-10-11,-2
 cursor/plugins,2026-10-12,0
 cursor/plugins,2026-10-13,0
+cursor/plugins,2026-10-14,0
 davila7/claude-code-templates,2026-09-30,-3
 davila7/claude-code-templates,2026-10-01,0
 davila7/claude-code-templates,2026-10-02,-2
@@ -70,6 +73,7 @@ dream-num/univer,2026-10-02,2
 earthtojake/text-to-cad,2026-10-11,0
 earthtojake/text-to-cad,2026-10-12,-1
 earthtojake/text-to-cad,2026-10-13,1
+earthtojake/text-to-cad,2026-10-14,0
 elastic/elasticsearch,2026-09-30,1
 elastic/elasticsearch,2026-10-01,4
 flutter/flutter,2026-10-03,12
@@ -77,6 +81,7 @@ flutter/flutter,2026-10-04,-5
 flutter/flutter,2026-10-11,1
 flutter/flutter,2026-10-12,1
 flutter/flutter,2026-10-13,2
+flutter/flutter,2026-10-14,-3
 harry0703/MoneyPrinterTurbo,2026-10-04,0
 harry0703/MoneyPrinterTurbo,2026-10-05,3
 harry0703/MoneyPrinterTurbo,2026-10-06,-4
@@ -89,9 +94,11 @@ heygen-com/hyperframes,2026-10-10,-1
 heygen-com/hyperframes,2026-10-11,-1
 heygen-com/hyperframes,2026-10-12,-1
 heygen-com/hyperframes,2026-10-13,2
+heygen-com/hyperframes,2026-10-14,-1
 mattpocock/skills,2026-10-11,1
 mattpocock/skills,2026-10-12,-1
 mattpocock/skills,2026-10-13,0
+mattpocock/skills,2026-10-14,1
 mvschwarz/openrig,2026-10-06,-3
 mvschwarz/openrig,2026-10-07,20
 mvschwarz/openrig,2026-10-08,0
@@ -136,11 +143,13 @@ stablyai/orca,2026-09-30,-1
 stablyai/orca,2026-10-01,-3
 tester-army/e2e,2026-10-12,11
 tester-army/e2e,2026-10-13,0
+tester-army/e2e,2026-10-14,-1
 thedotmack/claude-mem,2026-10-08,-1
 thedotmack/claude-mem,2026-10-10,0
 thedotmack/claude-mem,2026-10-11,3
 thedotmack/claude-mem,2026-10-12,0
 thedotmack/claude-mem,2026-10-13,-1
+thedotmack/claude-mem,2026-10-14,-1
 tile-ai/tilelang,2026-10-03,0
 tile-ai/tilelang,2026-10-04,0
 tile-ai/tilelang,2026-10-05,1
