@@ -1,117 +1,135 @@
-# GitHub Trending 洞察报告 · 2026-10-14
+# GitHub Trending 洞察报告 · 2026-10-15
 
-- 生成时间 (UTC): `2026-10-14T05:13:41Z`
+- 生成时间 (UTC): `2026-10-15T05:01:10Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-10-14` · 仓库数: 9
+- snapshot_date: `2026-10-15` · 仓库数: 12
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 9 |
-| 榜单 Star 合计 | 527,064 |
-| 本周期新增 Star | +67,642 |
-| 覆盖语言数 | 7 |
-| 有 7 天速度的仓库数 | 4 |
+| 趋势仓库数 | 12 |
+| 榜单 Star 合计 | 839,258 |
+| 本周期新增 Star | +51,827 |
+| 覆盖语言数 | 8 |
+| 有 7 天速度的仓库数 | 3 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [morluto/rea](https://github.com/morluto/rea) | typescript | 215,471 | +54,679 | 29,285.6 | — | +0 |
-| 2 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | html | 54,492 | +1,815 | 1,409.6 | — | +1 |
-| 3 | [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) | javascript | 55,715 | +1,961 | 1,037.7 | — | +0 |
-| 4 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | typescript | 28,418 | +969 | 407.7 | 179.3 | -1 |
+| 1 | [morluto/rea](https://github.com/morluto/rea) | typescript | 248,541 | +41,034 | 30,691.0 | — | +0 |
+| 2 | [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) | java | 87,769 | +1,008 | 801.9 | 382.0 | — |
+| 3 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | typescript | 29,289 | +947 | 519.3 | 202.2 | +1 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | +1 | 排名上升 |
-| [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) | +0 | 排名不变 |
-| [lyogavin/airllm](https://github.com/lyogavin/airllm) | +0 | 排名不变 |
+| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | +1 | 排名上升 |
+| [mksglu/context-mode](https://github.com/mksglu/context-mode) | +1 | 排名上升 |
 | [morluto/rea](https://github.com/morluto/rea) | +0 | 排名不变 |
-| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | -1 | 排名下滑 |
-| [mksglu/context-mode](https://github.com/mksglu/context-mode) | -1 | 排名下滑 |
-| [storytold/artcraft](https://github.com/storytold/artcraft) | -4 | 排名下滑 |
+| [xtool-org/xtool](https://github.com/xtool-org/xtool) | -1 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| typescript | 3 | 33.3% |
-| html | 1 | 11.1% |
-| javascript | 1 | 11.1% |
-| jupyter notebook | 1 | 11.1% |
-| python | 1 | 11.1% |
-| rust | 1 | 11.1% |
-| swift | 1 | 11.1% |
+| python | 4 | 33.3% |
+| typescript | 2 | 16.7% |
+| c# | 1 | 8.3% |
+| go | 1 | 8.3% |
+| java | 1 | 8.3% |
+| rust | 1 | 8.3% |
+| shell | 1 | 8.3% |
+| swift | 1 | 8.3% |
 
 ## 5. 仓库明细
 
 ### 1. [morluto/rea](https://github.com/morluto/rea)
 
 - 描述: Reverse engineer anything with agents, from app behavior down to native binaries.
-- 指标: stars 215,471 · forks 53,128 · open_issues 535 · language typescript
-- 本周期新增 (daily): +54,679 Star
-- topics: `agent-skills`, `ai-agents`, `binary-analysis`, `claude-code`, `cli`, `codex`, `cordis`, `ctf`, `decompiler`, `developer-tools`, `dsh`, `dsh-plugin`, `ghidra`, `hopper`, `llm`, `mcp`, `model-context-protocol`, `rea`, `reverse-engineering`, `static-analysis`
+- 指标: stars 248,541 · forks 62,364 · open_issues 810 · language typescript
+- 本周期新增 (daily): +41,034 Star
+- topics: `agent-skills`, `ai-agents`, `binary-analysis`, `claude-code`, `cli`, `codex`, `cordis`, `decompiler`, `developer-tools`, `dsh`, `dsh-plugin`, `ghidra`, `hopper`, `llm`, `mcp`, `model-context-protocol`, `rea`, `reverse-engineering`, `static-analysis`, `touhou`
 
-### 2. [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view)
-
-- 描述: A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.
-- 指标: stars 55,715 · forks 10,872 · open_issues 413 · language javascript
-- 本周期新增 (daily): +1,961 Star
-- topics: `3d-globe`, `cesium`, `flight-tracking`, `geospatial`, `geospatial-intelligence`, `gis`, `osint`, `photogrammetry`, `satellite-tracking`, `spatial-intelligence`, `webgl`, `worldview`
-
-### 3. [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)
+### 2. [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)
 
 - 描述: VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
-- 指标: stars 63,952 · forks 7,112 · open_issues 157 · language python
-- 本周期新增 (daily): +1,748 Star
+- 指标: stars 66,948 · forks 7,366 · open_issues 196 · language python
+- 本周期新增 (daily): +3,538 Star
 - topics: `ai`, `audiobook`, `cuda`, `dubbing`, `elevenlabs-alternative`, `huggingface`, `local-first`, `mlx`, `omnivoice-studio`, `speech-to-text`, `text-to-speech`, `transcription`, `translate`, `tts`, `voice-ai`, `voice-cloning`, `voice-generation`, `voicestudio`, `workflow`
 
-### 4. [mksglu/context-mode](https://github.com/mksglu/context-mode)
+### 3. [mksglu/context-mode](https://github.com/mksglu/context-mode)
 
 - 描述: Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.
-- 指标: stars 28,418 · forks 2,000 · open_issues 357 · language typescript
-- 本周期新增 (daily): +969 Star
+- 指标: stars 29,289 · forks 2,054 · open_issues 359 · language typescript
+- 本周期新增 (daily): +947 Star
 - topics: `antigravity`, `claude`, `claude-code`, `claude-code-hooks`, `claude-code-plugins`, `claude-code-skill`, `codex`, `codex-cli`, `context-mode`, `copilot`, `cursor-plugin`, `kiro`, `mcp`, `mcp-server`, `mcp-tools`, `openclaw`, `opencode`, `pi-agent`, `skills`, `zed-extension`
 
-### 5. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
+### 4. [nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
-- 描述: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.
-- 指标: stars 54,492 · forks 3,448 · open_issues 46 · language html
-- 本周期新增 (daily): +1,815 Star
-- topics: `agent-skills`, `claude-code`, `codex`, `data-visualization`, `diagrams`, `drawio`, `mermaid`, `svg`
+- 描述: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.
+- 指标: stars 95,491 · forks 10,521 · open_issues 382 · language shell
+- 本周期新增 (daily): +52 Star
+- topics: `bash`, `install`, `lts`, `node`, `node-js`, `nodejs`, `nvm`, `nvmrc`, `posix`, `posix-compliant`, `shell`, `version-manager`, `zsh`
 
-### 6. [vercel-labs/skills](https://github.com/vercel-labs/skills)
+### 5. [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)
 
-- 描述: The open agent skills tool - npx skills
-- 指标: stars 34,670 · forks 2,956 · open_issues 1,117 · language typescript
-- 本周期新增 (daily): +190 Star
+- 描述: Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.
+- 指标: stars 49,565 · forks 4,436 · open_issues 31 · language python
+- 本周期新增 (daily): +163 Star
+- topics: `agent-skills`, `ai-scientist`, `bioinformatics`, `chemoinformatics`, `claude`, `claude-skills`, `claudecode`, `clinical-research`, `computational-biology`, `data-analysis`, `drug-discovery`, `genomics`, `materials-science`, `metabolomics`, `proteomics`, `scientific-computing`, `scientific-visualization`
+
+### 6. [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
+
+- 描述: "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub:https://clianything.cc/
+- 指标: stars 52,663 · forks 4,780 · open_issues 169 · language python
+- 本周期新增 (daily): +103 Star
 - topics: —
 
-### 7. [lyogavin/airllm](https://github.com/lyogavin/airllm)
+### 7. [ifixai-ai/iFixAi](https://github.com/ifixai-ai/iFixAi)
 
-- 描述: AirLLM 2.8T LLM inference with single 4GB GPU
-- 指标: stars 38,446 · forks 3,931 · open_issues 166 · language jupyter notebook
-- 本周期新增 (daily): +1,001 Star
-- topics: `chinese-llm`, `chinese-nlp`, `finetune`, `generative-ai`, `instruct-gpt`, `instruction-set`, `llama`, `llm`, `lora`, `open-models`, `open-source`, `open-source-models`, `qlora`
+- 描述: Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.
+- 指标: stars 27,687 · forks 1,514 · open_issues 8 · language python
+- 本周期新增 (daily): +2,109 Star
+- topics: `agent-evaluation`, `ai`, `ai-alignment`, `ai-evaluation`, `ai-governance`, `ai-safety`, `cli`, `diagnostic-tool`, `eu-ai-act`, `hallucination-detection`, `iso-42001`, `llm-evaluation`, `llm-security`, `nist-ai-rmf`, `owasp-llm`, `prompt-injection`, `python`, `responsible-ai`, `risk-assessment`, `risk-management`
 
-### 8. [storytold/artcraft](https://github.com/storytold/artcraft)
+### 8. [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi)
 
-- 描述: ArtCraft is an intentional crafting engine for artists, designers, and filmmakers
-- 指标: stars 26,232 · forks 4,109 · open_issues 327 · language rust
-- 本周期新增 (daily): +4,081 Star
-- topics: `3d-graphics`, `ai`, `aivideo`, `filmmaking`, `imagegeneration`
+- 描述: Fully autonomous AI Agents system capable of performing complex penetration testing tasks
+- 指标: stars 29,788 · forks 4,468 · open_issues 29 · language go
+- 本周期新增 (daily): +1,025 Star
+- topics: `ai-agents`, `ai-security-tool`, `anthropic`, `autonomous-agents`, `golang`, `gpt`, `graphql`, `multi-agent-system`, `offensive-security`, `open-source`, `openai`, `penetration-testing`, `penetration-testing-tools`, `react`, `security-automation`, `security-testing`, `security-tools`, `self-hosted`
 
-### 9. [xtool-org/xtool](https://github.com/xtool-org/xtool)
+### 9. [rust-lang/rust](https://github.com/rust-lang/rust)
+
+- 描述: Empowering everyone to build reliable and efficient software.
+- 指标: stars 120,128 · forks 18,706 · open_issues 12,558 · language rust
+- 本周期新增 (daily): +207 Star
+- topics: `compiler`, `language`, `rust`
+
+### 10. [xtool-org/xtool](https://github.com/xtool-org/xtool)
 
 - 描述: Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.
-- 指标: stars 9,668 · forks 410 · open_issues 96 · language swift
-- 本周期新增 (daily): +1,198 Star
+- 指标: stars 11,065 · forks 505 · open_issues 105 · language swift
+- 本周期新增 (daily): +1,502 Star
 - topics: `ios`, `linux`, `swift`, `swift-package-manager`, `windows`, `xcode`
+
+### 11. [ntdevlabs/tiny11builder](https://github.com/ntdevlabs/tiny11builder)
+
+- 描述: WinUI app for building smaller, customized Windows 11 images.
+- 指标: stars 20,324 · forks 1,559 · open_issues 37 · language c#
+- 本周期新增 (daily): +139 Star
+- topics: —
+
+### 12. [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra)
+
+- 描述: Ghidra is a software reverse engineering (SRE) framework
+- 指标: stars 87,769 · forks 9,788 · open_issues 2,100 · language java
+- 本周期新增 (daily): +1,008 Star
+- topics: `disassembler`, `reverse-engineering`, `software-analysis`
 
 ## 6. 口径与方法
 
