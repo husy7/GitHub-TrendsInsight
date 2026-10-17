@@ -6,9 +6,11 @@ DietrichGebert/ponytail,2026-10-05,-3
 DuarteSantos8/openGym,2026-10-07,-2
 DuarteSantos8/openGym,2026-10-08,-2
 Effect-TS/effect,2026-10-04,12
+HKUDS/CLI-Anything,2026-10-17,2
 JuliusBrussee/caveman,2026-10-04,-3
 JuliusBrussee/caveman,2026-10-16,1
 K-Dense-AI/scientific-agent-skills,2026-10-16,2
+K-Dense-AI/scientific-agent-skills,2026-10-17,1
 NVIDIA/OpenShell,2026-10-01,1
 NVIDIA/OpenShell,2026-10-02,-2
 NVIDIA/OpenShell,2026-10-03,-4
@@ -23,6 +25,8 @@ addyosmani/agent-skills,2026-10-05,-2
 addyosmani/agent-skills,2026-10-08,6
 addyosmani/agent-skills,2026-10-10,-2
 affaan-m/ECC,2026-10-16,-7
+affaan-m/ECC,2026-10-17,7
+anthropics/claude-plugins-official,2026-10-17,1
 anthropics/knowledge-work-plugins,2026-10-11,-6
 ayghri/i-have-adhd,2026-10-08,3
 bilawalsidhu/gods-eye-view,2026-10-13,3
@@ -46,11 +50,13 @@ colbymchenry/codegraph,2026-10-03,1
 coreyhaines31/marketingskills,2026-10-05,5
 cs341-illinois/coursebook,2026-09-30,-4
 cursor/plugins,2026-10-03,-8
+cursor/plugins,2026-10-17,5
 debpalash/VoiceStudio,2026-09-30,0
 debpalash/VoiceStudio,2026-10-01,-1
 debpalash/VoiceStudio,2026-10-14,-1
 debpalash/VoiceStudio,2026-10-15,1
 debpalash/VoiceStudio,2026-10-16,-3
+debpalash/VoiceStudio,2026-10-17,-5
 dream-num/univer,2026-09-30,-5
 earendil-works/pi,2026-10-04,-4
 earthtojake/text-to-cad,2026-10-06,2
@@ -77,6 +83,7 @@ mksglu/context-mode,2026-10-13,2
 mksglu/context-mode,2026-10-14,-1
 mksglu/context-mode,2026-10-15,1
 mksglu/context-mode,2026-10-16,-5
+mksglu/context-mode,2026-10-17,3
 morluto/rea,2026-10-08,7
 morluto/rea,2026-10-10,0
 morluto/rea,2026-10-11,0
@@ -93,6 +100,7 @@ mvschwarz/openrig,2026-10-03,-10
 obra/superpowers,2026-10-03,4
 obra/superpowers,2026-10-04,-8
 obra/superpowers,2026-10-16,5
+obra/superpowers,2026-10-17,-2
 pablostanley/yoinks,2026-10-03,-5
 paperclipai/paperclip,2026-09-30,-2
 pbakaus/impeccable,2026-10-03,9
@@ -102,6 +110,7 @@ pbakaus/impeccable,2026-10-07,-3
 pingdotgg/t3code,2026-10-05,-2
 pingdotgg/t3code,2026-10-06,5
 pytorch/pytorch,2026-10-12,4
+ruvnet/ruflo,2026-10-17,1
 storytold/artcraft,2026-10-11,6
 storytold/artcraft,2026-10-12,0
 storytold/artcraft,2026-10-13,-1
@@ -115,4 +124,5 @@ thedotmack/claude-mem,2026-10-06,11
 thedotmack/claude-mem,2026-10-07,-4
 thedotmack/claude-mem,2026-10-08,-2
 vectorize-io/hindsight,2026-09-30,0
+xerj-org/xerj,2026-10-17,-1
 xtool-org/xtool,2026-10-15,-1
