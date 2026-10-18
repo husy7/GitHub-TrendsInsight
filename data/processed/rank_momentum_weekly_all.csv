@@ -23,6 +23,7 @@ NVIDIA/OpenShell,2026-10-07,12
 NVIDIA/OpenShell,2026-10-08,-1
 NationalSecurityAgency/ghidra,2026-10-16,6
 NationalSecurityAgency/ghidra,2026-10-17,-1
+NationalSecurityAgency/ghidra,2026-10-18,-1
 Panniantong/Agent-Reach,2026-10-05,3
 Panniantong/Agent-Reach,2026-10-06,2
 Panniantong/Agent-Reach,2026-10-07,-5
@@ -44,6 +45,7 @@ alirezarezvani/claude-skills,2026-10-05,0
 alirezarezvani/claude-skills,2026-10-06,-3
 anthropics/claude-code-action,2026-10-02,4
 anthropics/claude-code-action,2026-10-03,0
+anthropics/claude-plugins-official,2026-10-18,5
 anthropics/financial-services,2026-09-30,-1
 anthropics/financial-services,2026-10-01,-1
 anthropics/financial-services,2026-10-02,-2
@@ -58,9 +60,11 @@ boykopovar/AnyPS5,2026-10-14,0
 boykopovar/AnyPS5,2026-10-15,-1
 boykopovar/AnyPS5,2026-10-16,0
 boykopovar/AnyPS5,2026-10-17,-1
+boykopovar/AnyPS5,2026-10-18,0
 cathrynlavery/diagram-design,2026-10-15,2
 cathrynlavery/diagram-design,2026-10-16,3
 cathrynlavery/diagram-design,2026-10-17,1
+cathrynlavery/diagram-design,2026-10-18,0
 cloudflare/security-audit-skill,2026-09-30,-8
 cursor/plugins,2026-10-07,12
 cursor/plugins,2026-10-08,-1
@@ -113,6 +117,7 @@ heygen-com/hyperframes,2026-10-14,-1
 heygen-com/hyperframes,2026-10-15,1
 heygen-com/hyperframes,2026-10-16,0
 heygen-com/hyperframes,2026-10-17,-1
+heygen-com/hyperframes,2026-10-18,-1
 mattpocock/skills,2026-10-11,1
 mattpocock/skills,2026-10-12,-1
 mattpocock/skills,2026-10-13,0
@@ -120,9 +125,12 @@ mattpocock/skills,2026-10-14,1
 mattpocock/skills,2026-10-15,-1
 mattpocock/skills,2026-10-16,0
 mattpocock/skills,2026-10-17,-3
+mattpocock/skills,2026-10-18,-3
+mksglu/context-mode,2026-10-18,1
 morluto/rea,2026-10-15,9
 morluto/rea,2026-10-16,0
 morluto/rea,2026-10-17,0
+morluto/rea,2026-10-18,0
 mvschwarz/openrig,2026-10-06,-3
 mvschwarz/openrig,2026-10-07,20
 mvschwarz/openrig,2026-10-08,0
@@ -158,6 +166,7 @@ pytorch/pytorch,2026-10-04,0
 ranxianglei/billion-context,2026-10-12,-1
 ranxianglei/billion-context,2026-10-16,5
 ranxianglei/billion-context,2026-10-17,-2
+ranxianglei/billion-context,2026-10-18,-1
 rohitg00/ai-engineering-from-scratch,2026-09-30,7
 rohitg00/ai-engineering-from-scratch,2026-10-01,0
 rohitg00/ai-engineering-from-scratch,2026-10-02,1
@@ -167,6 +176,7 @@ rohitg00/ai-engineering-from-scratch,2026-10-05,-2
 rohitg00/ai-engineering-from-scratch,2026-10-06,-4
 stablyai/orca,2026-09-30,-1
 stablyai/orca,2026-10-01,-3
+storytold/artcraft,2026-10-18,0
 tester-army/e2e,2026-10-12,11
 tester-army/e2e,2026-10-13,0
 tester-army/e2e,2026-10-14,-1
