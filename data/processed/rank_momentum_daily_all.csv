@@ -8,12 +8,14 @@ DuarteSantos8/openGym,2026-10-08,-2
 Effect-TS/effect,2026-10-04,12
 HKUDS/CLI-Anything,2026-10-17,2
 HKUDS/CLI-Anything,2026-10-18,0
+HKUDS/CLI-Anything,2026-10-19,-4
 JuliusBrussee/caveman,2026-10-04,-3
 JuliusBrussee/caveman,2026-10-16,1
 K-Dense-AI/scientific-agent-skills,2026-10-16,2
 K-Dense-AI/scientific-agent-skills,2026-10-17,1
 K-Dense-AI/scientific-agent-skills,2026-10-18,-3
 MadsLorentzen/ai-job-search,2026-10-18,9
+MadsLorentzen/ai-job-search,2026-10-19,1
 NVIDIA/OpenShell,2026-10-01,1
 NVIDIA/OpenShell,2026-10-02,-2
 NVIDIA/OpenShell,2026-10-03,-4
@@ -30,10 +32,14 @@ addyosmani/agent-skills,2026-10-10,-2
 affaan-m/ECC,2026-10-16,-7
 affaan-m/ECC,2026-10-17,7
 affaan-m/ECC,2026-10-18,0
+akitaonrails/ai-memory,2026-10-19,0
 android/skills,2026-10-18,0
+android/skills,2026-10-19,-3
+anomalyco/opencode,2026-10-19,8
 anthropics/claude-code,2026-10-18,7
 anthropics/claude-plugins-official,2026-10-17,1
 anthropics/claude-plugins-official,2026-10-18,0
+anthropics/claude-plugins-official,2026-10-19,-1
 anthropics/knowledge-work-plugins,2026-10-11,-6
 ayghri/i-have-adhd,2026-10-08,3
 bilawalsidhu/gods-eye-view,2026-10-13,3
@@ -58,6 +64,7 @@ coreyhaines31/marketingskills,2026-10-05,5
 cs341-illinois/coursebook,2026-09-30,-4
 cursor/plugins,2026-10-03,-8
 cursor/plugins,2026-10-17,5
+cursor/plugins,2026-10-19,5
 debpalash/VoiceStudio,2026-09-30,0
 debpalash/VoiceStudio,2026-10-01,-1
 debpalash/VoiceStudio,2026-10-14,-1
@@ -65,6 +72,7 @@ debpalash/VoiceStudio,2026-10-15,1
 debpalash/VoiceStudio,2026-10-16,-3
 debpalash/VoiceStudio,2026-10-17,-5
 debpalash/VoiceStudio,2026-10-18,0
+debpalash/VoiceStudio,2026-10-19,1
 dream-num/univer,2026-09-30,-5
 earendil-works/pi,2026-10-04,-4
 earthtojake/text-to-cad,2026-10-06,2
@@ -120,6 +128,8 @@ pingdotgg/t3code,2026-10-06,5
 pytorch/pytorch,2026-10-12,4
 ruvnet/ruflo,2026-10-17,1
 ruvnet/ruflo,2026-10-18,-6
+ruvnet/ruflo,2026-10-19,7
+stablyai/orca,2026-10-19,1
 storytold/artcraft,2026-10-11,6
 storytold/artcraft,2026-10-12,0
 storytold/artcraft,2026-10-13,-1
