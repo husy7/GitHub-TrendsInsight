@@ -1,4 +1,5 @@
 repo_full_name,snapshot_date,rank_momentum
+Comfy-Org/ComfyUI,2026-10-20,9
 DietrichGebert/ponytail,2026-10-02,4
 DietrichGebert/ponytail,2026-10-03,-3
 DietrichGebert/ponytail,2026-10-04,3
@@ -9,13 +10,16 @@ Effect-TS/effect,2026-10-04,12
 HKUDS/CLI-Anything,2026-10-17,2
 HKUDS/CLI-Anything,2026-10-18,0
 HKUDS/CLI-Anything,2026-10-19,-4
+HKUDS/CLI-Anything,2026-10-20,-2
 JuliusBrussee/caveman,2026-10-04,-3
 JuliusBrussee/caveman,2026-10-16,1
 K-Dense-AI/scientific-agent-skills,2026-10-16,2
 K-Dense-AI/scientific-agent-skills,2026-10-17,1
 K-Dense-AI/scientific-agent-skills,2026-10-18,-3
+Kruk2/jasna,2026-10-20,3
 MadsLorentzen/ai-job-search,2026-10-18,9
 MadsLorentzen/ai-job-search,2026-10-19,1
+MadsLorentzen/ai-job-search,2026-10-20,0
 NVIDIA/OpenShell,2026-10-01,1
 NVIDIA/OpenShell,2026-10-02,-2
 NVIDIA/OpenShell,2026-10-03,-4
@@ -33,10 +37,13 @@ affaan-m/ECC,2026-10-16,-7
 affaan-m/ECC,2026-10-17,7
 affaan-m/ECC,2026-10-18,0
 akitaonrails/ai-memory,2026-10-19,0
+akitaonrails/ai-memory,2026-10-20,3
 android/skills,2026-10-18,0
 android/skills,2026-10-19,-3
 anomalyco/opencode,2026-10-19,8
+anomalyco/opencode,2026-10-20,1
 anthropics/claude-code,2026-10-18,7
+anthropics/claude-code,2026-10-20,-2
 anthropics/claude-plugins-official,2026-10-17,1
 anthropics/claude-plugins-official,2026-10-18,0
 anthropics/claude-plugins-official,2026-10-19,-1
@@ -129,7 +136,9 @@ pytorch/pytorch,2026-10-12,4
 ruvnet/ruflo,2026-10-17,1
 ruvnet/ruflo,2026-10-18,-6
 ruvnet/ruflo,2026-10-19,7
+ruvnet/ruflo,2026-10-20,0
 stablyai/orca,2026-10-19,1
+stablyai/orca,2026-10-20,1
 storytold/artcraft,2026-10-11,6
 storytold/artcraft,2026-10-12,0
 storytold/artcraft,2026-10-13,-1
