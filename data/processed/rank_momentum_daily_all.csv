@@ -1,9 +1,11 @@
 repo_full_name,snapshot_date,rank_momentum
 Comfy-Org/ComfyUI,2026-10-20,9
+Comfy-Org/ComfyUI,2026-10-21,-1
 DietrichGebert/ponytail,2026-10-02,4
 DietrichGebert/ponytail,2026-10-03,-3
 DietrichGebert/ponytail,2026-10-04,3
 DietrichGebert/ponytail,2026-10-05,-3
+DietrichGebert/ponytail,2026-10-21,0
 DuarteSantos8/openGym,2026-10-07,-2
 DuarteSantos8/openGym,2026-10-08,-2
 Effect-TS/effect,2026-10-04,12
@@ -20,6 +22,7 @@ Kruk2/jasna,2026-10-20,3
 MadsLorentzen/ai-job-search,2026-10-18,9
 MadsLorentzen/ai-job-search,2026-10-19,1
 MadsLorentzen/ai-job-search,2026-10-20,0
+MadsLorentzen/ai-job-search,2026-10-21,0
 NVIDIA/OpenShell,2026-10-01,1
 NVIDIA/OpenShell,2026-10-02,-2
 NVIDIA/OpenShell,2026-10-03,-4
@@ -42,12 +45,14 @@ android/skills,2026-10-18,0
 android/skills,2026-10-19,-3
 anomalyco/opencode,2026-10-19,8
 anomalyco/opencode,2026-10-20,1
+anomalyco/opencode,2026-10-21,-6
 anthropics/claude-code,2026-10-18,7
 anthropics/claude-code,2026-10-20,-2
 anthropics/claude-plugins-official,2026-10-17,1
 anthropics/claude-plugins-official,2026-10-18,0
 anthropics/claude-plugins-official,2026-10-19,-1
 anthropics/knowledge-work-plugins,2026-10-11,-6
+anthropics/knowledge-work-plugins,2026-10-21,1
 ayghri/i-have-adhd,2026-10-08,3
 bilawalsidhu/gods-eye-view,2026-10-13,3
 bilawalsidhu/gods-eye-view,2026-10-14,0
@@ -66,6 +71,7 @@ cathrynlavery/diagram-design,2026-10-12,0
 cathrynlavery/diagram-design,2026-10-13,-2
 cathrynlavery/diagram-design,2026-10-14,1
 cloudflare/cloudflare-os,2026-10-06,-1
+cloudflare/security-audit-skill,2026-10-21,9
 colbymchenry/codegraph,2026-10-03,1
 coreyhaines31/marketingskills,2026-10-05,5
 cs341-illinois/coursebook,2026-09-30,-4
@@ -87,6 +93,7 @@ earthtojake/text-to-cad,2026-10-07,0
 firebase/firebase-ios-sdk,2026-10-02,7
 getsentry/sentry,2026-10-04,-3
 getsentry/sentry,2026-10-05,8
+headroomlabs-ai/headroom,2026-10-21,-3
 heygen-com/hyperframes,2026-10-02,1
 heygen-com/hyperframes,2026-10-03,0
 lyogavin/airllm,2026-10-13,0
@@ -116,6 +123,7 @@ morluto/rea,2026-10-14,0
 morluto/rea,2026-10-15,0
 morluto/rea,2026-10-16,0
 msitarzewski/agency-agents,2026-10-07,2
+msitarzewski/agency-agents,2026-10-21,1
 mvschwarz/openrig,2026-09-30,1
 mvschwarz/openrig,2026-10-01,3
 mvschwarz/openrig,2026-10-02,-2
@@ -137,8 +145,11 @@ ruvnet/ruflo,2026-10-17,1
 ruvnet/ruflo,2026-10-18,-6
 ruvnet/ruflo,2026-10-19,7
 ruvnet/ruflo,2026-10-20,0
+ruvnet/ruflo,2026-10-21,-1
+shiyu-coder/Kronos,2026-10-21,-2
 stablyai/orca,2026-10-19,1
 stablyai/orca,2026-10-20,1
+stablyai/orca,2026-10-21,3
 storytold/artcraft,2026-10-11,6
 storytold/artcraft,2026-10-12,0
 storytold/artcraft,2026-10-13,-1
