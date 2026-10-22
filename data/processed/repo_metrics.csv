@@ -4,6 +4,7 @@ BerriAI/litellm,2026-10-10,,,,1.0
 Comfy-Org/ComfyUI,2026-10-19,,,,1.0
 Comfy-Org/ComfyUI,2026-10-20,,,9.0,1.0
 Comfy-Org/ComfyUI,2026-10-21,,,-1.0,1.0
+Comfy-Org/ComfyUI,2026-10-22,,,-1.0,1.0
 ComposioHQ/awesome-claude-skills,2026-10-01,,,,1.0
 DietrichGebert/ponytail,2026-10-01,,1051.7666666666667,,1.0
 DietrichGebert/ponytail,2026-10-02,,1038.6666666666667,4.0,1.0
@@ -11,6 +12,7 @@ DietrichGebert/ponytail,2026-10-03,,1040.4333333333334,-3.0,1.0
 DietrichGebert/ponytail,2026-10-04,,1018.2,3.0,1.0
 DietrichGebert/ponytail,2026-10-05,,1015.5333333333333,-3.0,1.0
 DietrichGebert/ponytail,2026-10-21,,,0.0,1.0
+DietrichGebert/ponytail,2026-10-22,,,-1.0,1.0
 DuarteSantos8/openGym,2026-10-06,,,,1.0
 DuarteSantos8/openGym,2026-10-07,474.0,,-2.0,1.0
 DuarteSantos8/openGym,2026-10-08,700.8571428571429,,-2.0,1.0
@@ -19,6 +21,7 @@ Effect-TS/effect,2026-10-04,66.57142857142857,,12.0,1.0
 EpicGames/raddebugger,2026-10-08,,,,1.0
 Friedrich-M/UniMate,2026-10-02,,,,1.0
 Graphify-Labs/graphify,2026-10-21,,,,1.0
+Graphify-Labs/graphify,2026-10-22,,,-4.0,1.0
 HKUDS/CLI-Anything,2026-10-15,,,,1.0
 HKUDS/CLI-Anything,2026-10-17,,,2.0,1.0
 HKUDS/CLI-Anything,2026-10-18,,,0.0,1.0
@@ -70,6 +73,7 @@ affaan-m/ECC,2026-10-18,859.8571428571429,767.4333333333333,0.0,1.0
 akitaonrails/ai-memory,2026-10-18,,,,1.0
 akitaonrails/ai-memory,2026-10-19,,,0.0,1.0
 akitaonrails/ai-memory,2026-10-20,,,3.0,1.0
+akitaonrails/ai-memory,2026-10-22,404.7142857142857,,-7.0,1.0
 alibaba/open-code-review,2026-10-10,297.42857142857144,767.6,,1.0
 android/skills,2026-10-17,,,,1.0
 android/skills,2026-10-18,,,0.0,1.0
@@ -119,6 +123,7 @@ cloudflare/cloudflare-os,2026-10-04,,,,1.0
 cloudflare/cloudflare-os,2026-10-06,94.71428571428571,,-1.0,1.0
 cloudflare/security-audit-skill,2026-10-08,,,,1.0
 cloudflare/security-audit-skill,2026-10-21,,527.4666666666667,9.0,1.0
+cloudflare/security-audit-skill,2026-10-22,,556.4666666666667,1.0,1.0
 colbymchenry/codegraph,2026-10-01,,,,1.0
 colbymchenry/codegraph,2026-10-03,,,1.0,1.0
 coreyhaines31/marketingskills,2026-10-03,,,,1.0
@@ -157,6 +162,7 @@ google/skills,2026-10-03,,,,1.0
 harry0703/MoneyPrinterTurbo,2026-10-01,,,,1.0
 headroomlabs-ai/headroom,2026-10-20,,,,1.0
 headroomlabs-ai/headroom,2026-10-21,,,-3.0,1.0
+headroomlabs-ai/headroom,2026-10-22,,,6.0,1.0
 heygen-com/hyperframes,2026-10-01,,379.5,,1.0
 heygen-com/hyperframes,2026-10-02,,391.1333333333333,1.0,1.0
 heygen-com/hyperframes,2026-10-03,380.14285714285717,406.1666666666667,0.0,1.0
@@ -246,16 +252,19 @@ ruvnet/ruflo,2026-10-20,363.2857142857143,,0.0,1.0
 ruvnet/ruflo,2026-10-21,449.0,,-1.0,1.0
 shiyu-coder/Kronos,2026-10-20,,,,1.0
 shiyu-coder/Kronos,2026-10-21,,,-2.0,1.0
+shiyu-coder/Kronos,2026-10-22,,,5.0,1.0
 sickn33/agentic-awesome-skills,2026-10-21,,,,1.0
 stablyai/orca,2026-10-18,,,,1.0
 stablyai/orca,2026-10-19,,,1.0,1.0
 stablyai/orca,2026-10-20,,,1.0,1.0
 stablyai/orca,2026-10-21,,,3.0,1.0
+stablyai/orca,2026-10-22,1243.5714285714287,,0.0,1.0
 storytold/artcraft,2026-10-10,,,,1.0
 storytold/artcraft,2026-10-11,,,6.0,1.0
 storytold/artcraft,2026-10-12,,,0.0,1.0
 storytold/artcraft,2026-10-13,,,-1.0,1.0
 storytold/artcraft,2026-10-14,,,-4.0,1.0
+supabase/supabase,2026-10-22,,,,1.0
 t8y2/dbx,2026-09-30,,,,1.0
 t8y2/dbx,2026-10-01,,,-10.0,1.0
 tensorflow/tensorflow,2026-10-11,,,,1.0
@@ -270,11 +279,13 @@ thedotmack/claude-mem,2026-10-07,300.57142857142856,,-4.0,1.0
 thedotmack/claude-mem,2026-10-08,372.42857142857144,,-2.0,1.0
 tile-ai/tilelang,2026-10-02,68.71428571428571,,,1.0
 trycua/cua,2026-10-08,182.71428571428572,214.6,,1.0
+twentyhq/twenty,2026-10-22,,,,1.0
 twostraws/SwiftUI-Agent-Skill,2026-10-10,,,,1.0
 vectorize-io/hindsight,2026-09-29,2219.5714285714284,,,1.0
 vectorize-io/hindsight,2026-09-30,2480.714285714286,688.0,0.0,1.0
 vercel-labs/skills,2026-10-14,,,,1.0
 vllm-project/vllm,2026-10-21,,,,1.0
+vllm-project/vllm,2026-10-22,,,13.0,1.0
 vxcontrol/pentagi,2026-10-15,,,,1.0
 willfaust/Madeira,2026-09-30,,,,1.0
 withmarbleapp/os-taxonomy,2026-10-20,,,,1.0
