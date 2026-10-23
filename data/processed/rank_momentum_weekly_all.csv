@@ -17,11 +17,13 @@ HKUDS/CLI-Anything,2026-09-30,2
 HKUDS/CLI-Anything,2026-10-01,0
 HKUDS/CLI-Anything,2026-10-02,-1
 HKUDS/CLI-Anything,2026-10-22,-3
+HKUDS/CLI-Anything,2026-10-23,4
 HunxByts/GhostTrack,2026-10-05,0
 HunxByts/GhostTrack,2026-10-07,11
 HunxByts/GhostTrack,2026-10-08,-3
 K-Dense-AI/scientific-agent-skills,2026-10-21,4
 K-Dense-AI/scientific-agent-skills,2026-10-22,3
+K-Dense-AI/scientific-agent-skills,2026-10-23,-2
 MadsLorentzen/ai-job-search,2026-10-20,6
 MadsLorentzen/ai-job-search,2026-10-21,2
 NVIDIA/OpenShell,2026-10-07,12
@@ -33,6 +35,7 @@ NationalSecurityAgency/ghidra,2026-10-19,1
 NationalSecurityAgency/ghidra,2026-10-20,1
 NationalSecurityAgency/ghidra,2026-10-21,1
 NationalSecurityAgency/ghidra,2026-10-22,-1
+NationalSecurityAgency/ghidra,2026-10-23,-6
 Panniantong/Agent-Reach,2026-10-05,3
 Panniantong/Agent-Reach,2026-10-06,2
 Panniantong/Agent-Reach,2026-10-07,-5
@@ -48,12 +51,15 @@ TencentCloud/Octop,2026-10-04,-2
 TencentCloud/Octop,2026-10-05,1
 TencentCloud/Octop,2026-10-06,-5
 akitaonrails/ai-memory,2026-10-22,2
+akitaonrails/ai-memory,2026-10-23,3
 alirezarezvani/claude-skills,2026-10-02,7
 alirezarezvani/claude-skills,2026-10-03,1
 alirezarezvani/claude-skills,2026-10-04,-1
 alirezarezvani/claude-skills,2026-10-05,0
 alirezarezvani/claude-skills,2026-10-06,-3
 android/skills,2026-10-22,5
+android/skills,2026-10-23,1
+anomalyco/opencode,2026-10-23,7
 anthropics/claude-code-action,2026-10-02,4
 anthropics/claude-code-action,2026-10-03,0
 anthropics/claude-plugins-official,2026-10-18,5
@@ -61,6 +67,7 @@ anthropics/claude-plugins-official,2026-10-19,1
 anthropics/claude-plugins-official,2026-10-20,2
 anthropics/claude-plugins-official,2026-10-21,-1
 anthropics/claude-plugins-official,2026-10-22,1
+anthropics/claude-plugins-official,2026-10-23,0
 anthropics/financial-services,2026-09-30,-1
 anthropics/financial-services,2026-10-01,-1
 anthropics/financial-services,2026-10-02,-2
@@ -99,6 +106,7 @@ cursor/plugins,2026-10-19,2
 cursor/plugins,2026-10-20,-2
 cursor/plugins,2026-10-21,-1
 cursor/plugins,2026-10-22,2
+cursor/plugins,2026-10-23,2
 davila7/claude-code-templates,2026-09-30,-3
 davila7/claude-code-templates,2026-10-01,0
 davila7/claude-code-templates,2026-10-02,-2
@@ -112,6 +120,7 @@ debpalash/VoiceStudio,2026-10-06,-1
 debpalash/VoiceStudio,2026-10-20,-7
 debpalash/VoiceStudio,2026-10-21,4
 debpalash/VoiceStudio,2026-10-22,1
+debpalash/VoiceStudio,2026-10-23,-3
 dream-num/univer,2026-10-02,2
 earthtojake/text-to-cad,2026-10-11,0
 earthtojake/text-to-cad,2026-10-12,-1
@@ -151,6 +160,7 @@ heygen-com/hyperframes,2026-10-19,-2
 heygen-com/hyperframes,2026-10-20,0
 heygen-com/hyperframes,2026-10-21,1
 heygen-com/hyperframes,2026-10-22,-2
+heygen-com/hyperframes,2026-10-23,-2
 mattpocock/skills,2026-10-11,1
 mattpocock/skills,2026-10-12,-1
 mattpocock/skills,2026-10-13,0
@@ -164,6 +174,7 @@ mksglu/context-mode,2026-10-19,2
 mksglu/context-mode,2026-10-20,-2
 mksglu/context-mode,2026-10-21,3
 mksglu/context-mode,2026-10-22,-4
+mksglu/context-mode,2026-10-23,-7
 morluto/rea,2026-10-15,9
 morluto/rea,2026-10-16,0
 morluto/rea,2026-10-17,0
@@ -172,6 +183,7 @@ morluto/rea,2026-10-19,0
 morluto/rea,2026-10-20,0
 morluto/rea,2026-10-21,0
 morluto/rea,2026-10-22,0
+morluto/rea,2026-10-23,0
 mvschwarz/openrig,2026-10-06,-3
 mvschwarz/openrig,2026-10-07,20
 mvschwarz/openrig,2026-10-08,0
@@ -217,9 +229,11 @@ rohitg00/ai-engineering-from-scratch,2026-10-05,-2
 rohitg00/ai-engineering-from-scratch,2026-10-06,-4
 ruvnet/ruflo,2026-10-21,5
 ruvnet/ruflo,2026-10-22,5
+ruvnet/ruflo,2026-10-23,1
 stablyai/orca,2026-09-30,-1
 stablyai/orca,2026-10-01,-3
 stablyai/orca,2026-10-22,-4
+stablyai/orca,2026-10-23,3
 storytold/artcraft,2026-10-18,0
 storytold/artcraft,2026-10-19,0
 storytold/artcraft,2026-10-20,-1
