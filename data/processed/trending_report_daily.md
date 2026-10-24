@@ -1,110 +1,104 @@
-# GitHub Trending 洞察报告 · 2026-10-23
+# GitHub Trending 洞察报告 · 2026-10-24
 
-- 生成时间 (UTC): `2026-10-23T05:13:10Z`
+- 生成时间 (UTC): `2026-10-24T04:55:53Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-10-23` · 仓库数: 9
+- snapshot_date: `2026-10-24` · 仓库数: 8
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 9 |
-| 榜单 Star 合计 | 689,597 |
-| 本周期新增 Star | +8,015 |
+| 趋势仓库数 | 8 |
+| 榜单 Star 合计 | 314,149 |
+| 本周期新增 Star | +6,174 |
 | 覆盖语言数 | 5 |
-| 有 7 天速度的仓库数 | 1 |
+| 有 7 天速度的仓库数 | 3 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | python | 31,733 | +303 | 273.1 | 200.9 | +9 |
+| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | javascript | 42,449 | +2,716 | 1,734.9 | 685.1 | +3 |
+| 2 | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | rust | 18,911 | +1,119 | 348.9 | 322.2 | +3 |
+| 3 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | python | 32,319 | +635 | 345.4 | 221.2 | -1 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | +9 | 排名上升 |
-| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | +6 | 排名上升 |
-| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | +2 | 排名上升 |
-| [supabase/supabase](https://github.com/supabase/supabase) | +1 | 排名上升 |
-| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | -3 | 排名下滑 |
+| [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | +3 | 排名上升 |
+| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | +3 | 排名上升 |
+| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | -1 | 排名下滑 |
+| [php/php-src](https://github.com/php/php-src) | -1 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| python | 4 | 44.4% |
-| javascript | 2 | 22.2% |
-| c | 1 | 11.1% |
-| typescript | 1 | 11.1% |
-| visual basic .net | 1 | 11.1% |
+| python | 3 | 37.5% |
+| javascript | 2 | 25.0% |
+| c | 1 | 12.5% |
+| rust | 1 | 12.5% |
+| typescript | 1 | 12.5% |
 
 ## 5. 仓库明细
 
-### 1. [php/php-src](https://github.com/php/php-src)
-
-- 描述: The PHP Interpreter
-- 指标: stars 41,270 · forks 8,324 · open_issues 2,230 · language c
-- 本周期新增 (daily): +287 Star
-- topics: —
-
-### 2. [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-
-- 描述: Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork
-- 指标: stars 31,733 · forks 3,542 · open_issues 133 · language python
-- 本周期新增 (daily): +303 Star
-- topics: —
-
-### 3. [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-
-- 描述: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
-- 指标: stars 173,803 · forks 9,465 · open_issues 93 · language javascript
-- 本周期新增 (daily): +1,948 Star
-- topics: `agent-skills`, `ai-agents`, `claude`, `claude-code`, `claude-code-plugin`, `cursor-rules`, `developer-tools`, `llm`, `prompt-engineering`, `yagni`
-
-### 4. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+### 1. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
 
 - 描述: A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
-- 指标: stars 39,956 · forks 2,496 · open_issues 79 · language javascript
-- 本周期新增 (daily): +2,979 Star
+- 指标: stars 42,449 · forks 2,653 · open_issues 83 · language javascript
+- 本周期新增 (daily): +2,716 Star
 - topics: —
 
-### 5. [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
+### 2. [php/php-src](https://github.com/php/php-src)
 
-- 描述: Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.
-- 指标: stars 133,191 · forks 12,736 · open_issues 1,607 · language python
-- 本周期新增 (daily): +1,408 Star
-- topics: `ai-agents`, `antigravity`, `ast`, `claude-code`, `code-analysis`, `code-search`, `codex`, `cursor`, `developer-tools`, `gemini`, `graphify`, `graphrag`, `knowledge-graph`, `leiden`, `llm`, `mcp`, `openclaw`, `rag`, `skills`, `tree-sitter`
+- 描述: The PHP Interpreter
+- 指标: stars 41,594 · forks 8,362 · open_issues 2,234 · language c
+- 本周期新增 (daily): +716 Star
+- topics: —
 
-### 6. [supabase/supabase](https://github.com/supabase/supabase)
+### 3. [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
 
-- 描述: The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.
-- 指标: stars 113,567 · forks 17,011 · open_issues 1,199 · language typescript
-- 本周期新增 (daily): +693 Star
-- topics: `ai`, `alternative`, `auth`, `database`, `deno`, `embeddings`, `example`, `firebase`, `nextjs`, `oauth2`, `pgvector`, `postgis`, `postgres`, `postgresql`, `postgrest`, `realtime`, `supabase`, `vectors`, `websockets`
+- 描述: Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork
+- 指标: stars 32,319 · forks 3,576 · open_issues 137 · language python
+- 本周期新增 (daily): +635 Star
+- topics: —
 
-### 7. [fastapi/fastapi](https://github.com/fastapi/fastapi)
+### 4. [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell)
 
-- 描述: FastAPI framework, high performance, easy to learn, fast to code, ready for production
-- 指标: stars 103,885 · forks 10,096 · open_issues 56 · language python
-- 本周期新增 (daily): +101 Star
-- topics: `api`, `async`, `asyncio`, `fastapi`, `framework`, `json`, `json-schema`, `openapi`, `openapi3`, `pydantic`, `python`, `python-types`, `python3`, `redoc`, `rest`, `starlette`, `swagger`, `swagger-ui`, `uvicorn`, `web`
+- 描述: OpenShell is the safe, private runtime for autonomous AI agents.
+- 指标: stars 18,911 · forks 1,889 · open_issues 576 · language rust
+- 本周期新增 (daily): +1,119 Star
+- topics: —
 
-### 8. [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)
+### 5. [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu)
 
-- 描述: A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.
-- 指标: stars 43,430 · forks 5,409 · open_issues 36 · language python
-- 本周期新增 (daily): +177 Star
-- topics: `claude-code`, `guide`, `tutorial`
+- 描述: 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据
+- 指标: stars 6,993 · forks 1,428 · open_issues 7 · language typescript
+- 本周期新增 (daily): +546 Star
+- topics: `bazi`, `chinese-astrology`, `divination`, `fortune-telling`, `nextjs`, `open-source`, `purple-star-astrology`, `typescript`, `zi-wei-dou-shu`, `ziwei-doushu`
 
-### 9. [Meloong-Git/PCL](https://github.com/Meloong-Git/PCL)
+### 6. [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red)
 
-- 描述: Minecraft 启动器 Plain Craft Launcher（PCL）。
-- 指标: stars 8,762 · forks 1,215 · open_issues 281 · language visual basic .net
-- 本周期新增 (daily): +119 Star
-- topics: `launcher`, `minecraft`, `minecraft-launcher`
+- 描述: claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.
+- 指标: stars 8,605 · forks 1,107 · open_issues 32 · language python
+- 本周期新增 (daily): +226 Star
+- topics: `claude-ai`, `claude-pt`, `claude-skills`, `redteam`, `redteam-tools`, `skills`
+
+### 7. [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)
+
+- 描述: VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning
+- 指标: stars 40,341 · forks 4,583 · open_issues 153 · language python
+- 本周期新增 (daily): +150 Star
+- topics: `audio`, `deeplearning`, `minicpm`, `multilingual`, `python`, `pytorch`, `speech`, `speech-synthesis`, `text-to-speech`, `tts`, `tts-model`, `voice-cloning`, `voice-design`, `voxcpm`
+
+### 8. [nodejs/node](https://github.com/nodejs/node)
+
+- 描述: Node.js JavaScript runtime ✨🐢🚀✨
+- 指标: stars 122,937 · forks 39,838 · open_issues 1,262 · language javascript
+- 本周期新增 (daily): +66 Star
+- topics: `javascript`, `js`, `linux`, `macos`, `mit`, `node`, `nodejs`, `runtime`, `windows`
 
 ## 6. 口径与方法
 
