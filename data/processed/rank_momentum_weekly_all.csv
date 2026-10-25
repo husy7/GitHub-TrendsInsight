@@ -1,5 +1,6 @@
 repo_full_name,snapshot_date,rank_momentum
 Comfy-Org/ComfyUI,2026-10-24,4
+Comfy-Org/ComfyUI,2026-10-25,-1
 DuarteSantos8/openGym,2026-10-08,0
 DuarteSantos8/openGym,2026-10-10,-2
 DuarteSantos8/openGym,2026-10-11,-1
@@ -20,6 +21,7 @@ HKUDS/CLI-Anything,2026-10-02,-1
 HKUDS/CLI-Anything,2026-10-22,-3
 HKUDS/CLI-Anything,2026-10-23,4
 HKUDS/CLI-Anything,2026-10-24,-2
+HKUDS/CLI-Anything,2026-10-25,-5
 HunxByts/GhostTrack,2026-10-05,0
 HunxByts/GhostTrack,2026-10-07,11
 HunxByts/GhostTrack,2026-10-08,-3
@@ -57,6 +59,7 @@ TencentCloud/Octop,2026-10-06,-5
 akitaonrails/ai-memory,2026-10-22,2
 akitaonrails/ai-memory,2026-10-23,3
 akitaonrails/ai-memory,2026-10-24,1
+akitaonrails/ai-memory,2026-10-25,-4
 alirezarezvani/claude-skills,2026-10-02,7
 alirezarezvani/claude-skills,2026-10-03,1
 alirezarezvani/claude-skills,2026-10-04,-1
@@ -65,8 +68,10 @@ alirezarezvani/claude-skills,2026-10-06,-3
 android/skills,2026-10-22,5
 android/skills,2026-10-23,1
 android/skills,2026-10-24,0
+android/skills,2026-10-25,-4
 anomalyco/opencode,2026-10-23,7
 anomalyco/opencode,2026-10-24,1
+anomalyco/opencode,2026-10-25,-1
 anthropics/claude-code-action,2026-10-02,4
 anthropics/claude-code-action,2026-10-03,0
 anthropics/claude-plugins-official,2026-10-18,5
@@ -76,6 +81,7 @@ anthropics/claude-plugins-official,2026-10-21,-1
 anthropics/claude-plugins-official,2026-10-22,1
 anthropics/claude-plugins-official,2026-10-23,0
 anthropics/claude-plugins-official,2026-10-24,0
+anthropics/claude-plugins-official,2026-10-25,-1
 anthropics/financial-services,2026-09-30,-1
 anthropics/financial-services,2026-10-01,-1
 anthropics/financial-services,2026-10-02,-2
@@ -102,6 +108,7 @@ cathrynlavery/diagram-design,2026-10-19,-2
 cathrynlavery/diagram-design,2026-10-20,-3
 cathrynlavery/diagram-design,2026-10-21,-4
 cloudflare/security-audit-skill,2026-09-30,-8
+cloudflare/security-audit-skill,2026-10-25,11
 cursor/plugins,2026-10-07,12
 cursor/plugins,2026-10-08,-1
 cursor/plugins,2026-10-10,-1
@@ -116,6 +123,7 @@ cursor/plugins,2026-10-21,-1
 cursor/plugins,2026-10-22,2
 cursor/plugins,2026-10-23,2
 cursor/plugins,2026-10-24,1
+cursor/plugins,2026-10-25,0
 davila7/claude-code-templates,2026-09-30,-3
 davila7/claude-code-templates,2026-10-01,0
 davila7/claude-code-templates,2026-10-02,-2
@@ -172,6 +180,7 @@ heygen-com/hyperframes,2026-10-21,1
 heygen-com/hyperframes,2026-10-22,-2
 heygen-com/hyperframes,2026-10-23,-2
 heygen-com/hyperframes,2026-10-24,-1
+heygen-com/hyperframes,2026-10-25,2
 mattpocock/skills,2026-10-11,1
 mattpocock/skills,2026-10-12,-1
 mattpocock/skills,2026-10-13,0
@@ -196,6 +205,7 @@ morluto/rea,2026-10-21,0
 morluto/rea,2026-10-22,0
 morluto/rea,2026-10-23,0
 morluto/rea,2026-10-24,0
+morluto/rea,2026-10-25,-1
 mvschwarz/openrig,2026-10-06,-3
 mvschwarz/openrig,2026-10-07,20
 mvschwarz/openrig,2026-10-08,0
@@ -243,11 +253,13 @@ ruvnet/ruflo,2026-10-21,5
 ruvnet/ruflo,2026-10-22,5
 ruvnet/ruflo,2026-10-23,1
 ruvnet/ruflo,2026-10-24,0
+ruvnet/ruflo,2026-10-25,-1
 stablyai/orca,2026-09-30,-1
 stablyai/orca,2026-10-01,-3
 stablyai/orca,2026-10-22,-4
 stablyai/orca,2026-10-23,3
 stablyai/orca,2026-10-24,7
+stablyai/orca,2026-10-25,1
 storytold/artcraft,2026-10-18,0
 storytold/artcraft,2026-10-19,0
 storytold/artcraft,2026-10-20,-1

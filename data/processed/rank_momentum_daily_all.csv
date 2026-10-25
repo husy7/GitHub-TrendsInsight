@@ -32,6 +32,7 @@ NVIDIA/OpenShell,2026-10-01,1
 NVIDIA/OpenShell,2026-10-02,-2
 NVIDIA/OpenShell,2026-10-03,-4
 NVIDIA/OpenShell,2026-10-24,3
+NVIDIA/OpenShell,2026-10-25,2
 NationalSecurityAgency/ghidra,2026-10-16,3
 NawfalMotii79/PLFM_RADAR,2026-10-01,-12
 OpenCut-app/OpenCut,2026-10-05,4
@@ -84,6 +85,7 @@ cloudflare/security-audit-skill,2026-10-21,9
 cloudflare/security-audit-skill,2026-10-22,1
 cloudflare/security-audit-skill,2026-10-23,-3
 cloudflare/security-audit-skill,2026-10-24,3
+cloudflare/security-audit-skill,2026-10-25,0
 colbymchenry/codegraph,2026-10-03,1
 coreyhaines31/marketingskills,2026-10-05,5
 cs341-illinois/coursebook,2026-09-30,-4
@@ -109,6 +111,7 @@ headroomlabs-ai/headroom,2026-10-21,-3
 headroomlabs-ai/headroom,2026-10-22,6
 heygen-com/hyperframes,2026-10-02,1
 heygen-com/hyperframes,2026-10-03,0
+luongnv89/claude-howto,2026-10-25,3
 lyogavin/airllm,2026-10-13,0
 lyogavin/airllm,2026-10-14,0
 mattpocock/skills,2026-10-02,7
@@ -151,6 +154,7 @@ pbakaus/impeccable,2026-10-03,9
 pbakaus/impeccable,2026-10-04,3
 pbakaus/impeccable,2026-10-05,0
 pbakaus/impeccable,2026-10-07,-3
+pbakaus/impeccable,2026-10-25,-1
 php/php-src,2026-10-24,-1
 pingdotgg/t3code,2026-10-05,-2
 pingdotgg/t3code,2026-10-06,5

@@ -1,104 +1,117 @@
-# GitHub Trending 洞察报告 · 2026-10-24
+# GitHub Trending 洞察报告 · 2026-10-25
 
-- 生成时间 (UTC): `2026-10-24T04:55:53Z`
+- 生成时间 (UTC): `2026-10-25T05:07:08Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-10-24` · 仓库数: 8
+- snapshot_date: `2026-10-25` · 仓库数: 10
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 8 |
-| 榜单 Star 合计 | 314,149 |
-| 本周期新增 Star | +6,174 |
+| 趋势仓库数 | 10 |
+| 榜单 Star 合计 | 377,666 |
+| 本周期新增 Star | +5,706 |
 | 覆盖语言数 | 5 |
-| 有 7 天速度的仓库数 | 3 |
+| 有 7 天速度的仓库数 | 2 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | javascript | 42,449 | +2,716 | 1,734.9 | 685.1 | +3 |
-| 2 | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | rust | 18,911 | +1,119 | 348.9 | 322.2 | +3 |
-| 3 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | python | 32,319 | +635 | 345.4 | 221.2 | -1 |
+| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | javascript | 45,002 | +2,264 | 1,811.4 | 740.6 | +0 |
+| 2 | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | rust | 19,581 | +896 | 432.0 | 349.8 | +2 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | +3 | 排名上升 |
-| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | +3 | 排名上升 |
-| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | -1 | 排名下滑 |
-| [php/php-src](https://github.com/php/php-src) | -1 | 排名下滑 |
+| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | +3 | 排名上升 |
+| [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | +2 | 排名上升 |
+| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | +0 | 排名不变 |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | -1 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| python | 3 | 37.5% |
-| javascript | 2 | 25.0% |
-| c | 1 | 12.5% |
-| rust | 1 | 12.5% |
-| typescript | 1 | 12.5% |
+| python | 3 | 30.0% |
+| rust | 3 | 30.0% |
+| typescript | 2 | 20.0% |
+| css | 1 | 10.0% |
+| javascript | 1 | 10.0% |
 
 ## 5. 仓库明细
 
 ### 1. [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
 
 - 描述: A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
-- 指标: stars 42,449 · forks 2,653 · open_issues 83 · language javascript
-- 本周期新增 (daily): +2,716 Star
+- 指标: stars 45,002 · forks 2,793 · open_issues 90 · language javascript
+- 本周期新增 (daily): +2,264 Star
 - topics: —
 
-### 2. [php/php-src](https://github.com/php/php-src)
-
-- 描述: The PHP Interpreter
-- 指标: stars 41,594 · forks 8,362 · open_issues 2,234 · language c
-- 本周期新增 (daily): +716 Star
-- topics: —
-
-### 3. [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-
-- 描述: Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork
-- 指标: stars 32,319 · forks 3,576 · open_issues 137 · language python
-- 本周期新增 (daily): +635 Star
-- topics: —
-
-### 4. [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell)
+### 2. [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell)
 
 - 描述: OpenShell is the safe, private runtime for autonomous AI agents.
-- 指标: stars 18,911 · forks 1,889 · open_issues 576 · language rust
-- 本周期新增 (daily): +1,119 Star
+- 指标: stars 19,581 · forks 1,939 · open_issues 579 · language rust
+- 本周期新增 (daily): +896 Star
 - topics: —
 
-### 5. [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu)
+### 3. [aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws)
 
-- 描述: 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据
-- 指标: stars 6,993 · forks 1,428 · open_issues 7 · language typescript
-- 本周期新增 (daily): +546 Star
-- topics: `bazi`, `chinese-astrology`, `divination`, `fortune-telling`, `nextjs`, `open-source`, `purple-star-astrology`, `typescript`, `zi-wei-dou-shu`, `ziwei-doushu`
+- 描述: Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS
+- 指标: stars 3,185 · forks 403 · open_issues 63 · language python
+- 本周期新增 (daily): +13 Star
+- topics: —
 
-### 6. [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red)
+### 4. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
 
-- 描述: claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.
-- 指标: stars 8,605 · forks 1,107 · open_issues 32 · language python
-- 本周期新增 (daily): +226 Star
-- topics: `claude-ai`, `claude-pt`, `claude-skills`, `redteam`, `redteam-tools`, `skills`
+- 描述: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
+- 指标: stars 32,368 · forks 1,662 · open_issues 49 · language css
+- 本周期新增 (daily): +455 Star
+- topics: —
 
-### 7. [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)
+### 5. [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)
 
-- 描述: VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning
-- 指标: stars 40,341 · forks 4,583 · open_issues 153 · language python
-- 本周期新增 (daily): +150 Star
-- topics: `audio`, `deeplearning`, `minicpm`, `multilingual`, `python`, `pytorch`, `speech`, `speech-synthesis`, `text-to-speech`, `tts`, `tts-model`, `voice-cloning`, `voice-design`, `voxcpm`
+- 描述: A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.
+- 指标: stars 44,678 · forks 5,498 · open_issues 40 · language python
+- 本周期新增 (daily): +392 Star
+- topics: `claude-code`, `guide`, `tutorial`
 
-### 8. [nodejs/node](https://github.com/nodejs/node)
+### 6. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
-- 描述: Node.js JavaScript runtime ✨🐢🚀✨
-- 指标: stars 122,937 · forks 39,838 · open_issues 1,262 · language javascript
-- 本周期新增 (daily): +66 Star
-- topics: `javascript`, `js`, `linux`, `macos`, `mit`, `node`, `nodejs`, `runtime`, `windows`
+- 描述: The design language that makes your AI harness better at design.
+- 指标: stars 86,580 · forks 5,168 · open_issues 39 · language rust
+- 本周期新增 (daily): +619 Star
+- topics: —
+
+### 7. [pollen-robotics/microduck](https://github.com/pollen-robotics/microduck)
+
+- 描述: A Tiny biped duck robot 🦆
+- 指标: stars 11,100 · forks 1,419 · open_issues 62 · language rust
+- 本周期新增 (daily): +319 Star
+- topics: —
+
+### 8. [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
+
+- 描述: An open-source AI agent that brings the power of Gemini directly into your terminal.
+- 指标: stars 108,179 · forks 14,817 · open_issues 762 · language typescript
+- 本周期新增 (daily): +44 Star
+- topics: `ai`, `ai-agents`, `cli`, `gemini`, `gemini-api`, `mcp-client`, `mcp-server`
+
+### 9. [jbiaojerry/ebook-treasure-chest](https://github.com/jbiaojerry/ebook-treasure-chest)
+
+- 描述: 欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。
+- 指标: stars 22,786 · forks 3,198 · open_issues 6 · language python
+- 本周期新增 (daily): +227 Star
+- topics: —
+
+### 10. [makecindy/cindy](https://github.com/makecindy/cindy)
+
+- 描述: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。
+- 指标: stars 4,207 · forks 604 · open_issues 1,892 · language typescript
+- 本周期新增 (daily): +477 Star
+- topics: `agent`, `ai-agent`, `ai-assistant`, `android`, `claude-code`, `codex`, `electron`, `ios`, `llm`, `macos`, `react-native`, `typescript`, `windows`
 
 ## 6. 口径与方法
 
