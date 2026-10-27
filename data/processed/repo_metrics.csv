@@ -32,6 +32,7 @@ HKUDS/CLI-Anything,2026-10-19,,,-4.0,1.0
 HKUDS/CLI-Anything,2026-10-20,,184.83333333333334,-2.0,1.0
 HunxByts/GhostTrack,2026-10-02,,,,1.0
 JetBrains/thinkrail,2026-10-26,,,,1.0
+JetBrains/thinkrail,2026-10-27,,,5.0,1.0
 JuliusBrussee/caveman,2026-10-03,,,,1.0
 JuliusBrussee/caveman,2026-10-04,,,-3.0,1.0
 JuliusBrussee/caveman,2026-10-16,,,1.0,1.0
@@ -55,12 +56,14 @@ NVIDIA/OpenShell,2026-10-02,,,-2.0,1.0
 NVIDIA/OpenShell,2026-10-03,,,-4.0,1.0
 NVIDIA/OpenShell,2026-10-24,348.85714285714283,322.2,3.0,1.0
 NVIDIA/OpenShell,2026-10-25,432.0,349.8333333333333,2.0,1.0
+NVIDIA/SkillSpector,2026-10-27,,,,1.0
 NationalSecurityAgency/ghidra,2026-10-15,801.8571428571429,382.03333333333336,,1.0
 NationalSecurityAgency/ghidra,2026-10-16,944.8571428571429,403.06666666666666,3.0,1.0
 NawfalMotii79/PLFM_RADAR,2026-09-29,,,,1.0
 NawfalMotii79/PLFM_RADAR,2026-10-01,,,-12.0,1.0
 Nutlope/hallmark,2026-10-25,,,,1.0
 Nutlope/hallmark,2026-10-26,,,2.0,1.0
+Nutlope/hallmark,2026-10-27,,,1.0,1.0
 OpenBMB/VoxCPM,2026-10-24,,,,1.0
 OpenCut-app/OpenCut,2026-10-04,,,,1.0
 OpenCut-app/OpenCut,2026-10-05,,,4.0,1.0
@@ -68,12 +71,14 @@ Panniantong/Agent-Reach,2026-10-03,,,,1.0
 Panniantong/Agent-Reach,2026-10-04,564.5714285714286,,-5.0,1.0
 Panniantong/Agent-Reach,2026-10-05,684.1428571428571,,0.0,1.0
 Panniantong/Agent-Reach,2026-10-06,814.7142857142857,,0.0,1.0
+Panniantong/Agent-Reach,2026-10-27,,601.1666666666666,-4.0,1.0
 Renhuai123/ziwei-doushu,2026-10-24,,,,1.0
 Renhuai123/ziwei-doushu,2026-10-26,,,-2.0,1.0
 Robbyant/lingbot-map,2026-10-10,,,,1.0
 SnailSploit/Claude-Red,2026-10-24,,,,1.0
 Stremio/stremio-web,2026-10-06,,,,1.0
 TauricResearch/TradingAgents,2026-10-26,,,,1.0
+TauricResearch/TradingAgents,2026-10-27,491.0,,4.0,1.0
 VectifyAI/PageIndex,2026-09-30,,,,1.0
 VectifyAI/PageIndex,2026-10-01,,,-6.0,1.0
 addyosmani/agent-skills,2026-10-04,,,,1.0
@@ -84,10 +89,12 @@ affaan-m/ECC,2026-10-04,,890.8,,1.0
 affaan-m/ECC,2026-10-16,,765.1,-7.0,1.0
 affaan-m/ECC,2026-10-17,794.7142857142857,766.8333333333334,7.0,1.0
 affaan-m/ECC,2026-10-18,859.8571428571429,767.4333333333333,0.0,1.0
+affaan-m/ECC,2026-10-27,823.4285714285714,774.8333333333334,-2.0,1.0
 akitaonrails/ai-memory,2026-10-18,,,,1.0
 akitaonrails/ai-memory,2026-10-19,,,0.0,1.0
 akitaonrails/ai-memory,2026-10-20,,,3.0,1.0
 akitaonrails/ai-memory,2026-10-22,404.7142857142857,,-7.0,1.0
+alchaincyf/huashu-design,2026-10-27,,,,1.0
 alibaba/open-code-review,2026-10-10,297.42857142857144,767.6,,1.0
 android/skills,2026-10-17,,,,1.0
 android/skills,2026-10-18,,,0.0,1.0
@@ -166,6 +173,7 @@ debpalash/VoiceStudio,2026-10-17,2144.714285714286,1297.4333333333334,-5.0,1.0
 debpalash/VoiceStudio,2026-10-18,2297.5714285714284,1344.4333333333334,0.0,1.0
 debpalash/VoiceStudio,2026-10-19,2392.285714285714,1401.2,1.0,1.0
 debpalash/VoiceStudio,2026-10-26,1617.142857142857,1699.2333333333333,6.0,1.0
+debpalash/VoiceStudio,2026-10-27,1697.5714285714287,1767.1333333333334,-8.0,1.0
 deepseek-ai/DeepGEMM,2026-10-07,,,,1.0
 dream-num/univer,2026-09-29,,,,1.0
 dream-num/univer,2026-09-30,,,-5.0,1.0
@@ -182,6 +190,7 @@ garrytan/gstack,2026-10-05,,,,1.0
 getsentry/sentry,2026-10-03,,,,1.0
 getsentry/sentry,2026-10-04,,,-3.0,1.0
 getsentry/sentry,2026-10-05,,,8.0,1.0
+gitroomhq/postiz-app,2026-10-27,,,,1.0
 google-gemini/gemini-cli,2026-10-25,,,,1.0
 google/skills,2026-10-03,,,,1.0
 harry0703/MoneyPrinterTurbo,2026-10-01,,,,1.0
@@ -205,6 +214,7 @@ lyogavin/airllm,2026-10-13,,,0.0,1.0
 lyogavin/airllm,2026-10-14,,,0.0,1.0
 makecindy/cindy,2026-10-25,,,,1.0
 makecindy/cindy,2026-10-26,,,9.0,1.0
+makecindy/cindy,2026-10-27,,,-3.0,1.0
 manaflow-ai/cmux,2026-10-08,,,,1.0
 mattpocock/skills,2026-10-01,,,,1.0
 mattpocock/skills,2026-10-02,,,7.0,1.0
@@ -242,11 +252,13 @@ msitarzewski/agency-agents,2026-10-06,302.2857142857143,,,1.0
 msitarzewski/agency-agents,2026-10-07,,,2.0,1.0
 msitarzewski/agency-agents,2026-10-21,,,1.0,1.0
 multica-ai/andrej-karpathy-skills,2026-10-11,,,,1.0
+multica-ai/andrej-karpathy-skills,2026-10-27,469.42857142857144,,-1.0,1.0
 mvschwarz/openrig,2026-09-29,,,,1.0
 mvschwarz/openrig,2026-09-30,,,1.0,1.0
 mvschwarz/openrig,2026-10-01,,,3.0,1.0
 mvschwarz/openrig,2026-10-02,,,-2.0,1.0
 mvschwarz/openrig,2026-10-03,,,-10.0,1.0
+nightly-labs/openbot,2026-10-27,,,,1.0
 nodejs/node,2026-10-24,,,,1.0
 ntdevlabs/tiny11builder,2026-10-15,,,,1.0
 nvm-sh/nvm,2026-10-15,,,,1.0
@@ -269,6 +281,7 @@ pbakaus/impeccable,2026-10-05,606.0,,0.0,1.0
 pbakaus/impeccable,2026-10-07,741.0,,-3.0,1.0
 pbakaus/impeccable,2026-10-25,,523.3333333333334,-1.0,1.0
 pbakaus/impeccable,2026-10-26,,549.7666666666667,2.0,1.0
+pbakaus/impeccable,2026-10-27,874.7142857142857,584.0666666666667,-2.0,1.0
 php/php-src,2026-10-23,,,,1.0
 php/php-src,2026-10-24,,,-1.0,1.0
 pingdotgg/t3code,2026-10-04,,,,1.0
@@ -276,6 +289,7 @@ pingdotgg/t3code,2026-10-05,186.28571428571428,,-2.0,1.0
 pingdotgg/t3code,2026-10-06,239.14285714285714,,5.0,1.0
 pollen-robotics/microduck,2026-10-25,,,,1.0
 pollen-robotics/microduck,2026-10-26,,,2.0,1.0
+pollen-robotics/microduck,2026-10-27,,,-3.0,1.0
 pytorch/pytorch,2026-10-11,69.71428571428571,,,1.0
 pytorch/pytorch,2026-10-12,,,4.0,1.0
 rakyll/hey,2026-09-30,,,,1.0
