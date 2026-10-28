@@ -1,4 +1,5 @@
 repo_full_name,snapshot_date,rank_momentum
+AgriciDaniel/claude-seo,2026-10-28,10
 Comfy-Org/ComfyUI,2026-10-24,4
 Comfy-Org/ComfyUI,2026-10-25,-1
 Comfy-Org/ComfyUI,2026-10-26,1
@@ -19,6 +20,7 @@ FxEmbed/FxEmbed,2026-10-01,3
 FxEmbed/FxEmbed,2026-10-02,-1
 Graphify-Labs/graphify,2026-10-26,5
 Graphify-Labs/graphify,2026-10-27,2
+Graphify-Labs/graphify,2026-10-28,0
 HKUDS/CLI-Anything,2026-09-30,2
 HKUDS/CLI-Anything,2026-10-01,0
 HKUDS/CLI-Anything,2026-10-02,-1
@@ -51,6 +53,7 @@ Panniantong/Agent-Reach,2026-10-06,2
 Panniantong/Agent-Reach,2026-10-07,-5
 Panniantong/Agent-Reach,2026-10-08,5
 Panniantong/Agent-Reach,2026-10-10,-4
+TauricResearch/TradingAgents,2026-10-28,5
 Tencent/WeKnora,2026-09-30,-5
 Tencent/WeKnora,2026-10-01,-3
 TencentCloud/Octop,2026-09-30,2
@@ -66,6 +69,7 @@ akitaonrails/ai-memory,2026-10-24,1
 akitaonrails/ai-memory,2026-10-25,-4
 akitaonrails/ai-memory,2026-10-26,3
 akitaonrails/ai-memory,2026-10-27,1
+akitaonrails/ai-memory,2026-10-28,-3
 alirezarezvani/claude-skills,2026-10-02,7
 alirezarezvani/claude-skills,2026-10-03,1
 alirezarezvani/claude-skills,2026-10-04,-1
@@ -77,11 +81,13 @@ android/skills,2026-10-24,0
 android/skills,2026-10-25,-4
 android/skills,2026-10-26,1
 android/skills,2026-10-27,0
+android/skills,2026-10-28,-3
 anomalyco/opencode,2026-10-23,7
 anomalyco/opencode,2026-10-24,1
 anomalyco/opencode,2026-10-25,-1
 anomalyco/opencode,2026-10-26,2
 anomalyco/opencode,2026-10-27,0
+anomalyco/opencode,2026-10-28,-4
 anthropics/claude-code-action,2026-10-02,4
 anthropics/claude-code-action,2026-10-03,0
 anthropics/claude-plugins-official,2026-10-18,5
@@ -99,6 +105,7 @@ anthropics/financial-services,2026-10-02,-2
 anthropics/financial-services,2026-10-03,-7
 anthropics/knowledge-work-plugins,2026-10-26,6
 anthropics/knowledge-work-plugins,2026-10-27,1
+anthropics/knowledge-work-plugins,2026-10-28,0
 boykopovar/AnyPS5,2026-10-07,8
 boykopovar/AnyPS5,2026-10-08,8
 boykopovar/AnyPS5,2026-10-10,1
@@ -124,6 +131,7 @@ cloudflare/security-audit-skill,2026-09-30,-8
 cloudflare/security-audit-skill,2026-10-25,11
 cloudflare/security-audit-skill,2026-10-26,0
 cloudflare/security-audit-skill,2026-10-27,0
+cloudflare/security-audit-skill,2026-10-28,0
 cursor/plugins,2026-10-07,12
 cursor/plugins,2026-10-08,-1
 cursor/plugins,2026-10-10,-1
@@ -224,6 +232,7 @@ morluto/rea,2026-10-23,0
 morluto/rea,2026-10-24,0
 morluto/rea,2026-10-25,-1
 multica-ai/andrej-karpathy-skills,2026-10-27,4
+multica-ai/andrej-karpathy-skills,2026-10-28,5
 mvschwarz/openrig,2026-10-06,-3
 mvschwarz/openrig,2026-10-07,20
 mvschwarz/openrig,2026-10-08,0
@@ -254,6 +263,7 @@ pingdotgg/t3code,2026-10-10,1
 pingdotgg/t3code,2026-10-11,-1
 pingdotgg/t3code,2026-10-26,-4
 pingdotgg/t3code,2026-10-27,-1
+pingdotgg/t3code,2026-10-28,3
 pytorch/pytorch,2026-09-30,0
 pytorch/pytorch,2026-10-01,1
 pytorch/pytorch,2026-10-03,-6
@@ -276,6 +286,7 @@ ruvnet/ruflo,2026-10-24,0
 ruvnet/ruflo,2026-10-25,-1
 ruvnet/ruflo,2026-10-26,2
 ruvnet/ruflo,2026-10-27,-1
+ruvnet/ruflo,2026-10-28,-4
 stablyai/orca,2026-09-30,-1
 stablyai/orca,2026-10-01,-3
 stablyai/orca,2026-10-22,-4
@@ -284,6 +295,7 @@ stablyai/orca,2026-10-24,7
 stablyai/orca,2026-10-25,1
 stablyai/orca,2026-10-26,0
 stablyai/orca,2026-10-27,0
+stablyai/orca,2026-10-28,-4
 storytold/artcraft,2026-10-18,0
 storytold/artcraft,2026-10-19,0
 storytold/artcraft,2026-10-20,-1

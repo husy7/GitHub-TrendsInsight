@@ -1,154 +1,128 @@
-# GitHub Trending 洞察报告 · 2026-10-27
+# GitHub Trending 洞察报告 · 2026-10-28
 
-- 生成时间 (UTC): `2026-10-27T05:25:04Z`
+- 生成时间 (UTC): `2026-10-28T06:03:58Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-10-27` · 仓库数: 14
+- snapshot_date: `2026-10-28` · 仓库数: 11
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 14 |
-| 榜单 Star 合计 | 1,063,630 |
-| 本周期新增 Star | +13,863 |
+| 趋势仓库数 | 11 |
+| 榜单 Star 合计 | 844,568 |
+| 本周期新增 Star | +14,353 |
 | 覆盖语言数 | 6 |
-| 有 7 天速度的仓库数 | 5 |
+| 有 7 天速度的仓库数 | 2 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | python | 89,709 | +2,297 | 1,697.6 | 1,767.1 | -8 |
-| 2 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | rust | 89,449 | +1,506 | 874.7 | 584.1 | -2 |
-| 3 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | javascript | 290,019 | +896 | 823.4 | 774.8 | -2 |
-| 4 | [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | python | 116,446 | +1,395 | 491.0 | — | +4 |
-| 5 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | — | 224,847 | +638 | 469.4 | — | -1 |
+| 1 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | rust | 90,933 | +1,449 | 995.3 | 622.8 | +1 |
+| 2 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | javascript | 291,086 | +1,165 | 867.3 | 799.9 | -3 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) | +5 | 排名上升 |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | +4 | 排名上升 |
-| [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | +1 | 排名上升 |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | -1 | 排名下滑 |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | -2 | 排名下滑 |
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | -2 | 排名下滑 |
-| [makecindy/cindy](https://github.com/makecindy/cindy) | -3 | 排名下滑 |
-| [pollen-robotics/microduck](https://github.com/pollen-robotics/microduck) | -3 | 排名下滑 |
-| [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | -4 | 排名下滑 |
-| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | -8 | 排名下滑 |
+| [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | +6 | 排名上升 |
+| [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | +5 | 排名上升 |
+| [obra/superpowers](https://github.com/obra/superpowers) | +4 | 排名上升 |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | +1 | 排名上升 |
+| [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | -1 | 排名下滑 |
+| [makecindy/cindy](https://github.com/makecindy/cindy) | -2 | 排名下滑 |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | -3 | 排名下滑 |
+| [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) | -7 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| python | 4 | 28.6% |
-| typescript | 4 | 28.6% |
-| rust | 2 | 14.3% |
-| css | 1 | 7.1% |
-| html | 1 | 7.1% |
-| javascript | 1 | 7.1% |
+| typescript | 4 | 36.4% |
+| css | 1 | 9.1% |
+| javascript | 1 | 9.1% |
+| python | 1 | 9.1% |
+| rust | 1 | 9.1% |
+| shell | 1 | 9.1% |
 
 ## 5. 仓库明细
 
-### 1. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
+### 1. [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills)
+
+- 描述: —
+- 指标: stars 9,902 · forks 696 · open_issues 6 · language —
+- 本周期新增 (daily): +1,395 Star
+- topics: —
+
+### 2. [Nutlope/hallmark](https://github.com/Nutlope/hallmark)
 
 - 描述: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
-- 指标: stars 36,931 · forks 1,926 · open_issues 63 · language css
-- 本周期新增 (daily): +2,244 Star
+- 指标: stars 39,398 · forks 2,055 · open_issues 64 · language css
+- 本周期新增 (daily): +2,830 Star
 - topics: —
 
-### 2. [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)
-
-- 描述: TradingAgents: Multi-Agents LLM Financial Trading Framework
-- 指标: stars 116,446 · forks 22,324 · open_issues 155 · language python
-- 本周期新增 (daily): +1,395 Star
-- topics: `agent`, `finance`, `llm`, `multiagent`, `trading`
-
-### 3. [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
-
-- 描述: Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need
-- 指标: stars 3,159 · forks 175 · open_issues 224 · language typescript
-- 本周期新增 (daily): +1,173 Star
-- topics: `agent`, `agent-skills`, `agentic-ai`, `agentic-workflow`, `ai-coding`, `ai-tools`, `pi-agent`, `pi-agent-extension`, `spec-driven`, `spec-driven-coding`, `spec-driven-development`, `vibe-coding`, `vibecoding`
-
-### 4. [makecindy/cindy](https://github.com/makecindy/cindy)
-
-- 描述: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。
-- 指标: stars 6,765 · forks 817 · open_issues 2,045 · language typescript
-- 本周期新增 (daily): +1,296 Star
-- topics: `agent`, `ai-agent`, `ai-assistant`, `android`, `claude-code`, `codex`, `electron`, `ios`, `llm`, `macos`, `react-native`, `typescript`, `windows`
-
-### 5. [affaan-m/ECC](https://github.com/affaan-m/ECC)
-
-- 描述: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
-- 指标: stars 290,019 · forks 42,983 · open_issues 248 · language javascript
-- 本周期新增 (daily): +896 Star
-- topics: `ai-agents`, `anthropic`, `claude`, `claude-code`, `developer-tools`, `llm`, `mcp`, `productivity`
-
-### 6. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-
-- 描述: The design language that makes your AI harness better at design.
-- 指标: stars 89,449 · forks 5,323 · open_issues 47 · language rust
-- 本周期新增 (daily): +1,506 Star
-- topics: —
-
-### 7. [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector)
-
-- 描述: Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.
-- 指标: stars 22,392 · forks 1,951 · open_issues 177 · language python
-- 本周期新增 (daily): +214 Star
-- topics: `agent-security`, `agent-skills`, `agentic-ai`, `ai-security`, `claude-code`, `mcp`, `prompt-injection`, `security-scanner`, `security-tools`, `security-workflow`, `supply-chain-security`
-
-### 8. [pollen-robotics/microduck](https://github.com/pollen-robotics/microduck)
-
-- 描述: A Tiny biped duck robot 🦆
-- 指标: stars 12,517 · forks 1,556 · open_issues 81 · language rust
-- 本周期新增 (daily): +843 Star
-- topics: —
-
-### 9. [nightly-labs/openbot](https://github.com/nightly-labs/openbot)
+### 3. [nightly-labs/openbot](https://github.com/nightly-labs/openbot)
 
 - 描述: A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.
-- 指标: stars 1,639 · forks 199 · open_issues 209 · language typescript
-- 本周期新增 (daily): +176 Star
+- 指标: stars 2,653 · forks 270 · open_issues 239 · language typescript
+- 本周期新增 (daily): +777 Star
 - topics: `ai-agents`, `bun`, `codex`, `electron`, `local-first`, `macos`, `solidjs`, `typescript`
 
-### 10. [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+### 4. [obra/superpowers](https://github.com/obra/superpowers)
 
-- 描述: Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.
-- 指标: stars 103,973 · forks 9,222 · open_issues 254 · language python
-- 本周期新增 (daily): +746 Star
-- topics: `agent-infrastructure`, `ai-agent`, `ai-search`, `automation`, `bilibili`, `claude-code`, `cli`, `cursor`, `free-api`, `llm-tools`, `mcp`, `python`, `reddit-scraper`, `twitter-scraper`, `web-scraper`, `xiaohongshu`, `youtube-transcript`
+- 描述: An agentic skills framework & software development methodology that works.
+- 指标: stars 306,651 · forks 27,293 · open_issues 364 · language shell
+- 本周期新增 (daily): +617 Star
+- topics: `ai`, `brainstorming`, `coding`, `obra`, `sdlc`, `skills`, `subagent-driven-development`, `superpowers`
 
-### 11. [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)
+### 5. [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 
-- 描述: VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
-- 指标: stars 89,709 · forks 9,887 · open_issues 65 · language python
-- 本周期新增 (daily): +2,297 Star
-- topics: `ai`, `audiobook`, `cuda`, `dubbing`, `elevenlabs-alternative`, `huggingface`, `local-first`, `mlx`, `omnivoice-studio`, `speech-to-text`, `text-to-speech`, `transcription`, `translate`, `tts`, `voice-ai`, `voice-cloning`, `voice-generation`, `voicestudio`, `workflow`
+- 描述: The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.
+- 指标: stars 90,933 · forks 5,391 · open_issues 47 · language rust
+- 本周期新增 (daily): +1,449 Star
+- topics: `agent-skills`, `ai`, `anti-slop`, `design`, `slop`
 
-### 12. [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app)
+### 6. [makecindy/cindy](https://github.com/makecindy/cindy)
+
+- 描述: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。
+- 指标: stars 7,665 · forks 909 · open_issues 2,105 · language typescript
+- 本周期新增 (daily): +1,465 Star
+- topics: `agent`, `ai-agent`, `ai-assistant`, `android`, `claude-code`, `codex`, `electron`, `ios`, `llm`, `macos`, `react-native`, `typescript`, `windows`
+
+### 7. [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app)
 
 - 描述: 📨 The ultimate agentic social media scheduling tool 🤖
-- 指标: stars 38,624 · forks 7,464 · open_issues 222 · language typescript
-- 本周期新增 (daily): +188 Star
+- 指标: stars 39,600 · forks 7,531 · open_issues 223 · language typescript
+- 本周期新增 (daily): +951 Star
 - topics: `nextjs`, `open-source`, `open-source-social-media-scheduling-tool`, `oss`, `postiz-cloud`, `postiz-hosted`, `redis`, `scheduling-tool`, `social-media-scheduling-tool`, `typescript`
 
-### 13. [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design)
+### 8. [affaan-m/ECC](https://github.com/affaan-m/ECC)
 
-- 描述: Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent
-- 指标: stars 27,160 · forks 2,984 · open_issues 6 · language html
-- 本周期新增 (daily): +251 Star
-- topics: `agent-skills`, `ai-design`, `claude-code`, `claude-skills`, `codex`, `cursor`, `design`, `html`, `pptx`, `prototype`
+- 描述: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+- 指标: stars 291,086 · forks 43,092 · open_issues 267 · language javascript
+- 本周期新增 (daily): +1,165 Star
+- topics: `ai-agents`, `anthropic`, `claude`, `claude-code`, `developer-tools`, `llm`, `mcp`, `productivity`
 
-### 14. [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
+### 9. [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)
 
-- 描述: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
-- 指标: stars 224,847 · forks 22,488 · open_issues 138 · language —
-- 本周期新增 (daily): +638 Star
+- 描述: DeepTutor: Lifelong Personalized Tutoring.https://deeptutor.info/.
+- 指标: stars 46,481 · forks 5,813 · open_issues 218 · language python
+- 本周期新增 (daily): +1,598 Star
+- topics: `ai-agents`, `ai-tutor`, `clawbot`, `cli-tool`, `deepresearch`, `interactive-learning`, `learning`, `multi-agent-systems`, `rag`
+
+### 10. [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
+
+- 描述: Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need
+- 指标: stars 4,286 · forks 227 · open_issues 228 · language typescript
+- 本周期新增 (daily): +1,204 Star
+- topics: `agent`, `agent-skills`, `agentic-ai`, `agentic-workflow`, `ai-coding`, `ai-tools`, `pi-agent`, `pi-agent-extension`, `spec-driven`, `spec-driven-coding`, `spec-driven-development`, `vibe-coding`, `vibecoding`
+
+### 11. [togg53192-cmd/jailbreaks](https://github.com/togg53192-cmd/jailbreaks)
+
+- 描述: LIST OF ALL MY JAILBREAKS
+- 指标: stars 5,913 · forks 866 · open_issues 14 · language —
+- 本周期新增 (daily): +902 Star
 - topics: —
 
 ## 6. 口径与方法

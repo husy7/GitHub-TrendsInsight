@@ -30,9 +30,11 @@ HKUDS/CLI-Anything,2026-10-17,,,2.0,1.0
 HKUDS/CLI-Anything,2026-10-18,,,0.0,1.0
 HKUDS/CLI-Anything,2026-10-19,,,-4.0,1.0
 HKUDS/CLI-Anything,2026-10-20,,184.83333333333334,-2.0,1.0
+HKUDS/DeepTutor,2026-10-28,,,,1.0
 HunxByts/GhostTrack,2026-10-02,,,,1.0
 JetBrains/thinkrail,2026-10-26,,,,1.0
 JetBrains/thinkrail,2026-10-27,,,5.0,1.0
+JetBrains/thinkrail,2026-10-28,,,-7.0,1.0
 JuliusBrussee/caveman,2026-10-03,,,,1.0
 JuliusBrussee/caveman,2026-10-04,,,-3.0,1.0
 JuliusBrussee/caveman,2026-10-16,,,1.0,1.0
@@ -64,6 +66,7 @@ NawfalMotii79/PLFM_RADAR,2026-10-01,,,-12.0,1.0
 Nutlope/hallmark,2026-10-25,,,,1.0
 Nutlope/hallmark,2026-10-26,,,2.0,1.0
 Nutlope/hallmark,2026-10-27,,,1.0,1.0
+Nutlope/hallmark,2026-10-28,,,-1.0,1.0
 OpenBMB/VoxCPM,2026-10-24,,,,1.0
 OpenCut-app/OpenCut,2026-10-04,,,,1.0
 OpenCut-app/OpenCut,2026-10-05,,,4.0,1.0
@@ -90,6 +93,7 @@ affaan-m/ECC,2026-10-16,,765.1,-7.0,1.0
 affaan-m/ECC,2026-10-17,794.7142857142857,766.8333333333334,7.0,1.0
 affaan-m/ECC,2026-10-18,859.8571428571429,767.4333333333333,0.0,1.0
 affaan-m/ECC,2026-10-27,823.4285714285714,774.8333333333334,-2.0,1.0
+affaan-m/ECC,2026-10-28,867.2857142857143,799.9333333333333,-3.0,1.0
 akitaonrails/ai-memory,2026-10-18,,,,1.0
 akitaonrails/ai-memory,2026-10-19,,,0.0,1.0
 akitaonrails/ai-memory,2026-10-20,,,3.0,1.0
@@ -182,6 +186,7 @@ earendil-works/pi,2026-10-04,,,-4.0,1.0
 earthtojake/text-to-cad,2026-10-05,,,,1.0
 earthtojake/text-to-cad,2026-10-06,,,2.0,1.0
 earthtojake/text-to-cad,2026-10-07,,,0.0,1.0
+elayadesign/ai-design-skills,2026-10-28,,,,1.0
 fastapi/fastapi,2026-10-23,,,,1.0
 firebase/firebase-ios-sdk,2026-10-01,,,,1.0
 firebase/firebase-ios-sdk,2026-10-02,,,7.0,1.0
@@ -191,6 +196,7 @@ getsentry/sentry,2026-10-03,,,,1.0
 getsentry/sentry,2026-10-04,,,-3.0,1.0
 getsentry/sentry,2026-10-05,,,8.0,1.0
 gitroomhq/postiz-app,2026-10-27,,,,1.0
+gitroomhq/postiz-app,2026-10-28,,,5.0,1.0
 google-gemini/gemini-cli,2026-10-25,,,,1.0
 google/skills,2026-10-03,,,,1.0
 harry0703/MoneyPrinterTurbo,2026-10-01,,,,1.0
@@ -215,6 +221,7 @@ lyogavin/airllm,2026-10-14,,,0.0,1.0
 makecindy/cindy,2026-10-25,,,,1.0
 makecindy/cindy,2026-10-26,,,9.0,1.0
 makecindy/cindy,2026-10-27,,,-3.0,1.0
+makecindy/cindy,2026-10-28,,,-2.0,1.0
 manaflow-ai/cmux,2026-10-08,,,,1.0
 mattpocock/skills,2026-10-01,,,,1.0
 mattpocock/skills,2026-10-02,,,7.0,1.0
@@ -259,6 +266,7 @@ mvschwarz/openrig,2026-10-01,,,3.0,1.0
 mvschwarz/openrig,2026-10-02,,,-2.0,1.0
 mvschwarz/openrig,2026-10-03,,,-10.0,1.0
 nightly-labs/openbot,2026-10-27,,,,1.0
+nightly-labs/openbot,2026-10-28,,,6.0,1.0
 nodejs/node,2026-10-24,,,,1.0
 ntdevlabs/tiny11builder,2026-10-15,,,,1.0
 nvm-sh/nvm,2026-10-15,,,,1.0
@@ -268,6 +276,7 @@ obra/superpowers,2026-10-03,,,4.0,1.0
 obra/superpowers,2026-10-04,,,-8.0,1.0
 obra/superpowers,2026-10-16,,,5.0,1.0
 obra/superpowers,2026-10-17,,,-2.0,1.0
+obra/superpowers,2026-10-28,,,4.0,1.0
 open-webui/open-webui,2026-10-13,,,,1.0
 openclaw/openclaw,2026-10-01,,,,1.0
 pablostanley/yoinks,2026-10-02,,,,1.0
@@ -282,6 +291,7 @@ pbakaus/impeccable,2026-10-07,741.0,,-3.0,1.0
 pbakaus/impeccable,2026-10-25,,523.3333333333334,-1.0,1.0
 pbakaus/impeccable,2026-10-26,,549.7666666666667,2.0,1.0
 pbakaus/impeccable,2026-10-27,874.7142857142857,584.0666666666667,-2.0,1.0
+pbakaus/impeccable,2026-10-28,995.2857142857143,622.7666666666667,1.0,1.0
 php/php-src,2026-10-23,,,,1.0
 php/php-src,2026-10-24,,,-1.0,1.0
 pingdotgg/t3code,2026-10-04,,,,1.0
@@ -330,6 +340,7 @@ thedotmack/claude-mem,2026-10-06,,,11.0,1.0
 thedotmack/claude-mem,2026-10-07,300.57142857142856,,-4.0,1.0
 thedotmack/claude-mem,2026-10-08,372.42857142857144,,-2.0,1.0
 tile-ai/tilelang,2026-10-02,68.71428571428571,,,1.0
+togg53192-cmd/jailbreaks,2026-10-28,,,,1.0
 trycua/cua,2026-10-08,182.71428571428572,214.6,,1.0
 twentyhq/twenty,2026-10-22,,,,1.0
 twostraws/SwiftUI-Agent-Skill,2026-10-10,,,,1.0
