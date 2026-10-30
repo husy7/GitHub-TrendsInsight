@@ -19,9 +19,11 @@ HKUDS/CLI-Anything,2026-10-18,0
 HKUDS/CLI-Anything,2026-10-19,-4
 HKUDS/CLI-Anything,2026-10-20,-2
 HKUDS/DeepTutor,2026-10-29,5
+HKUDS/DeepTutor,2026-10-30,3
 JetBrains/thinkrail,2026-10-27,5
 JetBrains/thinkrail,2026-10-28,-7
 JetBrains/thinkrail,2026-10-29,9
+JetBrains/thinkrail,2026-10-30,-3
 JuliusBrussee/caveman,2026-10-04,-3
 JuliusBrussee/caveman,2026-10-16,1
 K-Dense-AI/scientific-agent-skills,2026-10-16,2
@@ -32,7 +34,6 @@ MadsLorentzen/ai-job-search,2026-10-18,9
 MadsLorentzen/ai-job-search,2026-10-19,1
 MadsLorentzen/ai-job-search,2026-10-20,0
 MadsLorentzen/ai-job-search,2026-10-21,0
-NVIDIA/OpenShell,2026-10-01,1
 NVIDIA/OpenShell,2026-10-02,-2
 NVIDIA/OpenShell,2026-10-03,-4
 NVIDIA/OpenShell,2026-10-24,3
@@ -49,7 +50,6 @@ Panniantong/Agent-Reach,2026-10-06,0
 Panniantong/Agent-Reach,2026-10-27,-4
 Renhuai123/ziwei-doushu,2026-10-26,-2
 TauricResearch/TradingAgents,2026-10-27,4
-VectifyAI/PageIndex,2026-10-01,-6
 addyosmani/agent-skills,2026-10-05,-2
 addyosmani/agent-skills,2026-10-08,6
 addyosmani/agent-skills,2026-10-10,-2
@@ -103,7 +103,6 @@ coreyhaines31/marketingskills,2026-10-05,5
 cursor/plugins,2026-10-03,-8
 cursor/plugins,2026-10-17,5
 cursor/plugins,2026-10-19,5
-debpalash/VoiceStudio,2026-10-01,-1
 debpalash/VoiceStudio,2026-10-14,-1
 debpalash/VoiceStudio,2026-10-15,1
 debpalash/VoiceStudio,2026-10-16,-3
@@ -116,6 +115,7 @@ earendil-works/pi,2026-10-04,-4
 earthtojake/text-to-cad,2026-10-06,2
 earthtojake/text-to-cad,2026-10-07,0
 elayadesign/ai-design-skills,2026-10-29,-1
+elayadesign/ai-design-skills,2026-10-30,-5
 firebase/firebase-ios-sdk,2026-10-02,7
 getsentry/sentry,2026-10-04,-3
 getsentry/sentry,2026-10-05,8
@@ -159,17 +159,18 @@ morluto/rea,2026-10-16,0
 msitarzewski/agency-agents,2026-10-07,2
 msitarzewski/agency-agents,2026-10-21,1
 multica-ai/andrej-karpathy-skills,2026-10-27,-1
-mvschwarz/openrig,2026-10-01,3
 mvschwarz/openrig,2026-10-02,-2
 mvschwarz/openrig,2026-10-03,-10
 nightly-labs/openbot,2026-10-28,6
 nightly-labs/openbot,2026-10-29,-6
+nightly-labs/openbot,2026-10-30,3
 obra/superpowers,2026-10-03,4
 obra/superpowers,2026-10-04,-8
 obra/superpowers,2026-10-16,5
 obra/superpowers,2026-10-17,-2
 obra/superpowers,2026-10-28,4
 obra/superpowers,2026-10-29,1
+obra/superpowers,2026-10-30,1
 pablostanley/yoinks,2026-10-03,-5
 pbakaus/impeccable,2026-10-03,9
 pbakaus/impeccable,2026-10-04,3
@@ -180,6 +181,7 @@ pbakaus/impeccable,2026-10-26,2
 pbakaus/impeccable,2026-10-27,-2
 pbakaus/impeccable,2026-10-28,1
 pbakaus/impeccable,2026-10-29,-2
+pbakaus/impeccable,2026-10-30,4
 php/php-src,2026-10-24,-1
 pingdotgg/t3code,2026-10-05,-2
 pingdotgg/t3code,2026-10-06,5
@@ -202,7 +204,6 @@ storytold/artcraft,2026-10-12,0
 storytold/artcraft,2026-10-13,-1
 storytold/artcraft,2026-10-14,-4
 supabase/supabase,2026-10-23,1
-t8y2/dbx,2026-10-01,-10
 tester-army/e2e,2026-10-06,0
 tester-army/e2e,2026-10-07,0
 tester-army/e2e,2026-10-08,-11
@@ -210,7 +211,9 @@ thedotmack/claude-mem,2026-10-05,-5
 thedotmack/claude-mem,2026-10-06,11
 thedotmack/claude-mem,2026-10-07,-4
 thedotmack/claude-mem,2026-10-08,-2
+thedotmack/claude-mem,2026-10-30,0
 togg53192-cmd/jailbreaks,2026-10-29,1
+togg53192-cmd/jailbreaks,2026-10-30,0
 vllm-project/vllm,2026-10-22,13
 xerj-org/xerj,2026-10-17,-1
 xerj-org/xerj,2026-10-18,0
