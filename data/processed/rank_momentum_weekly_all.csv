@@ -7,6 +7,7 @@ AgriciDaniel/claude-seo,2026-11-01,-1
 AgriciDaniel/claude-seo,2026-11-02,0
 AgriciDaniel/claude-seo,2026-11-03,-1
 AgriciDaniel/claude-seo,2026-11-04,-2
+AgriciDaniel/claude-seo,2026-11-05,-7
 Comfy-Org/ComfyUI,2026-10-24,4
 Comfy-Org/ComfyUI,2026-10-25,-1
 Comfy-Org/ComfyUI,2026-10-26,1
@@ -30,6 +31,7 @@ HKUDS/CLI-Anything,2026-10-25,-5
 HunxByts/GhostTrack,2026-10-08,-3
 JetBrains/thinkrail,2026-11-03,0
 JetBrains/thinkrail,2026-11-04,0
+JetBrains/thinkrail,2026-11-05,-2
 K-Dense-AI/scientific-agent-skills,2026-10-21,4
 K-Dense-AI/scientific-agent-skills,2026-10-22,3
 K-Dense-AI/scientific-agent-skills,2026-10-23,-2
@@ -54,7 +56,7 @@ NationalSecurityAgency/ghidra,2026-10-24,-2
 Nutlope/hallmark,2026-11-02,0
 Nutlope/hallmark,2026-11-03,0
 Nutlope/hallmark,2026-11-04,0
-Panniantong/Agent-Reach,2026-10-07,-5
+Nutlope/hallmark,2026-11-05,-1
 Panniantong/Agent-Reach,2026-10-08,5
 Panniantong/Agent-Reach,2026-10-10,-4
 TauricResearch/TradingAgents,2026-10-28,5
@@ -110,6 +112,7 @@ anthropics/skills,2026-11-01,0
 anthropics/skills,2026-11-02,-1
 anthropics/skills,2026-11-03,2
 anthropics/skills,2026-11-04,3
+anthropics/skills,2026-11-05,2
 boykopovar/AnyPS5,2026-10-08,8
 boykopovar/AnyPS5,2026-10-10,1
 boykopovar/AnyPS5,2026-10-11,0
@@ -140,7 +143,6 @@ cloudflare/security-audit-skill,2026-11-01,-1
 cloudflare/security-audit-skill,2026-11-02,-3
 cloudflare/security-audit-skill,2026-11-03,-3
 cloudflare/security-audit-skill,2026-11-04,-4
-cursor/plugins,2026-10-07,12
 cursor/plugins,2026-10-08,-1
 cursor/plugins,2026-10-10,-1
 cursor/plugins,2026-10-11,-2
@@ -155,7 +157,6 @@ cursor/plugins,2026-10-22,2
 cursor/plugins,2026-10-23,2
 cursor/plugins,2026-10-24,1
 cursor/plugins,2026-10-25,0
-debpalash/VoiceStudio,2026-10-20,-7
 debpalash/VoiceStudio,2026-10-21,4
 debpalash/VoiceStudio,2026-10-22,1
 debpalash/VoiceStudio,2026-10-23,-3
@@ -174,7 +175,7 @@ flutter/flutter,2026-10-14,-3
 flutter/flutter,2026-10-15,-2
 ghostty-org/ghostty,2026-11-03,2
 ghostty-org/ghostty,2026-11-04,3
-heygen-com/hyperframes,2026-10-07,2
+ghostty-org/ghostty,2026-11-05,1
 heygen-com/hyperframes,2026-10-08,-1
 heygen-com/hyperframes,2026-10-10,-1
 heygen-com/hyperframes,2026-10-11,-1
@@ -195,12 +196,14 @@ heygen-com/hyperframes,2026-10-25,2
 heygen-com/hyperframes,2026-10-26,4
 heygen-com/hyperframes,2026-10-27,-6
 heygen-com/hyperframes,2026-11-03,-4
+hyprwm/Hyprland,2026-11-05,1
 jakubkrehel/skills,2026-10-30,1
 jakubkrehel/skills,2026-10-31,2
 jakubkrehel/skills,2026-11-01,0
 jakubkrehel/skills,2026-11-02,-2
 jakubkrehel/skills,2026-11-03,1
 jakubkrehel/skills,2026-11-04,0
+jakubkrehel/skills,2026-11-05,1
 mattpocock/skills,2026-10-11,1
 mattpocock/skills,2026-10-12,-1
 mattpocock/skills,2026-10-13,0
@@ -209,6 +212,7 @@ mattpocock/skills,2026-10-15,-1
 mattpocock/skills,2026-10-16,0
 mattpocock/skills,2026-10-17,-3
 mattpocock/skills,2026-10-18,-3
+max-sixty/worktrunk,2026-11-05,8
 mksglu/context-mode,2026-10-18,1
 mksglu/context-mode,2026-10-19,2
 mksglu/context-mode,2026-10-20,-2
@@ -235,7 +239,7 @@ multica-ai/andrej-karpathy-skills,2026-11-01,0
 multica-ai/andrej-karpathy-skills,2026-11-02,-3
 multica-ai/andrej-karpathy-skills,2026-11-03,-1
 multica-ai/andrej-karpathy-skills,2026-11-04,0
-mvschwarz/openrig,2026-10-07,20
+multica-ai/andrej-karpathy-skills,2026-11-05,-1
 mvschwarz/openrig,2026-10-08,0
 mvschwarz/openrig,2026-10-10,-1
 mvschwarz/openrig,2026-10-11,-4
@@ -246,16 +250,15 @@ obra/superpowers,2026-11-01,-1
 obra/superpowers,2026-11-02,-1
 obra/superpowers,2026-11-03,1
 obra/superpowers,2026-11-04,1
-pablostanley/yoinks,2026-10-07,13
+obra/superpowers,2026-11-05,-1
 pablostanley/yoinks,2026-10-08,-1
-pbakaus/impeccable,2026-10-29,-5
 pbakaus/impeccable,2026-10-30,2
 pbakaus/impeccable,2026-10-31,1
 pbakaus/impeccable,2026-11-01,-1
 pbakaus/impeccable,2026-11-02,2
 pbakaus/impeccable,2026-11-03,-1
 pbakaus/impeccable,2026-11-04,-2
-pingdotgg/t3code,2026-10-10,1
+pbakaus/impeccable,2026-11-05,1
 pingdotgg/t3code,2026-10-11,-1
 pingdotgg/t3code,2026-10-26,-4
 pingdotgg/t3code,2026-10-27,-1
@@ -265,6 +268,7 @@ pingdotgg/t3code,2026-11-01,-1
 pingdotgg/t3code,2026-11-02,2
 pingdotgg/t3code,2026-11-03,2
 pingdotgg/t3code,2026-11-04,3
+pingdotgg/t3code,2026-11-05,0
 ranxianglei/billion-context,2026-10-12,-1
 ranxianglei/billion-context,2026-10-16,5
 ranxianglei/billion-context,2026-10-17,-2
@@ -305,7 +309,7 @@ thedotmack/claude-mem,2026-11-01,-4
 thedotmack/claude-mem,2026-11-02,7
 thedotmack/claude-mem,2026-11-03,2
 thedotmack/claude-mem,2026-11-04,0
-tile-ai/tilelang,2026-10-08,4
+thedotmack/claude-mem,2026-11-05,1
 twostraws/SwiftUI-Agent-Skill,2026-10-16,0
 vllm-project/vllm,2026-10-26,3
 wshobson/agents,2026-10-22,1
