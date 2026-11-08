@@ -74,6 +74,8 @@ anthropics/knowledge-work-plugins,2026-10-11,-6
 anthropics/knowledge-work-plugins,2026-10-21,1
 anthropics/knowledge-work-plugins,2026-10-23,9
 anthropics/knowledge-work-plugins,2026-10-24,-1
+anthropics/skills,2026-11-08,6
+astral-sh/ruff,2026-11-08,8
 bilawalsidhu/gods-eye-view,2026-10-13,3
 bilawalsidhu/gods-eye-view,2026-10-14,0
 boykopovar/AnyPS5,2026-10-11,0
@@ -88,6 +90,7 @@ cloudflare/security-audit-skill,2026-10-24,3
 cloudflare/security-audit-skill,2026-10-25,0
 cloudflare/security-audit-skill,2026-10-26,-9
 cloudflare/security-audit-skill,2026-11-07,-7
+cloudflare/security-audit-skill,2026-11-08,15
 cursor/plugins,2026-10-19,5
 debpalash/VoiceStudio,2026-10-15,1
 debpalash/VoiceStudio,2026-10-16,-3
@@ -104,6 +107,7 @@ floci-io/floci,2026-11-06,-10
 garrytan/gstack,2026-11-06,7
 gitroomhq/postiz-app,2026-10-28,5
 google/skills,2026-11-07,-1
+google/skills,2026-11-08,7
 headroomlabs-ai/headroom,2026-10-21,-3
 headroomlabs-ai/headroom,2026-10-22,6
 hmjz100/LinkSwift,2026-10-29,1
@@ -128,12 +132,14 @@ mattpocock/skills,2026-11-04,6
 mattpocock/skills,2026-11-05,2
 mattpocock/skills,2026-11-06,1
 mattpocock/skills,2026-11-07,-14
+mattpocock/skills,2026-11-08,12
 max-sixty/worktrunk,2026-11-04,9
 max-sixty/worktrunk,2026-11-05,1
 max-sixty/worktrunk,2026-11-06,-5
 milind-soni/OpenMausBot,2026-10-31,3
 milind-soni/OpenMausBot,2026-11-01,-4
 milind-soni/OpenMausBot,2026-11-02,1
+milind-soni/OpenMausBot,2026-11-08,-4
 mksglu/context-mode,2026-10-13,2
 mksglu/context-mode,2026-10-14,-1
 mksglu/context-mode,2026-10-15,1
@@ -169,6 +175,7 @@ pingdotgg/t3code,2026-11-02,0
 pingdotgg/t3code,2026-11-03,-3
 pollen-robotics/microduck,2026-10-26,2
 pollen-robotics/microduck,2026-10-27,-3
+prometheus/prometheus,2026-11-08,2
 pytorch/pytorch,2026-10-12,4
 rust-lang/rust,2026-11-07,4
 ruvnet/ruflo,2026-10-17,1
@@ -201,6 +208,7 @@ togg53192-cmd/jailbreaks,2026-10-29,1
 togg53192-cmd/jailbreaks,2026-10-30,0
 togg53192-cmd/jailbreaks,2026-10-31,-3
 togg53192-cmd/jailbreaks,2026-11-02,-1
+vercel-labs/agent-browser,2026-11-08,9
 vercel-labs/agent-desktop,2026-11-04,-1
 vercel-labs/agent-desktop,2026-11-05,-4
 vercel-labs/agent-desktop,2026-11-06,0
@@ -208,3 +216,4 @@ vllm-project/vllm,2026-10-22,13
 xerj-org/xerj,2026-10-17,-1
 xerj-org/xerj,2026-10-18,0
 xtool-org/xtool,2026-10-15,-1
+zed-industries/zed,2026-11-08,-12
