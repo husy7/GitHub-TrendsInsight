@@ -1,6 +1,7 @@
 repo_full_name,snapshot_date,rank_momentum
 AgriciDaniel/claude-seo,2026-11-01,-1
 AgriciDaniel/claude-seo,2026-11-02,2
+AgriciDaniel/claude-seo,2026-11-12,2
 DietrichGebert/ponytail,2026-10-28,2
 DietrichGebert/ponytail,2026-10-29,-2
 DietrichGebert/ponytail,2026-10-30,-1
@@ -14,13 +15,13 @@ HKUDS/DeepTutor,2026-11-07,0
 HKUDS/DeepTutor,2026-11-09,1
 HKUDS/DeepTutor,2026-11-10,3
 HKUDS/DeepTutor,2026-11-11,1
-JustVugg/colibri,2026-10-14,-6
+HKUDS/DeepTutor,2026-11-12,-1
 Leonxlnx/taste-skill,2026-10-30,-1
 Leonxlnx/taste-skill,2026-10-31,1
 Leonxlnx/taste-skill,2026-11-01,0
 Leonxlnx/taste-skill,2026-11-02,2
 Leonxlnx/taste-skill,2026-11-03,-5
-NVIDIA/OpenShell,2026-10-14,0
+Leonxlnx/taste-skill,2026-11-12,5
 NVIDIA/OpenShell,2026-10-15,3
 NVIDIA/OpenShell,2026-10-16,0
 NVIDIA/OpenShell,2026-10-17,-1
@@ -36,7 +37,6 @@ NVIDIA/OpenShell,2026-10-26,0
 NVIDIA/OpenShell,2026-10-27,-3
 NVIDIA/OpenShell,2026-10-28,-1
 NVIDIA/OpenShell,2026-10-29,-4
-NationalSecurityAgency/ghidra,2026-10-14,1
 NationalSecurityAgency/ghidra,2026-10-15,1
 NationalSecurityAgency/ghidra,2026-10-16,0
 NationalSecurityAgency/ghidra,2026-10-17,3
@@ -64,6 +64,7 @@ NationalSecurityAgency/ghidra,2026-11-07,-3
 NationalSecurityAgency/ghidra,2026-11-09,-2
 NationalSecurityAgency/ghidra,2026-11-10,1
 NationalSecurityAgency/ghidra,2026-11-11,0
+NationalSecurityAgency/ghidra,2026-11-12,-5
 Nutlope/hallmark,2026-10-30,8
 Nutlope/hallmark,2026-10-31,4
 Nutlope/hallmark,2026-11-01,4
@@ -77,16 +78,15 @@ Nutlope/hallmark,2026-11-08,2
 Nutlope/hallmark,2026-11-09,0
 Nutlope/hallmark,2026-11-10,0
 Nutlope/hallmark,2026-11-11,0
+Nutlope/hallmark,2026-11-12,0
 Panniantong/Agent-Reach,2026-10-28,0
 Panniantong/Agent-Reach,2026-10-29,2
 Panniantong/Agent-Reach,2026-10-30,-1
 Panniantong/Agent-Reach,2026-10-31,-3
-Tencent/WeKnora,2026-10-14,-2
 Tencent/WeKnora,2026-10-15,-2
 Tencent/WeKnora,2026-10-16,-1
 Tencent/WeKnora,2026-10-17,-4
 Tencent/WeKnora,2026-10-18,-2
-TencentCloud/Octop,2026-10-14,0
 TencentCloud/Octop,2026-10-15,-2
 TencentCloud/Octop,2026-10-16,1
 TencentCloud/Octop,2026-10-17,-2
@@ -105,12 +105,10 @@ VectifyAI/PageIndex,2026-10-24,0
 VectifyAI/PageIndex,2026-10-25,-1
 VectifyAI/PageIndex,2026-10-26,1
 VectifyAI/PageIndex,2026-10-27,0
-addyosmani/agent-skills,2026-10-14,2
 addyosmani/agent-skills,2026-10-15,-1
 addyosmani/agent-skills,2026-10-16,-1
 addyosmani/agent-skills,2026-10-17,0
 addyosmani/agent-skills,2026-10-18,-2
-affaan-m/ECC,2026-10-14,0
 affaan-m/ECC,2026-10-15,-1
 affaan-m/ECC,2026-10-16,1
 affaan-m/ECC,2026-10-17,-1
@@ -129,7 +127,6 @@ affaan-m/ECC,2026-10-29,0
 affaan-m/ECC,2026-10-30,-4
 affaan-m/ECC,2026-10-31,-2
 affaan-m/ECC,2026-11-01,-1
-agent-substrate/substrate,2026-10-14,0
 agent-substrate/substrate,2026-10-15,3
 agent-substrate/substrate,2026-10-16,1
 agent-substrate/substrate,2026-10-17,0
@@ -137,12 +134,10 @@ agent-substrate/substrate,2026-10-18,1
 agent-substrate/substrate,2026-10-19,0
 agent-substrate/substrate,2026-10-20,-2
 agent-substrate/substrate,2026-10-21,-7
-alibaba/open-code-review,2026-10-14,0
 alibaba/open-code-review,2026-10-15,-2
 alibaba/open-code-review,2026-10-16,-6
 android/skills,2026-11-01,2
 android/skills,2026-11-02,1
-anthropics/claude-code,2026-10-14,-1
 anthropics/claude-code,2026-10-15,-2
 anthropics/claude-code,2026-10-16,-6
 anthropics/claude-code,2026-10-17,0
@@ -166,7 +161,7 @@ anthropics/claude-plugins-official,2026-11-04,0
 anthropics/claude-plugins-official,2026-11-05,1
 anthropics/claude-plugins-official,2026-11-10,1
 anthropics/claude-plugins-official,2026-11-11,3
-anthropics/financial-services,2026-10-14,1
+anthropics/claude-plugins-official,2026-11-12,0
 anthropics/financial-services,2026-10-15,1
 anthropics/financial-services,2026-10-16,0
 anthropics/financial-services,2026-10-17,-1
@@ -175,7 +170,6 @@ anthropics/financial-services,2026-10-19,-1
 anthropics/financial-services,2026-10-20,-1
 anthropics/financial-services,2026-10-21,0
 anthropics/financial-services,2026-10-22,-8
-anthropics/knowledge-work-plugins,2026-10-14,0
 anthropics/knowledge-work-plugins,2026-10-15,-1
 anthropics/knowledge-work-plugins,2026-10-16,1
 anthropics/knowledge-work-plugins,2026-10-17,-2
@@ -201,6 +195,7 @@ anthropics/knowledge-work-plugins,2026-11-05,-2
 anthropics/knowledge-work-plugins,2026-11-06,-3
 anthropics/knowledge-work-plugins,2026-11-07,-2
 anthropics/knowledge-work-plugins,2026-11-11,0
+anthropics/knowledge-work-plugins,2026-11-12,-1
 boykopovar/AnyPS5,2026-11-06,0
 boykopovar/AnyPS5,2026-11-07,-1
 boykopovar/AnyPS5,2026-11-08,-2
@@ -231,7 +226,7 @@ cloudflare/security-audit-skill,2026-11-08,1
 cloudflare/security-audit-skill,2026-11-09,1
 cloudflare/security-audit-skill,2026-11-10,0
 cloudflare/security-audit-skill,2026-11-11,0
-cursor/plugins,2026-10-14,1
+cloudflare/security-audit-skill,2026-11-12,0
 cursor/plugins,2026-10-15,-1
 cursor/plugins,2026-10-16,-1
 cursor/plugins,2026-10-17,0
@@ -251,7 +246,6 @@ cursor/plugins,2026-10-30,-2
 cursor/plugins,2026-10-31,-4
 cursor/plugins,2026-11-01,-1
 cursor/plugins,2026-11-02,-1
-debpalash/VoiceStudio,2026-10-14,-2
 debpalash/VoiceStudio,2026-10-15,-1
 debpalash/VoiceStudio,2026-10-16,1
 debpalash/VoiceStudio,2026-10-17,-2
@@ -280,6 +274,7 @@ debpalash/VoiceStudio,2026-11-08,0
 debpalash/VoiceStudio,2026-11-09,0
 debpalash/VoiceStudio,2026-11-10,-1
 debpalash/VoiceStudio,2026-11-11,-1
+debpalash/VoiceStudio,2026-11-12,-1
 earthtojake/text-to-cad,2026-10-21,0
 earthtojake/text-to-cad,2026-10-22,2
 earthtojake/text-to-cad,2026-10-23,3
@@ -300,7 +295,6 @@ flutter/flutter,2026-10-30,7
 flutter/flutter,2026-10-31,-2
 flutter/flutter,2026-11-01,0
 flutter/flutter,2026-11-02,2
-heygen-com/hyperframes,2026-10-14,3
 heygen-com/hyperframes,2026-10-15,2
 heygen-com/hyperframes,2026-10-16,1
 heygen-com/hyperframes,2026-10-17,1
@@ -329,6 +323,7 @@ heygen-com/hyperframes,2026-11-08,0
 heygen-com/hyperframes,2026-11-09,2
 heygen-com/hyperframes,2026-11-10,0
 heygen-com/hyperframes,2026-11-11,-1
+heygen-com/hyperframes,2026-11-12,0
 longbridge/gpui-kit,2026-10-15,2
 longbridge/gpui-kit,2026-10-16,0
 longbridge/gpui-kit,2026-10-17,0
@@ -336,7 +331,6 @@ longbridge/gpui-kit,2026-10-18,2
 longbridge/gpui-kit,2026-10-19,0
 longbridge/gpui-kit,2026-10-20,-2
 michael-denyer/pstack-claude,2026-11-04,-3
-mksglu/context-mode,2026-10-14,1
 mksglu/context-mode,2026-10-15,1
 mksglu/context-mode,2026-10-16,4
 mksglu/context-mode,2026-10-17,2
@@ -367,8 +361,8 @@ morluto/rea,2026-11-08,0
 morluto/rea,2026-11-09,0
 morluto/rea,2026-11-10,0
 morluto/rea,2026-11-11,0
+morluto/rea,2026-11-12,0
 mvschwarz/openrig,2026-11-01,-5
-paperclipai/paperclip,2026-10-14,1
 paperclipai/paperclip,2026-10-15,1
 paperclipai/paperclip,2026-10-16,0
 paperclipai/paperclip,2026-10-17,-1
@@ -405,6 +399,7 @@ pbakaus/impeccable,2026-11-08,1
 pbakaus/impeccable,2026-11-09,0
 pbakaus/impeccable,2026-11-10,1
 pbakaus/impeccable,2026-11-11,0
+pbakaus/impeccable,2026-11-12,2
 pingdotgg/t3code,2026-10-21,0
 pingdotgg/t3code,2026-10-22,1
 pingdotgg/t3code,2026-10-23,3
@@ -427,9 +422,9 @@ pingdotgg/t3code,2026-11-08,0
 pingdotgg/t3code,2026-11-09,1
 pingdotgg/t3code,2026-11-10,3
 pingdotgg/t3code,2026-11-11,0
+pingdotgg/t3code,2026-11-12,-1
 ranxianglei/billion-context,2026-11-04,0
 ranxianglei/billion-context,2026-11-11,-4
-rohitg00/ai-engineering-from-scratch,2026-10-14,1
 rohitg00/ai-engineering-from-scratch,2026-10-15,1
 rohitg00/ai-engineering-from-scratch,2026-10-16,1
 rohitg00/ai-engineering-from-scratch,2026-10-17,0
@@ -448,7 +443,6 @@ storytold/artcraft,2026-11-09,-1
 storytold/artcraft,2026-11-10,-6
 supabase/supabase,2026-10-27,0
 supabase/supabase,2026-10-28,2
-tashfeenahmed/freellmapi,2026-10-14,0
 tashfeenahmed/freellmapi,2026-10-15,1
 tashfeenahmed/freellmapi,2026-10-16,1
 tashfeenahmed/freellmapi,2026-10-17,1
@@ -491,13 +485,12 @@ thedotmack/claude-mem,2026-11-08,0
 thedotmack/claude-mem,2026-11-09,1
 thedotmack/claude-mem,2026-11-10,2
 thedotmack/claude-mem,2026-11-11,1
-trycua/cua,2026-10-14,1
+thedotmack/claude-mem,2026-11-12,1
 trycua/cua,2026-10-15,-1
 trycua/cua,2026-10-16,2
 trycua/cua,2026-10-17,1
 trycua/cua,2026-10-18,-1
 trycua/cua,2026-10-19,-3
-vectorize-io/hindsight,2026-10-14,0
 vectorize-io/hindsight,2026-10-15,1
 vectorize-io/hindsight,2026-10-16,1
 vectorize-io/hindsight,2026-10-17,-2

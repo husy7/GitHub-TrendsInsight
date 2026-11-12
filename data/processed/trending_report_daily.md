@@ -1,140 +1,119 @@
-# GitHub Trending 洞察报告 · 2026-11-11
+# GitHub Trending 洞察报告 · 2026-11-12
 
-- 生成时间 (UTC): `2026-11-11T06:57:39Z`
+- 生成时间 (UTC): `2026-11-12T07:33:32Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-11-11` · 仓库数: 12
+- snapshot_date: `2026-11-12` · 仓库数: 10
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 12 |
-| 榜单 Star 合计 | 882,331 |
-| 本周期新增 Star | +12,153 |
-| 覆盖语言数 | 7 |
-| 有 7 天速度的仓库数 | 4 |
+| 趋势仓库数 | 10 |
+| 榜单 Star 合计 | 375,612 |
+| 本周期新增 Star | +6,895 |
+| 覆盖语言数 | 6 |
+| 有 7 天速度的仓库数 | 1 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [mattpocock/skills](https://github.com/mattpocock/skills) | shell | 321,224 | +1,225 | 1,410.3 | 1,151.7 | -8 |
-| 2 | [anthropics/skills](https://github.com/anthropics/skills) | python | 192,606 | +1,679 | 716.3 | — | -1 |
-| 3 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | rust | 49,438 | +780 | 515.1 | — | -1 |
-| 4 | [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) | typescript | 6,529 | +375 | 368.4 | 176.7 | -2 |
+| 1 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | rust | 50,059 | +708 | 597.6 | — | +2 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | +3 | 排名上升 |
-| [anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) | +1 | 排名上升 |
-| [meta/astryx](https://github.com/meta/astryx) | +1 | 排名上升 |
-| [anthropics/skills](https://github.com/anthropics/skills) | -1 | 排名下滑 |
-| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | -1 | 排名下滑 |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | -1 | 排名下滑 |
-| [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) | -2 | 排名下滑 |
-| [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | -6 | 排名下滑 |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | -8 | 排名下滑 |
+| [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | +7 | 排名上升 |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | +2 | 排名上升 |
+| [meta/astryx](https://github.com/meta/astryx) | +0 | 排名不变 |
+| [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | -1 | 排名下滑 |
+| [we-promise/sure](https://github.com/we-promise/sure) | -1 | 排名下滑 |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | -2 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| python | 4 | 33.3% |
-| rust | 2 | 16.7% |
-| typescript | 2 | 16.7% |
-| c++ | 1 | 8.3% |
-| javascript | 1 | 8.3% |
-| ruby | 1 | 8.3% |
-| shell | 1 | 8.3% |
+| typescript | 3 | 30.0% |
+| python | 2 | 20.0% |
+| java | 1 | 10.0% |
+| javascript | 1 | 10.0% |
+| ruby | 1 | 10.0% |
+| rust | 1 | 10.0% |
 
 ## 5. 仓库明细
 
 ### 1. [meta/astryx](https://github.com/meta/astryx)
 
 - 描述: An open source design system that's fully customizable and agent ready
-- 指标: stars 23,615 · forks 1,853 · open_issues 673 · language typescript
-- 本周期新增 (daily): +3,108 Star
+- 指标: stars 25,571 · forks 1,991 · open_issues 666 · language typescript
+- 本周期新增 (daily): +2,776 Star
 - topics: —
 
-### 2. [anthropics/skills](https://github.com/anthropics/skills)
+### 2. [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
 
-- 描述: Public repository for Agent Skills
-- 指标: stars 192,606 · forks 22,673 · open_issues 1,516 · language python
-- 本周期新增 (daily): +1,679 Star
-- topics: `agent-skills`
+- 描述: LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.
+- 指标: stars 70,734 · forks 57,002 · open_issues 51 · language python
+- 本周期新增 (daily): +278 Star
+- topics: `a-stock`, `ai-agent`, `aigc`, `llm`, `quant`, `quantitative-finance`, `quantitative-trading`
 
-### 3. [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+### 3. [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)
 
-- 描述: Production-grade engineering skills for AI coding agents.
-- 指标: stars 115,368 · forks 12,111 · open_issues 133 · language javascript
-- 本周期新增 (daily): +465 Star
-- topics: `agent-skills`, `antigravity`, `claude-code`, `codex`, `cursor`, `skills`
-
-### 4. [anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts)
-
-- 描述: A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API
-- 指标: stars 20,631 · forks 3,477 · open_issues 242 · language python
-- 本周期新增 (daily): +531 Star
-- topics: —
-
-### 5. [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco)
-
-- 描述: Multi-Joint dynamics with Contact. A general purpose physics simulator.
-- 指标: stars 17,493 · forks 2,158 · open_issues 355 · language c++
-- 本周期新增 (daily): +456 Star
-- topics: `mujoco`, `physics`, `robotics`
-
-### 6. [we-promise/sure](https://github.com/we-promise/sure)
-
-- 描述: The personal finance app for everyone (by everyone)
-- 指标: stars 12,238 · forks 907 · open_issues 884 · language ruby
+- 描述: —
+- 指标: stars 2,022 · forks 151 · open_issues 372 · language typescript
 - 本周期新增 (daily): +159 Star
 - topics: —
 
-### 7. [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp)
+### 4. [shadcn/improve](https://github.com/shadcn/improve)
 
-- 描述: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.
-- 指标: stars 6,820 · forks 439 · open_issues 21 · language python
-- 本周期新增 (daily): +790 Star
-- topics: `ai`, `claude`, `hacs`, `home-assistant`, `home-automation`, `llm`, `mcp`, `model-context-protocol`
+- 描述: Use your most capable model to audit your codebase and write plans for cheaper models to execute.
+- 指标: stars 11,182 · forks 453 · open_issues 18 · language —
+- 本周期新增 (daily): +361 Star
+- topics: —
 
-### 8. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
+### 5. [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+
+- 描述: Production-grade engineering skills for AI coding agents.
+- 指标: stars 116,170 · forks 12,173 · open_issues 136 · language javascript
+- 本周期新增 (daily): +787 Star
+- topics: `agent-skills`, `antigravity`, `claude-code`, `codex`, `cursor`, `skills`
+
+### 6. [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 
 - 描述: Browser automation CLI for AI agents
-- 指标: stars 49,438 · forks 3,463 · open_issues 571 · language rust
-- 本周期新增 (daily): +780 Star
+- 指标: stars 50,059 · forks 3,493 · open_issues 585 · language rust
+- 本周期新增 (daily): +708 Star
 - topics: —
 
-### 9. [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
+### 7. [we-promise/sure](https://github.com/we-promise/sure)
 
-- 描述: Hunt down social media accounts by username across social networks
-- 指标: stars 109,409 · forks 12,693 · open_issues 409 · language python
-- 本周期新增 (daily): +2,393 Star
-- topics: `cli`, `cti`, `cybersecurity`, `forensics`, `hacktoberfest`, `information-gathering`, `infosec`, `linux`, `osint`, `pentesting`, `python`, `python3`, `reconnaissance`, `redteam`, `sherlock`, `tools`
-
-### 10. [tokio-rs/topcoat](https://github.com/tokio-rs/topcoat)
-
-- 描述: A batteries-included framework for building web apps
-- 指标: stars 6,960 · forks 309 · open_issues 60 · language rust
-- 本周期新增 (daily): +192 Star
+- 描述: The personal finance app for everyone (by everyone)
+- 指标: stars 13,227 · forks 976 · open_issues 888 · language ruby
+- 本周期新增 (daily): +1,078 Star
 - topics: —
 
-### 11. [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context)
+### 8. [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp)
 
-- 描述: A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need
-- 指标: stars 6,529 · forks 539 · open_issues 988 · language typescript
-- 本周期新增 (daily): +375 Star
-- topics: `dsh-plugin`
+- 描述: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.
+- 指标: stars 7,552 · forks 459 · open_issues 20 · language python
+- 本周期新增 (daily): +645 Star
+- topics: `ai`, `claude`, `hacs`, `home-assistant`, `home-automation`, `llm`, `mcp`, `model-context-protocol`
 
-### 12. [mattpocock/skills](https://github.com/mattpocock/skills)
+### 9. [openai/codex-security](https://github.com/openai/codex-security)
 
-- 描述: Skills for Real Engineers. Straight from my .agents directory.
-- 指标: stars 321,224 · forks 26,931 · open_issues 233 · language shell
-- 本周期新增 (daily): +1,225 Star
-- topics: —
+- 描述: OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm:https://www.npmjs.com/package/@openai/codex-security
+- 指标: stars 11,943 · forks 952 · open_issues 139 · language typescript
+- 本周期新增 (daily): +52 Star
+- topics: `ai-security`, `application-security`, `cli`, `code-scanning`, `codex`, `codex-security`, `cybersecurity`, `devsecops`, `nodejs`, `npm`, `openai`, `sdk`, `security`, `typescript`, `vulnerability-scanning`
+
+### 10. [TheAlgorithms/Java](https://github.com/TheAlgorithms/Java)
+
+- 描述: All Algorithms implemented in Java
+- 指标: stars 67,152 · forks 21,519 · open_issues 31 · language java
+- 本周期新增 (daily): +51 Star
+- topics: `algorithm`, `algorithm-challenges`, `algorithms`, `algorithms-datastructures`, `data-structures`, `hacktoberfest`, `java`, `search`, `sort`, `sorting-algorithms`
 
 ## 6. 口径与方法
 
