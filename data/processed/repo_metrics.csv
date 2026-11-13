@@ -1,5 +1,6 @@
 repo_full_name,snapshot_date,star_velocity_7d,star_velocity_30d,rank_momentum,language_share
 AgriciDaniel/claude-seo,2026-10-26,,,,1.0
+Alishahryar1/free-claude-code,2026-11-13,,,,1.0
 Comfy-Org/ComfyUI,2026-10-19,,,,1.0
 Comfy-Org/ComfyUI,2026-10-20,,,9.0,1.0
 Comfy-Org/ComfyUI,2026-10-21,,,-1.0,1.0
@@ -8,6 +9,7 @@ ConardLi/garden-skills,2026-11-06,,,,1.0
 CopilotKit/OpenBot,2026-10-30,,,,1.0
 CopilotKit/OpenBot,2026-10-31,,,5.0,1.0
 CopilotKit/OpenBot,2026-11-02,,,-9.0,1.0
+CopilotKit/OpenBot,2026-11-13,,,2.0,1.0
 D4Vinci/Scrapling,2026-11-03,,,,1.0
 D4Vinci/Scrapling,2026-11-04,,,-8.0,1.0
 D4Vinci/Scrapling,2026-11-05,,,-3.0,1.0
@@ -24,6 +26,7 @@ FareedKhan-dev/kimi-k3-in-c,2026-11-05,,,,1.0
 FlashML-org/FreeToken,2026-11-02,,,,1.0
 FlashML-org/FreeToken,2026-11-03,,,10.0,1.0
 GoogleChrome/modern-web-guidance-src,2026-11-12,,,,1.0
+GoogleChrome/modern-web-guidance-src,2026-11-13,,,2.0,1.0
 Graphify-Labs/graphify,2026-10-21,,,,1.0
 Graphify-Labs/graphify,2026-10-22,,,-4.0,1.0
 Graphify-Labs/graphify,2026-10-23,,,6.0,1.0
@@ -78,6 +81,7 @@ Nutlope/hallmark,2026-10-29,,361.3666666666667,-4.0,1.0
 OpenBMB/VoxCPM,2026-10-24,,,,1.0
 Orkas-AI/Orkas,2026-11-01,,,,1.0
 Panniantong/Agent-Reach,2026-10-27,,601.1666666666666,,1.0
+QwenLM/qwen-code,2026-11-13,,,,1.0
 Renhuai123/ziwei-doushu,2026-10-24,,,,1.0
 Renhuai123/ziwei-doushu,2026-10-26,,,-2.0,1.0
 Renhuai123/ziwei-doushu,2026-10-31,645.1428571428571,,2.0,1.0
@@ -96,6 +100,7 @@ ZhuLinsen/daily_stock_analysis,2026-11-10,,,,1.0
 ZhuLinsen/daily_stock_analysis,2026-11-12,,,7.0,1.0
 addyosmani/agent-skills,2026-11-11,,339.96666666666664,,1.0
 addyosmani/agent-skills,2026-11-12,,346.1,-2.0,1.0
+addyosmani/agent-skills,2026-11-13,,351.46666666666664,-4.0,1.0
 affaan-m/ECC,2026-10-16,,765.1,,1.0
 affaan-m/ECC,2026-10-17,794.7142857142857,766.8333333333334,7.0,1.0
 affaan-m/ECC,2026-10-18,859.8571428571429,767.4333333333333,0.0,1.0
@@ -133,13 +138,12 @@ anthropics/skills,2026-11-08,399.42857142857144,,6.0,1.0
 anthropics/skills,2026-11-09,452.7142857142857,,-2.0,1.0
 anthropics/skills,2026-11-10,542.2857142857143,,6.0,1.0
 anthropics/skills,2026-11-11,716.2857142857143,,-1.0,1.0
+ashhart/TensorFold,2026-11-13,,,,1.0
 astral-sh/ruff,2026-11-07,,,,1.0
 astral-sh/ruff,2026-11-08,,,8.0,1.0
 aws/agent-toolkit-for-aws,2026-10-25,,,,1.0
 beenuar/AiSOC,2026-11-02,,,,1.0
-bilawalsidhu/gods-eye-view,2026-10-14,1037.7142857142858,,,1.0
 bregman-arie/devops-exercises,2026-11-01,,,,1.0
-cathrynlavery/diagram-design,2026-10-14,1409.5714285714287,,,1.0
 cjpais/Handy,2026-11-02,,,,1.0
 cloudflare/security-audit-skill,2026-10-21,,527.4666666666667,,1.0
 cloudflare/security-audit-skill,2026-10-22,,556.4666666666667,1.0,1.0
@@ -152,8 +156,7 @@ cloudflare/security-audit-skill,2026-11-08,1495.2857142857142,1319.0333333333333
 coollabsio/coolify,2026-10-26,,,,1.0
 cursor/plugins,2026-10-17,200.0,133.86666666666667,,1.0
 cursor/plugins,2026-10-19,245.28571428571428,150.23333333333332,5.0,1.0
-debpalash/VoiceStudio,2026-10-14,,1213.6,,1.0
-debpalash/VoiceStudio,2026-10-15,,1239.3666666666666,1.0,1.0
+debpalash/VoiceStudio,2026-10-15,,1239.3666666666666,,1.0
 debpalash/VoiceStudio,2026-10-16,,1272.7,-3.0,1.0
 debpalash/VoiceStudio,2026-10-17,2144.714285714286,1297.4333333333334,-5.0,1.0
 debpalash/VoiceStudio,2026-10-18,2297.5714285714284,1344.4333333333334,0.0,1.0
@@ -175,6 +178,7 @@ floci-io/floci,2026-11-06,,,-10.0,1.0
 garrytan/gbrain,2026-11-10,,,,1.0
 garrytan/gstack,2026-11-05,,,,1.0
 garrytan/gstack,2026-11-06,,,7.0,1.0
+ggml-org/llama.cpp,2026-11-13,,,,1.0
 github/spec-kit,2026-11-05,,,,1.0
 gitroomhq/postiz-app,2026-10-27,,,,1.0
 gitroomhq/postiz-app,2026-10-28,,,5.0,1.0
@@ -207,7 +211,6 @@ lightpanda-io/browser,2026-11-02,,,7.0,1.0
 lightseekorg/tokenspeed,2026-10-16,,,,1.0
 luongnv89/claude-howto,2026-10-23,,,,1.0
 luongnv89/claude-howto,2026-10-25,,,3.0,1.0
-lyogavin/airllm,2026-10-14,,,,1.0
 lz4/lz4,2026-11-06,,,,1.0
 lz4/lz4,2026-11-07,,,-4.0,1.0
 macro-inc/macro,2026-10-29,,,,1.0
@@ -236,6 +239,7 @@ meta/astryx,2026-11-09,,,0.0,1.0
 meta/astryx,2026-11-10,,,4.0,1.0
 meta/astryx,2026-11-11,,,1.0,1.0
 meta/astryx,2026-11-12,,,0.0,1.0
+meta/astryx,2026-11-13,,,-9.0,1.0
 microsoft/VibeVoice,2026-11-06,,,,1.0
 microsoft/vscode,2026-11-07,,,,1.0
 milind-soni/OpenMausBot,2026-10-30,,,,1.0
@@ -245,13 +249,11 @@ milind-soni/OpenMausBot,2026-11-02,,,1.0,1.0
 milind-soni/OpenMausBot,2026-11-08,1011.0,,-4.0,1.0
 milind-soni/OpenMausBot,2026-11-09,1088.7142857142858,,6.0,1.0
 milind-soni/OpenMausBot,2026-11-10,1189.2857142857142,,-8.0,1.0
-mksglu/context-mode,2026-10-14,407.7142857142857,179.26666666666668,,1.0
-mksglu/context-mode,2026-10-15,519.2857142857143,202.23333333333332,1.0,1.0
+mksglu/context-mode,2026-10-15,519.2857142857143,202.23333333333332,,1.0
 mksglu/context-mode,2026-10-16,,224.8,-5.0,1.0
 mksglu/context-mode,2026-10-17,601.0,232.76666666666668,3.0,1.0
 mlabonne/llm-course,2026-10-19,,,,1.0
-morluto/rea,2026-10-14,29285.571428571428,,,1.0
-morluto/rea,2026-10-15,30691.0,,0.0,1.0
+morluto/rea,2026-10-15,30691.0,,,1.0
 morluto/rea,2026-10-16,34211.0,,0.0,1.0
 mpv-player/mpv,2026-11-07,,,,1.0
 msitarzewski/agency-agents,2026-10-21,,,,1.0
@@ -261,9 +263,11 @@ nightly-labs/openbot,2026-10-28,,,6.0,1.0
 nightly-labs/openbot,2026-10-29,,,-6.0,1.0
 nightly-labs/openbot,2026-10-30,,,3.0,1.0
 nodejs/node,2026-10-24,,,,1.0
+nodejs/node,2026-11-13,,,0.0,1.0
 ntdevlabs/tiny11builder,2026-10-15,,,,1.0
 nushell/nushell,2026-11-07,,,,1.0
 nvm-sh/nvm,2026-10-15,,,,1.0
+nvm-sh/nvm,2026-11-13,,,1.0,1.0
 obra/superpowers,2026-10-16,,,,1.0
 obra/superpowers,2026-10-17,,,-2.0,1.0
 obra/superpowers,2026-10-28,,,4.0,1.0
@@ -272,6 +276,7 @@ obra/superpowers,2026-10-30,699.1428571428571,,1.0,1.0
 obra/superpowers,2026-10-31,782.0,,-12.0,1.0
 obra/superpowers,2026-11-01,805.1428571428571,537.6666666666666,6.0,1.0
 openai/codex-security,2026-11-12,,,,1.0
+openai/codex-security,2026-11-13,,,7.0,1.0
 openssl/openssl,2026-11-07,,,,1.0
 p-e-w/heretic,2026-11-03,,,,1.0
 p-e-w/heretic,2026-11-04,,,9.0,1.0
@@ -294,6 +299,7 @@ pingdotgg/t3code,2026-11-03,1395.7142857142858,524.3666666666667,-3.0,1.0
 pollen-robotics/microduck,2026-10-25,,,,1.0
 pollen-robotics/microduck,2026-10-26,,,2.0,1.0
 pollen-robotics/microduck,2026-10-27,,,-3.0,1.0
+pookjw/HermesEnabler,2026-11-13,,,,1.0
 prometheus/prometheus,2026-11-07,,,,1.0
 prometheus/prometheus,2026-11-08,,,2.0,1.0
 public-apis/public-apis,2026-11-02,,,,1.0
@@ -332,7 +338,6 @@ stablyai/orca,2026-10-19,,,1.0,1.0
 stablyai/orca,2026-10-20,,,1.0,1.0
 stablyai/orca,2026-10-21,,,3.0,1.0
 stablyai/orca,2026-10-22,1243.5714285714287,,0.0,1.0
-storytold/artcraft,2026-10-14,,,,1.0
 supabase/supabase,2026-10-22,,,,1.0
 supabase/supabase,2026-10-23,,,1.0,1.0
 symfony/symfony,2026-11-07,,,,1.0
@@ -361,20 +366,19 @@ vercel-labs/agent-desktop,2026-11-03,,,,1.0
 vercel-labs/agent-desktop,2026-11-04,,,-1.0,1.0
 vercel-labs/agent-desktop,2026-11-05,,,-4.0,1.0
 vercel-labs/agent-desktop,2026-11-06,,,0.0,1.0
-vercel-labs/skills,2026-10-14,,,,1.0
 vllm-project/vllm,2026-10-21,,,,1.0
 vllm-project/vllm,2026-10-22,,,13.0,1.0
 vorssaint/vorssaint-utils,2026-11-01,,,,1.0
 vxcontrol/pentagi,2026-10-15,,,,1.0
 we-promise/sure,2026-11-11,,,,1.0
 we-promise/sure,2026-11-12,,,-1.0,1.0
+we-promise/sure,2026-11-13,,,2.0,1.0
 withmarbleapp/os-taxonomy,2026-10-20,,,,1.0
 wshobson/agents,2026-10-21,95.0,,,1.0
 xerj-org/xerj,2026-10-16,,,,1.0
 xerj-org/xerj,2026-10-17,,,-1.0,1.0
 xerj-org/xerj,2026-10-18,,,0.0,1.0
 xiaolai/the-craft-of-selfteaching,2026-10-29,,,,1.0
-xtool-org/xtool,2026-10-14,,,,1.0
-xtool-org/xtool,2026-10-15,,,-1.0,1.0
+xtool-org/xtool,2026-10-15,,,,1.0
 zed-industries/zed,2026-11-07,,,,1.0
 zed-industries/zed,2026-11-08,,,-12.0,1.0
