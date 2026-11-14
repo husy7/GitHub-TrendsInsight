@@ -16,9 +16,9 @@ Donchitos/Claude-Code-Game-Studios,2026-11-03,3
 Donchitos/Claude-Code-Game-Studios,2026-11-04,-8
 FlashML-org/FreeToken,2026-11-03,10
 GoogleChrome/modern-web-guidance-src,2026-11-13,2
+GoogleChrome/modern-web-guidance-src,2026-11-14,-1
 Graphify-Labs/graphify,2026-10-22,-4
 Graphify-Labs/graphify,2026-10-23,6
-HKUDS/CLI-Anything,2026-10-17,2
 HKUDS/CLI-Anything,2026-10-18,0
 HKUDS/CLI-Anything,2026-10-19,-4
 HKUDS/CLI-Anything,2026-10-20,-2
@@ -33,7 +33,6 @@ JetBrains/thinkrail,2026-10-30,-3
 JetBrains/thinkrail,2026-10-31,-8
 JiaFeiMiao-K-Cat/DiscImageStudio,2026-11-06,-3
 JustVugg/colibri,2026-11-04,6
-K-Dense-AI/scientific-agent-skills,2026-10-16,2
 K-Dense-AI/scientific-agent-skills,2026-10-17,1
 K-Dense-AI/scientific-agent-skills,2026-10-18,-3
 Kruk2/jasna,2026-10-20,3
@@ -44,7 +43,6 @@ MadsLorentzen/ai-job-search,2026-10-21,0
 NVIDIA/OpenShell,2026-10-25,2
 NVIDIA/auto-ontology,2026-11-06,0
 NVIDIA/auto-ontology,2026-11-07,-1
-NationalSecurityAgency/ghidra,2026-10-16,3
 Nutlope/hallmark,2026-10-26,2
 Nutlope/hallmark,2026-10-27,1
 Nutlope/hallmark,2026-10-28,-1
@@ -56,6 +54,7 @@ Renhuai123/ziwei-doushu,2026-11-02,-6
 TauricResearch/TradingAgents,2026-10-27,4
 Usagi-org/ai-goofish-monitor,2026-11-06,5
 ZhuLinsen/daily_stock_analysis,2026-11-12,7
+ZhuLinsen/daily_stock_analysis,2026-11-14,-2
 addyosmani/agent-skills,2026-11-12,-2
 addyosmani/agent-skills,2026-11-13,-4
 affaan-m/ECC,2026-10-17,7
@@ -92,7 +91,6 @@ cloudflare/security-audit-skill,2026-10-26,-9
 cloudflare/security-audit-skill,2026-11-07,-7
 cloudflare/security-audit-skill,2026-11-08,15
 cursor/plugins,2026-10-19,5
-debpalash/VoiceStudio,2026-10-16,-3
 debpalash/VoiceStudio,2026-10-17,-5
 debpalash/VoiceStudio,2026-10-18,0
 debpalash/VoiceStudio,2026-10-19,1
@@ -148,14 +146,11 @@ milind-soni/OpenMausBot,2026-11-02,1
 milind-soni/OpenMausBot,2026-11-08,-4
 milind-soni/OpenMausBot,2026-11-09,6
 milind-soni/OpenMausBot,2026-11-10,-8
-mksglu/context-mode,2026-10-16,-5
 mksglu/context-mode,2026-10-17,3
-morluto/rea,2026-10-16,0
 nightly-labs/openbot,2026-10-28,6
 nightly-labs/openbot,2026-10-29,-6
 nightly-labs/openbot,2026-10-30,3
 nodejs/node,2026-11-13,0
-nvm-sh/nvm,2026-11-13,1
 obra/superpowers,2026-10-17,-2
 obra/superpowers,2026-10-28,4
 obra/superpowers,2026-10-29,1
@@ -163,6 +158,7 @@ obra/superpowers,2026-10-30,1
 obra/superpowers,2026-10-31,-12
 obra/superpowers,2026-11-01,6
 openai/codex-security,2026-11-13,7
+openai/codex-security,2026-11-14,-1
 p-e-w/heretic,2026-11-04,9
 pbakaus/impeccable,2026-10-26,2
 pbakaus/impeccable,2026-10-27,-2
@@ -180,7 +176,6 @@ pollen-robotics/microduck,2026-10-27,-3
 prometheus/prometheus,2026-11-08,2
 ranxianglei/billion-context,2026-11-09,5
 ranxianglei/billion-context,2026-11-11,-2
-rust-lang/rust,2026-11-07,4
 ruvnet/RuView,2026-11-10,5
 ruvnet/ruflo,2026-10-17,1
 ruvnet/ruflo,2026-10-18,-6
@@ -222,6 +217,7 @@ vercel-labs/agent-desktop,2026-11-06,0
 vllm-project/vllm,2026-10-22,13
 we-promise/sure,2026-11-12,-1
 we-promise/sure,2026-11-13,2
+we-promise/sure,2026-11-14,0
 xerj-org/xerj,2026-10-17,-1
 xerj-org/xerj,2026-10-18,0
 zed-industries/zed,2026-11-08,-12
