@@ -1,4 +1,5 @@
 repo_full_name,snapshot_date,rank_momentum
+ChromeDevTools/chrome-devtools-mcp,2026-11-15,8
 Comfy-Org/ComfyUI,2026-10-20,9
 Comfy-Org/ComfyUI,2026-10-21,-1
 Comfy-Org/ComfyUI,2026-10-22,-1
@@ -17,6 +18,7 @@ Donchitos/Claude-Code-Game-Studios,2026-11-04,-8
 FlashML-org/FreeToken,2026-11-03,10
 GoogleChrome/modern-web-guidance-src,2026-11-13,2
 GoogleChrome/modern-web-guidance-src,2026-11-14,-1
+GoogleChrome/modern-web-guidance-src,2026-11-15,0
 Graphify-Labs/graphify,2026-10-22,-4
 Graphify-Labs/graphify,2026-10-23,6
 HKUDS/CLI-Anything,2026-10-18,0
@@ -33,9 +35,9 @@ JetBrains/thinkrail,2026-10-30,-3
 JetBrains/thinkrail,2026-10-31,-8
 JiaFeiMiao-K-Cat/DiscImageStudio,2026-11-06,-3
 JustVugg/colibri,2026-11-04,6
-K-Dense-AI/scientific-agent-skills,2026-10-17,1
 K-Dense-AI/scientific-agent-skills,2026-10-18,-3
 Kruk2/jasna,2026-10-20,3
+Likely7/Veyra-NRVideo,2026-11-15,-3
 MadsLorentzen/ai-job-search,2026-10-18,9
 MadsLorentzen/ai-job-search,2026-10-19,1
 MadsLorentzen/ai-job-search,2026-10-20,0
@@ -47,6 +49,7 @@ Nutlope/hallmark,2026-10-26,2
 Nutlope/hallmark,2026-10-27,1
 Nutlope/hallmark,2026-10-28,-1
 Nutlope/hallmark,2026-10-29,-4
+QwenLM/qwen-code,2026-11-15,0
 Renhuai123/ziwei-doushu,2026-10-26,-2
 Renhuai123/ziwei-doushu,2026-10-31,2
 Renhuai123/ziwei-doushu,2026-11-01,0
@@ -57,13 +60,13 @@ ZhuLinsen/daily_stock_analysis,2026-11-12,7
 ZhuLinsen/daily_stock_analysis,2026-11-14,-2
 addyosmani/agent-skills,2026-11-12,-2
 addyosmani/agent-skills,2026-11-13,-4
-affaan-m/ECC,2026-10-17,7
 affaan-m/ECC,2026-10-18,0
 affaan-m/ECC,2026-10-27,-2
 affaan-m/ECC,2026-10-28,-3
 akitaonrails/ai-memory,2026-10-19,0
 akitaonrails/ai-memory,2026-10-20,3
 akitaonrails/ai-memory,2026-10-22,-7
+alibaba/open-code-review,2026-11-15,-4
 android/skills,2026-10-18,0
 android/skills,2026-10-19,-3
 anomalyco/hex,2026-11-04,2
@@ -71,7 +74,6 @@ anomalyco/opencode,2026-10-19,8
 anomalyco/opencode,2026-10-20,1
 anomalyco/opencode,2026-10-21,-6
 anthropics/claude-code,2026-10-20,-2
-anthropics/claude-plugins-official,2026-10-17,1
 anthropics/claude-plugins-official,2026-10-18,0
 anthropics/claude-plugins-official,2026-10-19,-1
 anthropics/claude-quickstarts,2026-11-10,-1
@@ -82,7 +84,9 @@ anthropics/skills,2026-11-08,6
 anthropics/skills,2026-11-09,-2
 anthropics/skills,2026-11-10,6
 anthropics/skills,2026-11-11,-1
+ashhart/TensorFold,2026-11-15,-2
 astral-sh/ruff,2026-11-08,8
+backnotprop/plannotator,2026-11-15,5
 cloudflare/security-audit-skill,2026-10-22,1
 cloudflare/security-audit-skill,2026-10-23,-3
 cloudflare/security-audit-skill,2026-10-24,3
@@ -91,7 +95,6 @@ cloudflare/security-audit-skill,2026-10-26,-9
 cloudflare/security-audit-skill,2026-11-07,-7
 cloudflare/security-audit-skill,2026-11-08,15
 cursor/plugins,2026-10-19,5
-debpalash/VoiceStudio,2026-10-17,-5
 debpalash/VoiceStudio,2026-10-18,0
 debpalash/VoiceStudio,2026-10-19,1
 debpalash/VoiceStudio,2026-10-26,6
@@ -117,6 +120,7 @@ hyprwm/Hyprland,2026-11-03,13
 kornia/kornia,2026-11-03,0
 lightpanda-io/browser,2026-11-01,6
 lightpanda-io/browser,2026-11-02,7
+louislam/uptime-kuma,2026-11-15,-4
 luongnv89/claude-howto,2026-10-25,3
 lz4/lz4,2026-11-07,-4
 macro-inc/macro,2026-10-31,-2
@@ -146,12 +150,10 @@ milind-soni/OpenMausBot,2026-11-02,1
 milind-soni/OpenMausBot,2026-11-08,-4
 milind-soni/OpenMausBot,2026-11-09,6
 milind-soni/OpenMausBot,2026-11-10,-8
-mksglu/context-mode,2026-10-17,3
 nightly-labs/openbot,2026-10-28,6
 nightly-labs/openbot,2026-10-29,-6
 nightly-labs/openbot,2026-10-30,3
 nodejs/node,2026-11-13,0
-obra/superpowers,2026-10-17,-2
 obra/superpowers,2026-10-28,4
 obra/superpowers,2026-10-29,1
 obra/superpowers,2026-10-30,1
@@ -177,7 +179,6 @@ prometheus/prometheus,2026-11-08,2
 ranxianglei/billion-context,2026-11-09,5
 ranxianglei/billion-context,2026-11-11,-2
 ruvnet/RuView,2026-11-10,5
-ruvnet/ruflo,2026-10-17,1
 ruvnet/ruflo,2026-10-18,-6
 ruvnet/ruflo,2026-10-19,7
 ruvnet/ruflo,2026-10-20,0
@@ -206,6 +207,7 @@ togg53192-cmd/jailbreaks,2026-10-29,1
 togg53192-cmd/jailbreaks,2026-10-30,0
 togg53192-cmd/jailbreaks,2026-10-31,-3
 togg53192-cmd/jailbreaks,2026-11-02,-1
+tradermonty/claude-trading-skills,2026-11-15,6
 vercel-labs/agent-browser,2026-11-08,9
 vercel-labs/agent-browser,2026-11-09,-4
 vercel-labs/agent-browser,2026-11-10,-2
@@ -218,6 +220,6 @@ vllm-project/vllm,2026-10-22,13
 we-promise/sure,2026-11-12,-1
 we-promise/sure,2026-11-13,2
 we-promise/sure,2026-11-14,0
-xerj-org/xerj,2026-10-17,-1
+we-promise/sure,2026-11-15,-7
 xerj-org/xerj,2026-10-18,0
 zed-industries/zed,2026-11-08,-12
