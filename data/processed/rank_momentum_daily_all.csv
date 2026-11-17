@@ -1,6 +1,7 @@
 repo_full_name,snapshot_date,rank_momentum
 ChromeDevTools/chrome-devtools-mcp,2026-11-15,8
 ChromeDevTools/chrome-devtools-mcp,2026-11-16,-1
+ChromeDevTools/chrome-devtools-mcp,2026-11-17,-8
 Comfy-Org/ComfyUI,2026-10-20,9
 Comfy-Org/ComfyUI,2026-10-21,-1
 Comfy-Org/ComfyUI,2026-10-22,-1
@@ -23,7 +24,6 @@ GoogleChrome/modern-web-guidance-src,2026-11-15,0
 GoogleChrome/modern-web-guidance-src,2026-11-16,-8
 Graphify-Labs/graphify,2026-10-22,-4
 Graphify-Labs/graphify,2026-10-23,6
-HKUDS/CLI-Anything,2026-10-19,-4
 HKUDS/CLI-Anything,2026-10-20,-2
 HKUDS/DeepTutor,2026-10-29,5
 HKUDS/DeepTutor,2026-10-30,3
@@ -38,10 +38,10 @@ JiaFeiMiao-K-Cat/DiscImageStudio,2026-11-06,-3
 JustVugg/colibri,2026-11-04,6
 Kruk2/jasna,2026-10-20,3
 Likely7/Veyra-NRVideo,2026-11-15,-3
-MadsLorentzen/ai-job-search,2026-10-19,1
 MadsLorentzen/ai-job-search,2026-10-20,0
 MadsLorentzen/ai-job-search,2026-10-21,0
 NVIDIA/OpenShell,2026-10-25,2
+NVIDIA/SkillEvaluator,2026-11-17,2
 NVIDIA/auto-ontology,2026-11-06,0
 NVIDIA/auto-ontology,2026-11-07,-1
 Nutlope/hallmark,2026-10-26,2
@@ -60,21 +60,17 @@ ZhuLinsen/daily_stock_analysis,2026-11-12,7
 ZhuLinsen/daily_stock_analysis,2026-11-14,-2
 addyosmani/agent-skills,2026-11-12,-2
 addyosmani/agent-skills,2026-11-13,-4
-affaan-m/ECC,2026-10-27,-2
 affaan-m/ECC,2026-10-28,-3
 ag-ui-protocol/ag-ui,2026-11-16,6
-akitaonrails/ai-memory,2026-10-19,0
+ag-ui-protocol/ag-ui,2026-11-17,1
 akitaonrails/ai-memory,2026-10-20,3
 akitaonrails/ai-memory,2026-10-22,-7
 alibaba/open-code-review,2026-11-15,-4
 alibaba/open-code-review,2026-11-16,-1
-android/skills,2026-10-19,-3
+alibaba/open-code-review,2026-11-17,-5
 anomalyco/hex,2026-11-04,2
-anomalyco/opencode,2026-10-19,8
 anomalyco/opencode,2026-10-20,1
 anomalyco/opencode,2026-10-21,-6
-anthropics/claude-code,2026-10-20,-2
-anthropics/claude-plugins-official,2026-10-19,-1
 anthropics/claude-quickstarts,2026-11-10,-1
 anthropics/claude-quickstarts,2026-11-11,1
 anthropics/knowledge-work-plugins,2026-10-23,9
@@ -87,6 +83,7 @@ ashhart/TensorFold,2026-11-15,-2
 astral-sh/ruff,2026-11-08,8
 backnotprop/plannotator,2026-11-15,5
 backnotprop/plannotator,2026-11-16,-3
+backnotprop/plannotator,2026-11-17,2
 cloudflare/security-audit-skill,2026-10-22,1
 cloudflare/security-audit-skill,2026-10-23,-3
 cloudflare/security-audit-skill,2026-10-24,3
@@ -94,13 +91,14 @@ cloudflare/security-audit-skill,2026-10-25,0
 cloudflare/security-audit-skill,2026-10-26,-9
 cloudflare/security-audit-skill,2026-11-07,-7
 cloudflare/security-audit-skill,2026-11-08,15
-debpalash/VoiceStudio,2026-10-19,1
 debpalash/VoiceStudio,2026-10-26,6
 debpalash/VoiceStudio,2026-10-27,-8
 dream-num/univer,2026-11-16,6
+dream-num/univer,2026-11-17,-2
 dsx-ai-factory/nvke,2026-11-09,13
 elayadesign/ai-design-skills,2026-10-29,-1
 elayadesign/ai-design-skills,2026-10-30,-5
+elementalsouls/Claude-BugHunter,2026-11-17,4
 expo/skills,2026-10-31,6
 floci-io/floci,2026-11-05,4
 floci-io/floci,2026-11-06,-10
@@ -108,6 +106,7 @@ garrytan/gstack,2026-11-06,7
 gitroomhq/postiz-app,2026-10-28,5
 google-deepmind/mujoco,2026-11-10,4
 google-deepmind/mujoco,2026-11-11,-1
+google-labs-code/stitch-skills,2026-11-17,-5
 google/skills,2026-11-07,-1
 google/skills,2026-11-08,7
 headroomlabs-ai/headroom,2026-10-21,-3
@@ -176,7 +175,6 @@ prometheus/prometheus,2026-11-08,2
 ranxianglei/billion-context,2026-11-09,5
 ranxianglei/billion-context,2026-11-11,-2
 ruvnet/RuView,2026-11-10,5
-ruvnet/ruflo,2026-10-19,7
 ruvnet/ruflo,2026-10-20,0
 ruvnet/ruflo,2026-10-21,-1
 scenario-labs/skills,2026-11-06,5
@@ -188,7 +186,6 @@ shiyu-coder/Kronos,2026-10-22,5
 shiyu-coder/Kronos,2026-11-02,6
 shiyu-coder/Kronos,2026-11-03,-5
 shiyu-coder/Kronos,2026-11-04,-4
-stablyai/orca,2026-10-19,1
 stablyai/orca,2026-10-20,1
 stablyai/orca,2026-10-21,3
 stablyai/orca,2026-10-22,0
@@ -205,6 +202,7 @@ togg53192-cmd/jailbreaks,2026-10-31,-3
 togg53192-cmd/jailbreaks,2026-11-02,-1
 tradermonty/claude-trading-skills,2026-11-15,6
 tradermonty/claude-trading-skills,2026-11-16,-8
+tradermonty/claude-trading-skills,2026-11-17,7
 vercel-labs/agent-browser,2026-11-08,9
 vercel-labs/agent-browser,2026-11-09,-4
 vercel-labs/agent-browser,2026-11-10,-2

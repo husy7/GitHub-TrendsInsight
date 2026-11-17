@@ -1,133 +1,156 @@
-# GitHub Trending 洞察报告 · 2026-11-16
+# GitHub Trending 洞察报告 · 2026-11-17
 
-- 生成时间 (UTC): `2026-11-16T07:05:21Z`
+- 生成时间 (UTC): `2026-11-17T08:20:05Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-11-16` · 仓库数: 12
+- snapshot_date: `2026-11-17` · 仓库数: 15
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
-| 趋势仓库数 | 12 |
-| 榜单 Star 合计 | 215,806 |
-| 本周期新增 Star | +6,475 |
+| 趋势仓库数 | 15 |
+| 榜单 Star 合计 | 382,335 |
+| 本周期新增 Star | +9,704 |
 | 覆盖语言数 | 4 |
-| 有 7 天速度的仓库数 | 1 |
+| 有 7 天速度的仓库数 | 2 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | typescript | 12,057 | +866 | 245.6 | — | -3 |
+| 1 | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | go | 53,231 | +951 | 436.6 | — | -5 |
+| 2 | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | typescript | 12,809 | +696 | 332.1 | 94.9 | +2 |
 
 ## 3. 排名动量 (rank_momentum)
 
 | 仓库 | rank_momentum | 说明 |
 |---|---|---|
-| [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | +6 | 排名上升 |
-| [ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) | +6 | 排名上升 |
-| [dream-num/univer](https://github.com/dream-num/univer) | +6 | 排名上升 |
-| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | -1 | 排名下滑 |
-| [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | -1 | 排名下滑 |
-| [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | -3 | 排名下滑 |
-| [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) | -8 | 排名下滑 |
-| [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) | -8 | 排名下滑 |
+| [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) | +7 | 排名上升 |
+| [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | +4 | 排名上升 |
+| [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) | +2 | 排名上升 |
+| [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | +2 | 排名上升 |
+| [ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) | +1 | 排名上升 |
+| [dream-num/univer](https://github.com/dream-num/univer) | -2 | 排名下滑 |
+| [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | -5 | 排名下滑 |
+| [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | -5 | 排名下滑 |
+| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | -8 | 排名下滑 |
 
 ## 4. 语言占比 (按仓库主语言)
 
 | language | 仓库数 | 占比 |
 |---|---|---|
-| typescript | 6 | 50.0% |
-| python | 3 | 25.0% |
-| go | 2 | 16.7% |
-| c++ | 1 | 8.3% |
+| python | 6 | 40.0% |
+| typescript | 5 | 33.3% |
+| go | 2 | 13.3% |
+| javascript | 2 | 13.3% |
 
 ## 5. 仓库明细
 
-### 1. [dream-num/univer](https://github.com/dream-num/univer)
-
-- 描述: Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.
-- 指标: stars 26,613 · forks 2,420 · open_issues 176 · language typescript
-- 本周期新增 (daily): +988 Star
-- topics: `board`, `collaboration`, `doc`, `docx`, `excel`, `offce365`, `office`, `pdf`, `ppt`, `pptx`, `presentation`, `sdk`, `sheet`, `slides`, `spreadsheet`, `univer`, `word`, `wordprocessor`, `workspace`, `xlsx`
-
-### 2. [ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui)
+### 1. [ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui)
 
 - 描述: AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.
-- 指标: stars 18,160 · forks 1,868 · open_issues 594 · language typescript
-- 本周期新增 (daily): +355 Star
+- 指标: stars 19,552 · forks 2,021 · open_issues 591 · language typescript
+- 本周期新增 (daily): +791 Star
 - topics: `ag-ui-protocol`, `agent-frontend`, `agent-ui`, `agentic-workflow`, `ai-agents`
 
-### 3. [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
-
-- 描述: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.
-- 指标: stars 9,467 · forks 1,171 · open_issues 19 · language typescript
-- 本周期新增 (daily): +247 Star
-- topics: —
-
-### 4. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
+### 2. [backnotprop/plannotator](https://github.com/backnotprop/plannotator)
 
 - 描述: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.
-- 指标: stars 12,057 · forks 1,122 · open_issues 173 · language typescript
-- 本周期新增 (daily): +866 Star
+- 指标: stars 12,809 · forks 1,272 · open_issues 187 · language typescript
+- 本周期新增 (daily): +696 Star
 - topics: `agents`, `claude-code`, `code-review`, `codex`, `obsidian`, `opencode`, `pi-mono`, `plan-mode`, `skills`
 
-### 5. [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+### 3. [dream-num/univer](https://github.com/dream-num/univer)
 
-- 描述: Chrome DevTools for coding agents
-- 指标: stars 57,223 · forks 4,826 · open_issues 136 · language typescript
-- 本周期新增 (daily): +717 Star
-- topics: `browser`, `chrome`, `chrome-devtools`, `debugging`, `devtools`, `mcp`, `mcp-server`, `puppeteer`
+- 描述: Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.
+- 指标: stars 28,542 · forks 2,573 · open_issues 212 · language typescript
+- 本周期新增 (daily): +1,828 Star
+- topics: `board`, `collaboration`, `doc`, `docx`, `excel`, `offce365`, `office`, `pdf`, `ppt`, `pptx`, `presentation`, `sdk`, `sheet`, `slides`, `spreadsheet`, `univer`, `word`, `wordprocessor`, `workspace`, `xlsx`
 
-### 6. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
-
-- 描述: Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
-- 指标: stars 52,414 · forks 4,187 · open_issues 349 · language go
-- 本周期新增 (daily): +691 Star
-- topics: `agent`, `agent-skills`, `code-review`, `code-review-assistant`, `harness`, `repository-level-context`
-
-### 7. [Tencent/LoopForge](https://github.com/Tencent/LoopForge)
-
-- 描述: Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.
-- 指标: stars 1,856 · forks 307 · open_issues 133 · language go
-- 本周期新增 (daily): +423 Star
-- topics: `agent-orchestration`, `agentic-workflow`, `ai-agents`, `ai-coding`, `claude-code`, `code-review`, `codebuddy`, `codex`, `coding-agents`, `cursor`, `developer-tools`, `human-on-the-loop`, `llm`, `mcp`, `multi-agent`, `sdlc`, `self-hosted`, `sop`, `workflow-automation`, `workflow-engine`
-
-### 8. [ggml-org/ggml](https://github.com/ggml-org/ggml)
-
-- 描述: Tensor library for machine learning
-- 指标: stars 16,002 · forks 2,050 · open_issues 387 · language c++
-- 本周期新增 (daily): +43 Star
-- topics: `machine-learning`
-
-### 9. [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter)
-
-- 描述: A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.
-- 指标: stars 6,755 · forks 1,031 · open_issues 46 · language python
-- 本周期新增 (daily): +98 Star
-- topics: `ai-security`, `anthropic`, `application-security`, `bug-bounty`, `bugbounty`, `bugcrowd`, `claude`, `claude-code`, `claude-skills`, `ethical-hacking`, `hackerone`, `offensive-security`, `pentesting`, `red-team`, `security-tools`, `web-security`
-
-### 10. [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src)
-
-- 描述: Keep your coding agent up to date with the latest web best practices
-- 指标: stars 7,487 · forks 648 · open_issues 405 · language typescript
-- 本周期新增 (daily): +1,219 Star
-- topics: —
-
-### 11. [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)
+### 4. [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)
 
 - 描述: Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.
-- 指标: stars 5,801 · forks 1,216 · open_issues 57 · language python
-- 本周期新增 (daily): +706 Star
+- 指标: stars 6,593 · forks 1,377 · open_issues 54 · language python
+- 本周期新增 (daily): +837 Star
 - topics: —
 
-### 12. [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator)
+### 5. [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter)
 
-- 描述: Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.
-- 指标: stars 1,971 · forks 271 · open_issues 33 · language python
-- 本周期新增 (daily): +122 Star
+- 描述: A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.
+- 指标: stars 7,819 · forks 1,215 · open_issues 6 · language python
+- 本周期新增 (daily): +1,094 Star
+- topics: `ai-security`, `anthropic`, `application-security`, `bug-bounty`, `bugbounty`, `bugcrowd`, `claude`, `claude-code`, `claude-skills`, `ethical-hacking`, `hackerone`, `offensive-security`, `pentesting`, `red-team`, `security-tools`, `web-security`
+
+### 6. [getarcaneapp/arcane](https://github.com/getarcaneapp/arcane)
+
+- 描述: Modern Docker Management, Designed for Everyone
+- 指标: stars 8,944 · forks 462 · open_issues 7 · language go
+- 本周期新增 (daily): +46 Star
+- topics: `compose`, `container-management`, `containers`, `docker`, `docker-compose`, `docker-management`, `go`, `self-hosted`, `sveltekit`, `typescript`, `web-ui`
+
+### 7. [DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map)
+
+- 描述: 江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) \| Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes
+- 指标: stars 7,373 · forks 883 · open_issues 13 · language javascript
+- 本周期新增 (daily): +288 Star
+- topics: `ancient-china`, `cartography`, `china-map`, `chinese-history`, `classical-chinese-poetry`, `digital-humanities`, `gis`, `historical-atlas`, `historical-map`, `interactive-map`
+
+### 8. [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
+
+- 描述: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.
+- 指标: stars 9,856 · forks 1,280 · open_issues 20 · language typescript
+- 本周期新增 (daily): +529 Star
+- topics: —
+
+### 9. [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
+
+- 描述: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary
+- 指标: stars 68,403 · forks 6,086 · open_issues 37 · language python
+- 本周期新增 (daily): +135 Star
+- topics: `ai-prompts`, `ai-skill`, `bluesky`, `claude`, `claude-code`, `clawhub`, `deep-research`, `hackernews`, `instagram`, `openclaw`, `polymarket`, `recency`, `reddit`, `research`, `social-media`, `tiktok`, `trends`, `twitter`, `web-search`, `youtube`
+
+### 10. [NVIDIA/SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator)
+
+- 描述: Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.
+- 指标: stars 3,032 · forks 432 · open_issues 61 · language python
+- 本周期新增 (daily): +873 Star
 - topics: `agent-evaluation`, `agent-plugins`, `agent-security`, `agent-skills`, `agentic-ai`, `benchmark`, `claude-code`, `codex`, `evaluate`, `evaluation`, `plugin`, `plugin-evaluation`, `security-scanner`, `skill-eval`, `skill-evals`, `skill-evaluation`, `skill-evaluator`, `skills`
+
+### 11. [alibaba/open-code-review](https://github.com/alibaba/open-code-review)
+
+- 描述: Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
+- 指标: stars 53,231 · forks 4,361 · open_issues 352 · language go
+- 本周期新增 (daily): +951 Star
+- topics: `agent`, `agent-skills`, `code-review`, `code-review-assistant`, `harness`, `repository-level-context`
+
+### 12. [google-research/paper-orchestra](https://github.com/google-research/paper-orchestra)
+
+- 描述: PaperOrchestra is a multi-agent framework for automated AI research paper writing.
+- 指标: stars 1,907 · forks 299 · open_issues 35 · language python
+- 本周期新增 (daily): +313 Star
+- topics: `ai-research-assistant`, `multi-agent-systems`
+
+### 13. [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+
+- 描述: Chrome DevTools for coding agents
+- 指标: stars 57,858 · forks 4,857 · open_issues 124 · language typescript
+- 本周期新增 (daily): +841 Star
+- topics: `browser`, `chrome`, `chrome-devtools`, `debugging`, `devtools`, `mcp`, `mcp-server`, `puppeteer`
+
+### 14. [sveltejs/svelte](https://github.com/sveltejs/svelte)
+
+- 描述: web development for the rest of us
+- 指标: stars 89,136 · forks 6,136 · open_issues 1,313 · language javascript
+- 本周期新增 (daily): +115 Star
+- topics: `compiler`, `template`, `ui`
+
+### 15. [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill)
+
+- 描述: Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.
+- 指标: stars 7,280 · forks 661 · open_issues 35 · language python
+- 本周期新增 (daily): +367 Star
+- topics: `agent-skills`, `ai-agents`, `audio-processing`, `captions`, `claude-code`, `codex`, `coding-agent`, `cursor`, `ffmpeg`, `gemini-cli-extension`, `loudness-normalization`, `mcp`, `mcp-server`, `model-context-protocol`, `python`, `subtitles`, `transcoding`, `video`, `video-editing`, `whisper`
 
 ## 6. 口径与方法
 
