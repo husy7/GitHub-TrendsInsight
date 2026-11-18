@@ -23,6 +23,7 @@ Donchitos/Claude-Code-Game-Studios,2026-11-09,-2
 Donchitos/Claude-Code-Game-Studios,2026-11-10,-2
 Donchitos/Claude-Code-Game-Studios,2026-11-11,0
 Donchitos/Claude-Code-Game-Studios,2026-11-12,-3
+GoogleChrome/modern-web-guidance-src,2026-11-18,0
 Graphify-Labs/graphify,2026-10-26,5
 Graphify-Labs/graphify,2026-10-27,2
 Graphify-Labs/graphify,2026-10-28,0
@@ -44,14 +45,12 @@ Leonxlnx/taste-skill,2026-11-01,-2
 Leonxlnx/taste-skill,2026-11-02,-3
 Leonxlnx/taste-skill,2026-11-03,0
 Leonxlnx/taste-skill,2026-11-06,-3
-MadsLorentzen/ai-job-search,2026-10-20,6
 MadsLorentzen/ai-job-search,2026-10-21,2
 NVIDIA/auto-ontology,2026-11-10,0
 NVIDIA/auto-ontology,2026-11-11,0
 NVIDIA/auto-ontology,2026-11-12,0
 NVIDIA/auto-ontology,2026-11-13,-3
 NVIDIA/auto-ontology,2026-11-14,-3
-NationalSecurityAgency/ghidra,2026-10-20,1
 NationalSecurityAgency/ghidra,2026-10-21,1
 NationalSecurityAgency/ghidra,2026-10-22,-1
 NationalSecurityAgency/ghidra,2026-10-23,-6
@@ -84,9 +83,11 @@ YuJunZhiXue/dsh-purge,2026-11-02,-1
 ZhuLinsen/daily_stock_analysis,2026-11-15,-1
 ZhuLinsen/daily_stock_analysis,2026-11-16,1
 ZhuLinsen/daily_stock_analysis,2026-11-17,-1
+ZhuLinsen/daily_stock_analysis,2026-11-18,2
 addyosmani/agent-skills,2026-11-15,0
 addyosmani/agent-skills,2026-11-16,-1
 addyosmani/agent-skills,2026-11-17,-1
+addyosmani/agent-skills,2026-11-18,-2
 affaan-m/ECC,2026-11-01,-2
 affaan-m/ECC,2026-11-02,-1
 affaan-m/ECC,2026-11-03,-1
@@ -97,6 +98,7 @@ akitaonrails/ai-memory,2026-10-25,-4
 akitaonrails/ai-memory,2026-10-26,3
 akitaonrails/ai-memory,2026-10-27,1
 akitaonrails/ai-memory,2026-10-28,-3
+alibaba/open-code-review,2026-11-18,3
 android/skills,2026-10-22,5
 android/skills,2026-10-23,1
 android/skills,2026-10-24,0
@@ -111,7 +113,6 @@ anomalyco/opencode,2026-10-26,2
 anomalyco/opencode,2026-10-27,0
 anomalyco/opencode,2026-10-28,-4
 anomalyco/opencode,2026-10-29,-2
-anthropics/claude-plugins-official,2026-10-20,2
 anthropics/claude-plugins-official,2026-10-21,-1
 anthropics/claude-plugins-official,2026-10-22,1
 anthropics/claude-plugins-official,2026-10-23,0
@@ -142,13 +143,13 @@ anthropics/skills,2026-11-14,-1
 anthropics/skills,2026-11-15,-1
 anthropics/skills,2026-11-16,1
 anthropics/skills,2026-11-17,-2
+anthropics/skills,2026-11-18,-2
 backnotprop/plannotator,2026-11-16,5
 backnotprop/plannotator,2026-11-17,1
-boykopovar/AnyPS5,2026-10-20,-2
+backnotprop/plannotator,2026-11-18,1
 boykopovar/AnyPS5,2026-10-21,-6
 calesthio/OpenMontage,2026-11-06,2
 calesthio/OpenMontage,2026-11-07,-1
-cathrynlavery/diagram-design,2026-10-20,-3
 cathrynlavery/diagram-design,2026-10-21,-4
 cloudflare/security-audit-skill,2026-10-26,0
 cloudflare/security-audit-skill,2026-10-27,0
@@ -165,7 +166,6 @@ cloudflare/security-audit-skill,2026-11-11,3
 cloudflare/security-audit-skill,2026-11-12,3
 cloudflare/security-audit-skill,2026-11-13,1
 cloudflare/security-audit-skill,2026-11-14,-6
-cursor/plugins,2026-10-20,-2
 cursor/plugins,2026-10-21,-1
 cursor/plugins,2026-10-22,2
 cursor/plugins,2026-10-23,2
@@ -189,7 +189,6 @@ google/elephant-goldfish-model,2026-11-15,0
 google/elephant-goldfish-model,2026-11-16,-4
 google/elephant-goldfish-model,2026-11-17,0
 google/skills,2026-11-13,1
-heygen-com/hyperframes,2026-10-20,0
 heygen-com/hyperframes,2026-10-21,1
 heygen-com/hyperframes,2026-10-22,-2
 heygen-com/hyperframes,2026-10-23,-2
@@ -229,6 +228,7 @@ max-sixty/worktrunk,2026-11-10,-1
 max-sixty/worktrunk,2026-11-11,-1
 meta/astryx,2026-11-16,0
 meta/astryx,2026-11-17,-1
+meta/astryx,2026-11-18,-1
 milind-soni/OpenMausBot,2026-11-07,0
 milind-soni/OpenMausBot,2026-11-08,-1
 milind-soni/OpenMausBot,2026-11-09,2
@@ -239,11 +239,9 @@ milind-soni/OpenMausBot,2026-11-13,2
 milind-soni/OpenMausBot,2026-11-14,-1
 milind-soni/OpenMausBot,2026-11-15,-3
 milind-soni/OpenMausBot,2026-11-16,-2
-mksglu/context-mode,2026-10-20,-2
 mksglu/context-mode,2026-10-21,3
 mksglu/context-mode,2026-10-22,-4
 mksglu/context-mode,2026-10-23,-7
-morluto/rea,2026-10-20,0
 morluto/rea,2026-10-21,0
 morluto/rea,2026-10-22,0
 morluto/rea,2026-10-23,0
@@ -270,6 +268,7 @@ obra/superpowers,2026-11-05,-1
 obra/superpowers,2026-11-06,-3
 obra/superpowers,2026-11-07,-1
 obra/superpowers,2026-11-08,-6
+openai/codex-security,2026-11-18,0
 pbakaus/impeccable,2026-10-30,2
 pbakaus/impeccable,2026-10-31,1
 pbakaus/impeccable,2026-11-01,-1
@@ -315,7 +314,6 @@ stablyai/orca,2026-10-25,1
 stablyai/orca,2026-10-26,0
 stablyai/orca,2026-10-27,0
 stablyai/orca,2026-10-28,-4
-storytold/artcraft,2026-10-20,-1
 storytold/artcraft,2026-10-21,-11
 thedotmack/claude-mem,2026-11-02,7
 thedotmack/claude-mem,2026-11-03,2
@@ -336,12 +334,14 @@ vercel-labs/agent-browser,2026-11-14,-1
 vercel-labs/agent-browser,2026-11-15,0
 vercel-labs/agent-browser,2026-11-16,-1
 vercel-labs/agent-browser,2026-11-17,0
+vercel-labs/agent-browser,2026-11-18,-4
 vercel-labs/agent-desktop,2026-11-11,0
 vercel-labs/agent-desktop,2026-11-12,-1
 vercel-labs/agent-desktop,2026-11-13,-3
 vercel-labs/agent-desktop,2026-11-14,-8
 vllm-project/vllm,2026-10-26,3
 we-promise/sure,2026-11-17,1
+we-promise/sure,2026-11-18,2
 wshobson/agents,2026-10-22,1
 wshobson/agents,2026-10-27,3
 zed-industries/zed,2026-11-13,1
