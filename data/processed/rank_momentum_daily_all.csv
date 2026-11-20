@@ -2,7 +2,6 @@ repo_full_name,snapshot_date,rank_momentum
 ChromeDevTools/chrome-devtools-mcp,2026-11-15,8
 ChromeDevTools/chrome-devtools-mcp,2026-11-16,-1
 ChromeDevTools/chrome-devtools-mcp,2026-11-17,-8
-Comfy-Org/ComfyUI,2026-10-22,-1
 CopilotKit/OpenBot,2026-10-31,5
 CopilotKit/OpenBot,2026-11-02,-9
 CopilotKit/OpenBot,2026-11-13,2
@@ -10,7 +9,6 @@ D4Vinci/Scrapling,2026-11-04,-8
 D4Vinci/Scrapling,2026-11-05,-3
 D4Vinci/Scrapling,2026-11-06,9
 DeanChensj/jiangshan-map,2026-11-19,-9
-DietrichGebert/ponytail,2026-10-22,-1
 DietrichGebert/ponytail,2026-10-23,2
 Donchitos/Claude-Code-Game-Studios,2026-11-01,8
 Donchitos/Claude-Code-Game-Studios,2026-11-02,-5
@@ -21,8 +19,8 @@ GoogleChrome/modern-web-guidance-src,2026-11-13,2
 GoogleChrome/modern-web-guidance-src,2026-11-14,-1
 GoogleChrome/modern-web-guidance-src,2026-11-15,0
 GoogleChrome/modern-web-guidance-src,2026-11-16,-8
-Graphify-Labs/graphify,2026-10-22,-4
 Graphify-Labs/graphify,2026-10-23,6
+HKUDS/CLI-Anything,2026-11-20,-1
 HKUDS/DeepTutor,2026-10-29,5
 HKUDS/DeepTutor,2026-10-30,3
 HKUDS/DeepTutor,2026-10-31,-9
@@ -70,7 +68,6 @@ alibaba/open-code-review,2026-11-18,8
 anomalyco/hex,2026-11-04,2
 anthropics/claude-quickstarts,2026-11-10,-1
 anthropics/claude-quickstarts,2026-11-11,1
-anthropics/knowledge-work-plugins,2026-10-23,9
 anthropics/knowledge-work-plugins,2026-10-24,-1
 anthropics/skills,2026-11-08,6
 anthropics/skills,2026-11-09,-2
@@ -82,7 +79,6 @@ backnotprop/plannotator,2026-11-15,5
 backnotprop/plannotator,2026-11-16,-3
 backnotprop/plannotator,2026-11-17,2
 backnotprop/plannotator,2026-11-18,-9
-cloudflare/security-audit-skill,2026-10-22,1
 cloudflare/security-audit-skill,2026-10-23,-3
 cloudflare/security-audit-skill,2026-10-24,3
 cloudflare/security-audit-skill,2026-10-25,0
@@ -90,6 +86,7 @@ cloudflare/security-audit-skill,2026-10-26,-9
 cloudflare/security-audit-skill,2026-11-07,-7
 cloudflare/security-audit-skill,2026-11-08,15
 cursor/plugins,2026-11-19,7
+cursor/plugins,2026-11-20,-4
 debpalash/VoiceStudio,2026-10-27,-8
 dream-num/univer,2026-11-16,6
 dream-num/univer,2026-11-17,-2
@@ -99,6 +96,7 @@ elayadesign/ai-design-skills,2026-10-29,-1
 elayadesign/ai-design-skills,2026-10-30,-5
 elementalsouls/Claude-BugHunter,2026-11-17,4
 elementalsouls/Claude-BugHunter,2026-11-18,4
+elementalsouls/Claude-BugHunter,2026-11-20,0
 expo/skills,2026-10-31,6
 floci-io/floci,2026-11-05,4
 floci-io/floci,2026-11-06,-10
@@ -111,14 +109,15 @@ google-deepmind/mujoco,2026-11-11,-1
 google-labs-code/stitch-skills,2026-11-17,-5
 google-labs-code/stitch-skills,2026-11-18,1
 google-labs-code/stitch-skills,2026-11-19,-2
+google-labs-code/stitch-skills,2026-11-20,-2
 google-research/paper-orchestra,2026-11-18,-3
 google-research/paper-orchestra,2026-11-19,7
 google/skills,2026-11-07,-1
 google/skills,2026-11-08,7
-headroomlabs-ai/headroom,2026-10-22,6
 homeassistant-ai/ha-mcp,2026-11-11,3
 homeassistant-ai/ha-mcp,2026-11-12,-1
 hyprwm/Hyprland,2026-11-03,13
+jingyaogong/minimind,2026-11-20,10
 kornia/kornia,2026-11-03,0
 lightpanda-io/browser,2026-11-01,6
 lightpanda-io/browser,2026-11-02,7
@@ -154,6 +153,7 @@ milind-soni/OpenMausBot,2026-11-09,6
 milind-soni/OpenMausBot,2026-11-10,-8
 mvanhorn/last30days-skill,2026-11-18,7
 mvanhorn/last30days-skill,2026-11-19,-1
+mvanhorn/last30days-skill,2026-11-20,-7
 nightly-labs/openbot,2026-10-28,6
 nightly-labs/openbot,2026-10-29,-6
 nightly-labs/openbot,2026-10-30,3
@@ -165,8 +165,10 @@ obra/superpowers,2026-10-31,-12
 obra/superpowers,2026-11-01,6
 obra/superpowers,2026-11-18,-1
 obra/superpowers,2026-11-19,-5
+obra/superpowers,2026-11-20,12
 openai/codex-security,2026-11-13,7
 openai/codex-security,2026-11-14,-1
+openvinotoolkit/openvino,2026-11-20,5
 p-e-w/heretic,2026-11-04,9
 pbakaus/impeccable,2026-10-26,2
 pbakaus/impeccable,2026-10-27,-2
@@ -189,11 +191,9 @@ scenario-labs/skills,2026-11-06,5
 sherlock-project/sherlock,2026-11-09,7
 sherlock-project/sherlock,2026-11-10,-2
 sherlock-project/sherlock,2026-11-11,-6
-shiyu-coder/Kronos,2026-10-22,5
 shiyu-coder/Kronos,2026-11-02,6
 shiyu-coder/Kronos,2026-11-03,-5
 shiyu-coder/Kronos,2026-11-04,-4
-stablyai/orca,2026-10-22,0
 supabase/supabase,2026-10-23,1
 sveltejs/svelte,2026-11-18,2
 sveltejs/svelte,2026-11-19,2
@@ -218,7 +218,6 @@ vercel-labs/agent-browser,2026-11-12,2
 vercel-labs/agent-desktop,2026-11-04,-1
 vercel-labs/agent-desktop,2026-11-05,-4
 vercel-labs/agent-desktop,2026-11-06,0
-vllm-project/vllm,2026-10-22,13
 we-promise/sure,2026-11-12,-1
 we-promise/sure,2026-11-13,2
 we-promise/sure,2026-11-14,0
