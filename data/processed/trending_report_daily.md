@@ -1,27 +1,30 @@
-# GitHub Trending 洞察报告 · 2026-11-24
+# GitHub Trending 洞察报告 · 2026-11-25
 
-- 生成时间 (UTC): `2026-11-24T10:16:24Z`
+- 生成时间 (UTC): `2026-11-25T08:59:56Z`
 - 主榜单 period: `daily` · language 筛选: 全部
 - 数据源: [daily](https://github.com/trending?since=daily) · [weekly](https://github.com/trending?since=weekly) · [monthly](https://github.com/trending?since=monthly)
-- snapshot_date: `2026-11-24` · 仓库数: 16
+- snapshot_date: `2026-11-25` · 仓库数: 16
 
 ## 1. 概览
 
 | 指标 | 值 |
 |---|---|
 | 趋势仓库数 | 16 |
-| 榜单 Star 合计 | 1,040,026 |
-| 本周期新增 Star | +11,791 |
+| 榜单 Star 合计 | 1,051,361 |
+| 本周期新增 Star | +12,214 |
 | 覆盖语言数 | 6 |
-| 有 7 天速度的仓库数 | 3 |
+| 有 7 天速度的仓库数 | 6 |
 
 ## 2. Star Velocity Top 10 (近 7 天)
 
 | # | 仓库 | 语言 | stars | 本周期新增 | star_velocity_7d | star_velocity_30d | rank_momentum |
 |---|---|---|---|---|---|---|---|
-| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | python | 20,475 | +2,029 | 1,808.0 | 460.6 | +0 |
-| 2 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | python | 73,746 | +797 | 778.3 | — | +0 |
-| 3 | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | typescript | 12,472 | +422 | 367.4 | 121.0 | +0 |
+| 1 | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | python | 22,028 | +1,826 | 1,722.1 | 520.2 | +0 |
+| 2 | [obra/superpowers](https://github.com/obra/superpowers) | shell | 326,113 | +1,003 | 935.3 | — | +0 |
+| 3 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | python | 74,603 | +703 | 767.0 | — | +0 |
+| 4 | [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | python | 70,601 | +727 | 616.4 | — | +0 |
+| 5 | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | typescript | 12,790 | +403 | 375.1 | 133.7 | +0 |
+| 6 | [cursor/plugins](https://github.com/cursor/plugins) | typescript | 19,362 | +360 | 337.6 | 176.3 | +0 |
 
 ## 3. 排名动量 (rank_momentum)
 
@@ -60,113 +63,113 @@
 ### 1. [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter)
 
 - 描述: A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.
-- 指标: stars 20,475 · forks 2,166 · open_issues 13 · language python
-- 本周期新增 (daily): +2,029 Star
+- 指标: stars 22,028 · forks 2,278 · open_issues 16 · language python
+- 本周期新增 (daily): +1,826 Star
 - topics: `ai-security`, `anthropic`, `application-security`, `bug-bounty`, `bugbounty`, `bugcrowd`, `claude`, `claude-code`, `claude-skills`, `ethical-hacking`, `hackerone`, `offensive-security`, `pentesting`, `red-team`, `security-tools`, `web-security`
 
 ### 2. [obra/superpowers](https://github.com/obra/superpowers)
 
 - 描述: An agentic skills framework & software development methodology that works.
-- 指标: stars 325,484 · forks 28,860 · open_issues 359 · language shell
-- 本周期新增 (daily): +840 Star
+- 指标: stars 326,113 · forks 28,942 · open_issues 371 · language shell
+- 本周期新增 (daily): +1,003 Star
 - topics: `ai`, `brainstorming`, `coding`, `obra`, `sdlc`, `skills`, `subagent-driven-development`, `superpowers`
 
 ### 3. [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
 
 - 描述: "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub:https://clianything.cc/
-- 指标: stars 64,152 · forks 5,832 · open_issues 293 · language python
-- 本周期新增 (daily): +790 Star
+- 指标: stars 65,192 · forks 5,931 · open_issues 299 · language python
+- 本周期新增 (daily): +1,074 Star
 - topics: —
 
 ### 4. [jingyaogong/minimind](https://github.com/jingyaogong/minimind)
 
 - 描述: 🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.
-- 指标: stars 69,852 · forks 9,106 · open_issues 63 · language python
-- 本周期新增 (daily): +828 Star
+- 指标: stars 70,601 · forks 9,178 · open_issues 64 · language python
+- 本周期新增 (daily): +727 Star
 - topics: `artificial-intelligence`, `large-language-model`
 
 ### 5. [cursor/plugins](https://github.com/cursor/plugins)
 
 - 描述: Cursor plugin specification and official plugins
-- 指标: stars 18,964 · forks 2,053 · open_issues 692 · language typescript
-- 本周期新增 (daily): +397 Star
+- 指标: stars 19,362 · forks 2,090 · open_issues 699 · language typescript
+- 本周期新增 (daily): +360 Star
 - topics: —
 
 ### 6. [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
 
 - 描述: Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.
-- 指标: stars 208,328 · forks 10,885 · open_issues 923 · language typescript
-- 本周期新增 (daily): +924 Star
+- 指标: stars 209,319 · forks 10,942 · open_issues 921 · language typescript
+- 本周期新增 (daily): +991 Star
 - topics: `ai`, `ai-agents`, `ai-crawler`, `ai-scraping`, `ai-search`, `crawler`, `data-extraction`, `html-to-markdown`, `llm`, `markdown`, `scraper`, `scraping`, `web-crawler`, `web-data`, `web-data-extraction`, `web-scraper`, `web-scraping`, `web-search`, `webscraping`
 
 ### 7. [nginx/nginx](https://github.com/nginx/nginx)
 
 - 描述: The official NGINX Open Source repository.
-- 指标: stars 33,111 · forks 8,394 · open_issues 489 · language c
-- 本周期新增 (daily): +174 Star
+- 指标: stars 33,284 · forks 8,399 · open_issues 492 · language c
+- 本周期新增 (daily): +158 Star
 - topics: `content-cache`, `http`, `http2`, `http3`, `https`, `load-balancer`, `mail-proxy-server`, `nginx`, `quic`, `reverse-proxy`, `security`, `tcp-proxy-server`, `tls`, `udp-proxy-server`, `web-server`
 
 ### 8. [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino)
 
 - 描述: OpenVINO™ is an open source toolkit for optimizing and deploying AI inference
-- 指标: stars 12,360 · forks 3,682 · open_issues 1,196 · language c++
-- 本周期新增 (daily): +184 Star
+- 指标: stars 12,541 · forks 3,698 · open_issues 1,182 · language c++
+- 本周期新增 (daily): +185 Star
 - topics: `ai`, `computer-vision`, `deep-learning`, `deploy-ai`, `diffusion-models`, `generative-ai`, `good-first-issue`, `inference`, `llm-inference`, `natural-language-processing`, `nlp`, `openvino`, `optimize-ai`, `performance-boost`, `recommendation-system`, `speech-recognition`, `stable-diffusion`, `transformers`, `yolo`
 
 ### 9. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)
 
 - 描述: Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.
-- 指标: stars 71,360 · forks 4,766 · open_issues 39 · language html
-- 本周期新增 (daily): +620 Star
+- 指标: stars 72,430 · forks 4,821 · open_issues 38 · language html
+- 本周期新增 (daily): +802 Star
 - topics: `agent-skills`, `claude-code`, `codex`, `data-visualization`, `diagrams`, `drawio`, `mermaid`, `svg`
 
 ### 10. [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
 
 - 描述: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary
-- 指标: stars 73,746 · forks 6,507 · open_issues 33 · language python
-- 本周期新增 (daily): +797 Star
+- 指标: stars 74,603 · forks 6,575 · open_issues 27 · language python
+- 本周期新增 (daily): +703 Star
 - topics: `agent-skills`, `artificial-intelligence`, `automation`, `bot`, `command-line`, `data-science`, `dsh`, `dsh-plugin`, `golang`, `instagram`, `llms`, `nlp`, `osint`, `polymarket`, `python3`, `reddit`, `terminal`, `tiktok`, `twitter`, `youtube`
 
 ### 11. [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
 
 - 描述: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.
-- 指标: stars 12,472 · forks 1,519 · open_issues 24 · language typescript
-- 本周期新增 (daily): +422 Star
+- 指标: stars 12,790 · forks 1,530 · open_issues 23 · language typescript
+- 本周期新增 (daily): +403 Star
 - topics: —
 
 ### 12. [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance)
 
 - 描述: Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.
-- 指标: stars 5,323 · forks 338 · open_issues 32 · language shell
-- 本周期新增 (daily): +761 Star
+- 指标: stars 6,113 · forks 397 · open_issues 34 · language shell
+- 本周期新增 (daily): +928 Star
 - topics: `accessibility`, `ai-agents`, `android`, `app-review-guidelines`, `app-store`, `app-store-connect`, `app-store-rejection`, `app-store-review`, `claude-code`, `coppa`, `data-safety`, `eu-ai-act`, `gdpr`, `google-play`, `google-play-policy`, `ios`, `mobile-compliance`, `play-console`, `pre-submission-checklist`, `privacy-manifest`
 
 ### 13. [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)
 
 - 描述: The open-source agent for CI/CD reliability.
-- 指标: stars 14,976 · forks 2,001 · open_issues 23 · language python
-- 本周期新增 (daily): +436 Star
+- 指标: stars 15,311 · forks 2,021 · open_issues 36 · language python
+- 本周期新增 (daily): +398 Star
 - topics: `alerting`, `ci-cd`, `cli`, `datadog`, `devops`, `gitlab-ci`, `grafana`, `incident-management`, `llm`, `observability`, `ollama`, `remediation`, `root-cause-analysis`, `site-reliability-engineering`, `slack`
 
 ### 14. [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE)
 
 - 描述: There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.
-- 指标: stars 77,632 · forks 5,677 · open_issues 668 · language typescript
-- 本周期新增 (daily): +595 Star
+- 指标: stars 78,164 · forks 5,707 · open_issues 662 · language typescript
+- 本周期新增 (daily): +584 Star
 - topics: `app`, `crdt`, `editor`, `electron`, `knowledge-base`, `markdown`, `miro`, `notes`, `notion`, `notion-alternative`, `rust`, `rust-lang`, `rust-language`, `table`, `tableview`, `whiteboard`, `wiki`, `workspace`
 
 ### 15. [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3)
 
 - 描述: The only downloader you need. 下载器的集大成者。
-- 指标: stars 16,852 · forks 1,017 · open_issues 109 · language python
-- 本周期新增 (daily): +1,087 Star
+- 指标: stars 17,745 · forks 1,063 · open_issues 114 · language python
+- 本周期新增 (daily): +1,092 Star
 - topics: `async`, `asyncio`, `bittorent`, `bt`, `cross-platform`, `download-manager`, `downloader`, `fluent-design`, `ftp`, `http3`, `magnet`, `pyqt`, `pyside6`, `python`, `qt`, `quic`, `react`, `software`, `streaming`
 
 ### 16. [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip)
 
 - 描述: AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.
-- 指标: stars 14,939 · forks 2,242 · open_issues 41 · language python
-- 本周期新增 (daily): +907 Star
+- 指标: stars 15,765 · forks 2,301 · open_issues 39 · language python
+- 本周期新增 (daily): +980 Star
 - topics: `ai-agent`, `ai-video-editor`, `content-repurposing`, `desktop-app`, `douyin`, `instagram-reels`, `mcp`, `open-source`, `podcast`, `subtitles`, `tiktok`, `video-clipping`, `video-editing-software`, `xiaohongshu`, `youtube-shorts`
 
 ## 6. 口径与方法

@@ -14,7 +14,7 @@ ChromeDevTools/chrome-devtools-mcp,2026-11-21,0
 ChromeDevTools/chrome-devtools-mcp,2026-11-22,0
 ChromeDevTools/chrome-devtools-mcp,2026-11-23,0
 ChromeDevTools/chrome-devtools-mcp,2026-11-24,0
-Comfy-Org/ComfyUI,2026-10-27,-4
+ChromeDevTools/chrome-devtools-mcp,2026-11-25,0
 D4Vinci/Scrapling,2026-11-08,7
 D4Vinci/Scrapling,2026-11-09,-1
 D4Vinci/Scrapling,2026-11-10,0
@@ -33,7 +33,7 @@ GoogleChrome/modern-web-guidance-src,2026-11-21,0
 GoogleChrome/modern-web-guidance-src,2026-11-22,0
 GoogleChrome/modern-web-guidance-src,2026-11-23,0
 GoogleChrome/modern-web-guidance-src,2026-11-24,0
-Graphify-Labs/graphify,2026-10-27,2
+GoogleChrome/modern-web-guidance-src,2026-11-25,0
 Graphify-Labs/graphify,2026-10-28,0
 Graphify-Labs/graphify,2026-10-29,-1
 HKUDS/DeepTutor,2026-11-07,-5
@@ -93,7 +93,7 @@ ag-ui-protocol/ag-ui,2026-11-21,0
 ag-ui-protocol/ag-ui,2026-11-22,0
 ag-ui-protocol/ag-ui,2026-11-23,0
 ag-ui-protocol/ag-ui,2026-11-24,0
-akitaonrails/ai-memory,2026-10-27,1
+ag-ui-protocol/ag-ui,2026-11-25,0
 akitaonrails/ai-memory,2026-10-28,-3
 alibaba/open-code-review,2026-11-18,3
 alibaba/open-code-review,2026-11-19,3
@@ -102,13 +102,11 @@ alibaba/open-code-review,2026-11-21,0
 alibaba/open-code-review,2026-11-22,0
 alibaba/open-code-review,2026-11-23,0
 alibaba/open-code-review,2026-11-24,0
-android/skills,2026-10-27,0
+alibaba/open-code-review,2026-11-25,0
 android/skills,2026-10-28,-3
-anomalyco/opencode,2026-10-27,0
 anomalyco/opencode,2026-10-28,-4
 anomalyco/opencode,2026-10-29,-2
 anthropics/claude-quickstarts,2026-11-15,2
-anthropics/knowledge-work-plugins,2026-10-27,1
 anthropics/knowledge-work-plugins,2026-10-28,0
 anthropics/knowledge-work-plugins,2026-10-29,-2
 anthropics/knowledge-work-plugins,2026-10-30,-4
@@ -141,9 +139,9 @@ backnotprop/plannotator,2026-11-21,0
 backnotprop/plannotator,2026-11-22,0
 backnotprop/plannotator,2026-11-23,0
 backnotprop/plannotator,2026-11-24,0
+backnotprop/plannotator,2026-11-25,0
 calesthio/OpenMontage,2026-11-06,2
 calesthio/OpenMontage,2026-11-07,-1
-cloudflare/security-audit-skill,2026-10-27,0
 cloudflare/security-audit-skill,2026-10-28,0
 cloudflare/security-audit-skill,2026-10-29,0
 cloudflare/security-audit-skill,2026-10-30,0
@@ -162,6 +160,7 @@ dream-num/univer,2026-11-21,0
 dream-num/univer,2026-11-22,0
 dream-num/univer,2026-11-23,0
 dream-num/univer,2026-11-24,0
+dream-num/univer,2026-11-25,0
 ghostty-org/ghostty,2026-11-03,2
 ghostty-org/ghostty,2026-11-04,3
 ghostty-org/ghostty,2026-11-05,1
@@ -178,11 +177,11 @@ google-labs-code/stitch-skills,2026-11-21,0
 google-labs-code/stitch-skills,2026-11-22,0
 google-labs-code/stitch-skills,2026-11-23,0
 google-labs-code/stitch-skills,2026-11-24,0
+google-labs-code/stitch-skills,2026-11-25,0
 google/elephant-goldfish-model,2026-11-15,0
 google/elephant-goldfish-model,2026-11-16,-4
 google/elephant-goldfish-model,2026-11-17,0
 google/skills,2026-11-13,1
-heygen-com/hyperframes,2026-10-27,-6
 heygen-com/hyperframes,2026-11-03,-4
 hyprwm/Hyprland,2026-11-05,1
 hyprwm/Hyprland,2026-11-06,2
@@ -204,6 +203,7 @@ kajisho5/ffmpeg-skill,2026-11-21,0
 kajisho5/ffmpeg-skill,2026-11-22,0
 kajisho5/ffmpeg-skill,2026-11-23,0
 kajisho5/ffmpeg-skill,2026-11-24,0
+kajisho5/ffmpeg-skill,2026-11-25,0
 mattpocock/skills,2026-11-09,0
 mattpocock/skills,2026-11-10,-2
 mattpocock/skills,2026-11-11,6
@@ -226,6 +226,7 @@ meta/astryx,2026-11-21,0
 meta/astryx,2026-11-22,0
 meta/astryx,2026-11-23,0
 meta/astryx,2026-11-24,0
+meta/astryx,2026-11-25,0
 milind-soni/OpenMausBot,2026-11-07,0
 milind-soni/OpenMausBot,2026-11-08,-1
 milind-soni/OpenMausBot,2026-11-09,2
@@ -236,7 +237,6 @@ milind-soni/OpenMausBot,2026-11-13,2
 milind-soni/OpenMausBot,2026-11-14,-1
 milind-soni/OpenMausBot,2026-11-15,-3
 milind-soni/OpenMausBot,2026-11-16,-2
-multica-ai/andrej-karpathy-skills,2026-10-27,4
 multica-ai/andrej-karpathy-skills,2026-10-28,5
 multica-ai/andrej-karpathy-skills,2026-10-29,1
 multica-ai/andrej-karpathy-skills,2026-10-30,-2
@@ -253,6 +253,7 @@ mvanhorn/last30days-skill,2026-11-21,0
 mvanhorn/last30days-skill,2026-11-22,0
 mvanhorn/last30days-skill,2026-11-23,0
 mvanhorn/last30days-skill,2026-11-24,0
+mvanhorn/last30days-skill,2026-11-25,0
 obra/superpowers,2026-10-31,3
 obra/superpowers,2026-11-01,-1
 obra/superpowers,2026-11-02,-1
@@ -274,7 +275,6 @@ pbakaus/impeccable,2026-11-05,1
 pbakaus/impeccable,2026-11-06,-5
 pbakaus/impeccable,2026-11-07,1
 pbakaus/impeccable,2026-11-08,-9
-pingdotgg/t3code,2026-10-27,-1
 pingdotgg/t3code,2026-10-28,3
 pingdotgg/t3code,2026-10-31,3
 pingdotgg/t3code,2026-11-01,-1
@@ -292,7 +292,7 @@ pookjw/HermesEnabler,2026-11-21,0
 pookjw/HermesEnabler,2026-11-22,0
 pookjw/HermesEnabler,2026-11-23,0
 pookjw/HermesEnabler,2026-11-24,0
-ruvnet/ruflo,2026-10-27,-1
+pookjw/HermesEnabler,2026-11-25,0
 ruvnet/ruflo,2026-10-28,-4
 ruvnet/ruflo,2026-10-29,-2
 ruvnet/ruflo,2026-10-30,-2
@@ -301,7 +301,6 @@ sherlock-project/sherlock,2026-11-15,-1
 sherlock-project/sherlock,2026-11-16,-1
 sherlock-project/sherlock,2026-11-17,-5
 shiyu-coder/Kronos,2026-11-08,0
-stablyai/orca,2026-10-27,0
 stablyai/orca,2026-10-28,-4
 thedotmack/claude-mem,2026-11-02,7
 thedotmack/claude-mem,2026-11-03,2
@@ -319,6 +318,7 @@ tradermonty/claude-trading-skills,2026-11-21,0
 tradermonty/claude-trading-skills,2026-11-22,0
 tradermonty/claude-trading-skills,2026-11-23,0
 tradermonty/claude-trading-skills,2026-11-24,0
+tradermonty/claude-trading-skills,2026-11-25,0
 vercel-labs/agent-browser,2026-11-09,0
 vercel-labs/agent-browser,2026-11-10,3
 vercel-labs/agent-browser,2026-11-11,2
@@ -342,5 +342,6 @@ we-promise/sure,2026-11-21,0
 we-promise/sure,2026-11-22,0
 we-promise/sure,2026-11-23,0
 we-promise/sure,2026-11-24,0
+we-promise/sure,2026-11-25,0
 zed-industries/zed,2026-11-13,1
 zed-industries/zed,2026-11-14,-4
