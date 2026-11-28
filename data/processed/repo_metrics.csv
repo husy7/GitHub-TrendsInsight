@@ -37,12 +37,11 @@ HKUDS/CLI-Anything,2026-11-24,,242.26666666666668,0.0,1.0
 HKUDS/CLI-Anything,2026-11-25,,,0.0,1.0
 HKUDS/CLI-Anything,2026-11-26,843.0,,0.0,1.0
 HKUDS/CLI-Anything,2026-11-27,829.7142857142857,304.3,0.0,1.0
-HKUDS/DeepTutor,2026-10-29,,,,1.0
-HKUDS/DeepTutor,2026-10-30,,,3.0,1.0
+HKUDS/CLI-Anything,2026-11-28,795.1428571428571,,0.0,1.0
+HKUDS/DeepTutor,2026-10-30,,,,1.0
 HKUDS/DeepTutor,2026-10-31,,,-9.0,1.0
 HKUDS/DeepTutor,2026-11-01,,,0.0,1.0
-JetBrains/thinkrail,2026-10-29,,,,1.0
-JetBrains/thinkrail,2026-10-30,,,-3.0,1.0
+JetBrains/thinkrail,2026-10-30,,,,1.0
 JetBrains/thinkrail,2026-10-31,,,-8.0,1.0
 JiaFeiMiao-K-Cat/DiscImageStudio,2026-11-05,,,,1.0
 JiaFeiMiao-K-Cat/DiscImageStudio,2026-11-06,,,-3.0,1.0
@@ -58,7 +57,6 @@ NVIDIA/SkillEvaluator,2026-11-19,,,5.0,1.0
 NVIDIA/auto-ontology,2026-11-05,,,,1.0
 NVIDIA/auto-ontology,2026-11-06,,,0.0,1.0
 NVIDIA/auto-ontology,2026-11-07,,,-1.0,1.0
-Nutlope/hallmark,2026-10-29,,361.3666666666667,,1.0
 Orkas-AI/Orkas,2026-11-01,,,,1.0
 QwenLM/qwen-code,2026-11-13,,,,1.0
 QwenLM/qwen-code,2026-11-15,,,0.0,1.0
@@ -80,6 +78,7 @@ Tracer-Cloud/opensre,2026-11-24,,,0.0,1.0
 Tracer-Cloud/opensre,2026-11-25,,,0.0,1.0
 Tracer-Cloud/opensre,2026-11-26,,,0.0,1.0
 Tracer-Cloud/opensre,2026-11-27,382.85714285714283,,0.0,1.0
+Tracer-Cloud/opensre,2026-11-28,355.42857142857144,,0.0,1.0
 Usagi-org/ai-goofish-monitor,2026-11-04,,,,1.0
 Usagi-org/ai-goofish-monitor,2026-11-06,,,5.0,1.0
 XiaoYouChR/Ghost-Downloader-3,2026-11-20,,,,1.0
@@ -90,6 +89,7 @@ XiaoYouChR/Ghost-Downloader-3,2026-11-24,,,0.0,1.0
 XiaoYouChR/Ghost-Downloader-3,2026-11-25,,,0.0,1.0
 XiaoYouChR/Ghost-Downloader-3,2026-11-26,,,0.0,1.0
 XiaoYouChR/Ghost-Downloader-3,2026-11-27,909.2857142857143,,0.0,1.0
+XiaoYouChR/Ghost-Downloader-3,2026-11-28,877.2857142857143,,0.0,1.0
 ZhuLinsen/daily_stock_analysis,2026-11-10,,,,1.0
 ZhuLinsen/daily_stock_analysis,2026-11-12,,,7.0,1.0
 ZhuLinsen/daily_stock_analysis,2026-11-14,539.7142857142857,,-2.0,1.0
@@ -140,6 +140,7 @@ cathrynlavery/diagram-design,2026-11-24,,,0.0,1.0
 cathrynlavery/diagram-design,2026-11-25,,,0.0,1.0
 cathrynlavery/diagram-design,2026-11-26,,,0.0,1.0
 cathrynlavery/diagram-design,2026-11-27,753.2857142857143,,0.0,1.0
+cathrynlavery/diagram-design,2026-11-28,735.1428571428571,,0.0,1.0
 cjpais/Handy,2026-11-02,,,,1.0
 cloudflare/security-audit-skill,2026-11-07,1437.7142857142858,1266.8,,1.0
 cloudflare/security-audit-skill,2026-11-08,1495.2857142857142,1319.0333333333333,15.0,1.0
@@ -153,14 +154,14 @@ cursor/plugins,2026-11-24,,167.8,0.0,1.0
 cursor/plugins,2026-11-25,337.57142857142856,176.3,0.0,1.0
 cursor/plugins,2026-11-26,326.57142857142856,179.7,0.0,1.0
 cursor/plugins,2026-11-27,317.57142857142856,182.9,0.0,1.0
+cursor/plugins,2026-11-28,306.42857142857144,185.23333333333332,0.0,1.0
 dream-num/univer,2026-11-15,,,,1.0
 dream-num/univer,2026-11-16,,,6.0,1.0
 dream-num/univer,2026-11-17,,,-2.0,1.0
 dream-num/univer,2026-11-18,,,-2.0,1.0
 dsx-ai-factory/nvke,2026-11-08,,,,1.0
 dsx-ai-factory/nvke,2026-11-09,,,13.0,1.0
-elayadesign/ai-design-skills,2026-10-29,,,,1.0
-elayadesign/ai-design-skills,2026-10-30,,,-5.0,1.0
+elayadesign/ai-design-skills,2026-10-30,,,,1.0
 elementalsouls/Claude-BugHunter,2026-11-16,,,,1.0
 elementalsouls/Claude-BugHunter,2026-11-17,,,4.0,1.0
 elementalsouls/Claude-BugHunter,2026-11-18,358.2857142857143,,4.0,1.0
@@ -172,9 +173,9 @@ elementalsouls/Claude-BugHunter,2026-11-24,1808.0,460.56666666666666,0.0,1.0
 elementalsouls/Claude-BugHunter,2026-11-25,1722.142857142857,520.2333333333333,0.0,1.0
 elementalsouls/Claude-BugHunter,2026-11-26,,574.1,0.0,1.0
 elementalsouls/Claude-BugHunter,2026-11-27,1734.4285714285713,621.2333333333333,0.0,1.0
+elementalsouls/Claude-BugHunter,2026-11-28,1677.2857142857142,674.8666666666667,0.0,1.0
 etcd-io/etcd,2026-11-07,,,,1.0
-expo/skills,2026-10-29,,,,1.0
-expo/skills,2026-10-31,,,6.0,1.0
+expo/skills,2026-10-31,,,,1.0
 firecrawl/firecrawl,2026-11-20,,,,1.0
 firecrawl/firecrawl,2026-11-21,,,0.0,1.0
 firecrawl/firecrawl,2026-11-22,,,0.0,1.0
@@ -183,6 +184,7 @@ firecrawl/firecrawl,2026-11-24,,,0.0,1.0
 firecrawl/firecrawl,2026-11-25,,,0.0,1.0
 firecrawl/firecrawl,2026-11-26,,,0.0,1.0
 firecrawl/firecrawl,2026-11-27,949.8571428571429,,0.0,1.0
+firecrawl/firecrawl,2026-11-28,905.5714285714286,,0.0,1.0
 floci-io/floci,2026-11-04,,,,1.0
 floci-io/floci,2026-11-05,,,4.0,1.0
 floci-io/floci,2026-11-06,,,-10.0,1.0
@@ -210,6 +212,7 @@ google-labs-code/stitch-skills,2026-11-24,367.42857142857144,121.0,0.0,1.0
 google-labs-code/stitch-skills,2026-11-25,375.14285714285717,133.66666666666666,0.0,1.0
 google-labs-code/stitch-skills,2026-11-26,373.7142857142857,144.8,0.0,1.0
 google-labs-code/stitch-skills,2026-11-27,374.14285714285717,153.63333333333333,0.0,1.0
+google-labs-code/stitch-skills,2026-11-28,373.7142857142857,163.73333333333332,0.0,1.0
 google-research/paper-orchestra,2026-11-17,,,,1.0
 google-research/paper-orchestra,2026-11-18,,,-3.0,1.0
 google-research/paper-orchestra,2026-11-19,,,7.0,1.0
@@ -217,7 +220,6 @@ google/skills,2026-11-06,,,,1.0
 google/skills,2026-11-07,,,-1.0,1.0
 google/skills,2026-11-08,,,7.0,1.0
 harry0703/MoneyPrinterTurbo,2026-11-05,,353.23333333333335,,1.0
-hmjz100/LinkSwift,2026-10-29,,,,1.0
 homeassistant-ai/ha-mcp,2026-11-10,,,,1.0
 homeassistant-ai/ha-mcp,2026-11-11,,,3.0,1.0
 homeassistant-ai/ha-mcp,2026-11-12,,,-1.0,1.0
@@ -232,6 +234,7 @@ jingyaogong/minimind,2026-11-24,,,0.0,1.0
 jingyaogong/minimind,2026-11-25,616.4285714285714,,0.0,1.0
 jingyaogong/minimind,2026-11-26,,,0.0,1.0
 jingyaogong/minimind,2026-11-27,672.0,,0.0,1.0
+jingyaogong/minimind,2026-11-28,644.5714285714286,,0.0,1.0
 jquery/jquery,2026-11-19,,,,1.0
 kajisho5/ffmpeg-skill,2026-11-17,,,,1.0
 karpathy/nanochat,2026-11-03,,,,1.0
@@ -244,9 +247,7 @@ louislam/uptime-kuma,2026-11-14,,,,1.0
 louislam/uptime-kuma,2026-11-15,,,-4.0,1.0
 lz4/lz4,2026-11-06,,,,1.0
 lz4/lz4,2026-11-07,,,-4.0,1.0
-macro-inc/macro,2026-10-29,,,,1.0
-macro-inc/macro,2026-10-31,,,-2.0,1.0
-makecindy/cindy,2026-10-29,,,,1.0
+macro-inc/macro,2026-10-31,,,,1.0
 martin-olivier/airgorah,2026-11-15,,,,1.0
 mattpocock/skills,2026-10-31,,1148.2,,1.0
 mattpocock/skills,2026-11-01,,1151.1666666666667,6.0,1.0
@@ -285,6 +286,7 @@ mjmirza/app-store-compliance,2026-11-24,,,0.0,1.0
 mjmirza/app-store-compliance,2026-11-25,,,0.0,1.0
 mjmirza/app-store-compliance,2026-11-26,,,0.0,1.0
 mjmirza/app-store-compliance,2026-11-27,723.7142857142857,,0.0,1.0
+mjmirza/app-store-compliance,2026-11-28,739.2857142857143,,0.0,1.0
 mpv-player/mpv,2026-11-07,,,,1.0
 mvanhorn/last30days-skill,2026-11-17,,,,1.0
 mvanhorn/last30days-skill,2026-11-18,,,7.0,1.0
@@ -297,6 +299,7 @@ mvanhorn/last30days-skill,2026-11-24,778.2857142857143,,0.0,1.0
 mvanhorn/last30days-skill,2026-11-25,767.0,,0.0,1.0
 mvanhorn/last30days-skill,2026-11-26,757.4285714285714,,0.0,1.0
 mvanhorn/last30days-skill,2026-11-27,727.1428571428571,,0.0,1.0
+mvanhorn/last30days-skill,2026-11-28,724.5714285714286,,0.0,1.0
 n8n-io/n8n,2026-11-19,,,,1.0
 nginx/nginx,2026-11-20,,,,1.0
 nginx/nginx,2026-11-21,,,0.0,1.0
@@ -306,14 +309,13 @@ nginx/nginx,2026-11-24,,,0.0,1.0
 nginx/nginx,2026-11-25,,,0.0,1.0
 nginx/nginx,2026-11-26,,,0.0,1.0
 nginx/nginx,2026-11-27,165.0,,0.0,1.0
-nightly-labs/openbot,2026-10-29,,,,1.0
-nightly-labs/openbot,2026-10-30,,,3.0,1.0
+nginx/nginx,2026-11-28,154.0,,0.0,1.0
+nightly-labs/openbot,2026-10-30,,,,1.0
 nodejs/node,2026-11-13,,,,1.0
 nushell/nushell,2026-11-07,,,,1.0
 nvm-sh/nvm,2026-11-13,,,,1.0
 nvm-sh/nvm,2026-11-19,,,-3.0,1.0
-obra/superpowers,2026-10-29,,,,1.0
-obra/superpowers,2026-10-30,699.1428571428571,,1.0,1.0
+obra/superpowers,2026-10-30,699.1428571428571,,,1.0
 obra/superpowers,2026-10-31,782.0,,-12.0,1.0
 obra/superpowers,2026-11-01,805.1428571428571,537.6666666666666,6.0,1.0
 obra/superpowers,2026-11-18,,,-1.0,1.0
@@ -326,6 +328,7 @@ obra/superpowers,2026-11-24,,,0.0,1.0
 obra/superpowers,2026-11-25,935.2857142857143,,0.0,1.0
 obra/superpowers,2026-11-26,773.2857142857143,,0.0,1.0
 obra/superpowers,2026-11-27,782.0,704.9,0.0,1.0
+obra/superpowers,2026-11-28,792.7142857142857,696.8666666666667,0.0,1.0
 openai/codex-security,2026-11-12,,,,1.0
 openai/codex-security,2026-11-13,,,7.0,1.0
 openai/codex-security,2026-11-14,,,-1.0,1.0
@@ -339,12 +342,12 @@ openvinotoolkit/openvino,2026-11-24,,,0.0,1.0
 openvinotoolkit/openvino,2026-11-25,,,0.0,1.0
 openvinotoolkit/openvino,2026-11-26,186.14285714285714,,0.0,1.0
 openvinotoolkit/openvino,2026-11-27,177.14285714285714,,0.0,1.0
+openvinotoolkit/openvino,2026-11-28,163.71428571428572,,0.0,1.0
 p-e-w/heretic,2026-11-03,,,,1.0
 p-e-w/heretic,2026-11-04,,,9.0,1.0
 paperclipai/paperclip,2026-11-03,406.2857142857143,458.7,,1.0
 patchy631/ai-engineering-hub,2026-11-02,,,,1.0
-pbakaus/impeccable,2026-10-29,1040.4285714285713,660.7,,1.0
-pbakaus/impeccable,2026-10-30,1387.5714285714287,749.1,4.0,1.0
+pbakaus/impeccable,2026-10-30,1387.5714285714287,749.1,,1.0
 pbakaus/impeccable,2026-10-31,1617.5714285714287,820.8,0.0,1.0
 pbakaus/impeccable,2026-11-01,1718.7142857142858,849.3,-4.0,1.0
 pingdotgg/t3code,2026-10-31,396.42857142857144,289.2,,1.0
@@ -362,8 +365,7 @@ ranxianglei/billion-context,2026-11-09,,,5.0,1.0
 ranxianglei/billion-context,2026-11-11,368.42857142857144,176.66666666666666,-2.0,1.0
 react/react,2026-11-07,,,,1.0
 rust-lang/rust,2026-11-07,,,,1.0
-ruvnet/RuView,2026-10-29,,,,1.0
-ruvnet/RuView,2026-11-10,,,5.0,1.0
+ruvnet/RuView,2026-11-10,,,,1.0
 scenario-labs/skills,2026-11-05,,,,1.0
 scenario-labs/skills,2026-11-06,,,5.0,1.0
 shadcn/improve,2026-11-12,,,,1.0
@@ -397,8 +399,8 @@ toeverything/AFFiNE,2026-11-24,,,0.0,1.0
 toeverything/AFFiNE,2026-11-25,,,0.0,1.0
 toeverything/AFFiNE,2026-11-26,,,0.0,1.0
 toeverything/AFFiNE,2026-11-27,540.7142857142857,,0.0,1.0
-togg53192-cmd/jailbreaks,2026-10-29,,,,1.0
-togg53192-cmd/jailbreaks,2026-10-30,,,0.0,1.0
+toeverything/AFFiNE,2026-11-28,521.5714285714286,,0.0,1.0
+togg53192-cmd/jailbreaks,2026-10-30,,,,1.0
 togg53192-cmd/jailbreaks,2026-10-31,,,-3.0,1.0
 togg53192-cmd/jailbreaks,2026-11-02,,,-1.0,1.0
 tokio-rs/topcoat,2026-11-11,,,,1.0
@@ -422,7 +424,6 @@ we-promise/sure,2026-11-12,,,-1.0,1.0
 we-promise/sure,2026-11-13,,,2.0,1.0
 we-promise/sure,2026-11-14,,,0.0,1.0
 we-promise/sure,2026-11-15,,,-7.0,1.0
-xiaolai/the-craft-of-selfteaching,2026-10-29,,,,1.0
 zed-industries/zed,2026-11-07,,,,1.0
 zed-industries/zed,2026-11-08,,,-12.0,1.0
 zhouxiaoka/autoclip,2026-11-20,,,,1.0
@@ -433,3 +434,4 @@ zhouxiaoka/autoclip,2026-11-24,,,0.0,1.0
 zhouxiaoka/autoclip,2026-11-25,,,0.0,1.0
 zhouxiaoka/autoclip,2026-11-26,,,0.0,1.0
 zhouxiaoka/autoclip,2026-11-27,806.2857142857143,,0.0,1.0
+zhouxiaoka/autoclip,2026-11-28,768.4285714285714,,0.0,1.0

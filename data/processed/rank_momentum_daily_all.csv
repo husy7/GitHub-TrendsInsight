@@ -26,10 +26,9 @@ HKUDS/CLI-Anything,2026-11-24,0
 HKUDS/CLI-Anything,2026-11-25,0
 HKUDS/CLI-Anything,2026-11-26,0
 HKUDS/CLI-Anything,2026-11-27,0
-HKUDS/DeepTutor,2026-10-30,3
+HKUDS/CLI-Anything,2026-11-28,0
 HKUDS/DeepTutor,2026-10-31,-9
 HKUDS/DeepTutor,2026-11-01,0
-JetBrains/thinkrail,2026-10-30,-3
 JetBrains/thinkrail,2026-10-31,-8
 JiaFeiMiao-K-Cat/DiscImageStudio,2026-11-06,-3
 JustVugg/colibri,2026-11-04,6
@@ -50,6 +49,7 @@ Tracer-Cloud/opensre,2026-11-24,0
 Tracer-Cloud/opensre,2026-11-25,0
 Tracer-Cloud/opensre,2026-11-26,0
 Tracer-Cloud/opensre,2026-11-27,0
+Tracer-Cloud/opensre,2026-11-28,0
 Usagi-org/ai-goofish-monitor,2026-11-06,5
 XiaoYouChR/Ghost-Downloader-3,2026-11-21,0
 XiaoYouChR/Ghost-Downloader-3,2026-11-22,0
@@ -58,6 +58,7 @@ XiaoYouChR/Ghost-Downloader-3,2026-11-24,0
 XiaoYouChR/Ghost-Downloader-3,2026-11-25,0
 XiaoYouChR/Ghost-Downloader-3,2026-11-26,0
 XiaoYouChR/Ghost-Downloader-3,2026-11-27,0
+XiaoYouChR/Ghost-Downloader-3,2026-11-28,0
 ZhuLinsen/daily_stock_analysis,2026-11-12,7
 ZhuLinsen/daily_stock_analysis,2026-11-14,-2
 addyosmani/agent-skills,2026-11-12,-2
@@ -90,6 +91,7 @@ cathrynlavery/diagram-design,2026-11-24,0
 cathrynlavery/diagram-design,2026-11-25,0
 cathrynlavery/diagram-design,2026-11-26,0
 cathrynlavery/diagram-design,2026-11-27,0
+cathrynlavery/diagram-design,2026-11-28,0
 cloudflare/security-audit-skill,2026-11-08,15
 cursor/plugins,2026-11-19,7
 cursor/plugins,2026-11-20,-4
@@ -100,11 +102,11 @@ cursor/plugins,2026-11-24,0
 cursor/plugins,2026-11-25,0
 cursor/plugins,2026-11-26,0
 cursor/plugins,2026-11-27,0
+cursor/plugins,2026-11-28,0
 dream-num/univer,2026-11-16,6
 dream-num/univer,2026-11-17,-2
 dream-num/univer,2026-11-18,-2
 dsx-ai-factory/nvke,2026-11-09,13
-elayadesign/ai-design-skills,2026-10-30,-5
 elementalsouls/Claude-BugHunter,2026-11-17,4
 elementalsouls/Claude-BugHunter,2026-11-18,4
 elementalsouls/Claude-BugHunter,2026-11-20,0
@@ -115,7 +117,7 @@ elementalsouls/Claude-BugHunter,2026-11-24,0
 elementalsouls/Claude-BugHunter,2026-11-25,0
 elementalsouls/Claude-BugHunter,2026-11-26,0
 elementalsouls/Claude-BugHunter,2026-11-27,0
-expo/skills,2026-10-31,6
+elementalsouls/Claude-BugHunter,2026-11-28,0
 firecrawl/firecrawl,2026-11-21,0
 firecrawl/firecrawl,2026-11-22,0
 firecrawl/firecrawl,2026-11-23,0
@@ -123,6 +125,7 @@ firecrawl/firecrawl,2026-11-24,0
 firecrawl/firecrawl,2026-11-25,0
 firecrawl/firecrawl,2026-11-26,0
 firecrawl/firecrawl,2026-11-27,0
+firecrawl/firecrawl,2026-11-28,0
 floci-io/floci,2026-11-05,4
 floci-io/floci,2026-11-06,-10
 garrytan/gstack,2026-11-06,7
@@ -141,6 +144,7 @@ google-labs-code/stitch-skills,2026-11-24,0
 google-labs-code/stitch-skills,2026-11-25,0
 google-labs-code/stitch-skills,2026-11-26,0
 google-labs-code/stitch-skills,2026-11-27,0
+google-labs-code/stitch-skills,2026-11-28,0
 google-research/paper-orchestra,2026-11-18,-3
 google-research/paper-orchestra,2026-11-19,7
 google/skills,2026-11-07,-1
@@ -156,12 +160,12 @@ jingyaogong/minimind,2026-11-24,0
 jingyaogong/minimind,2026-11-25,0
 jingyaogong/minimind,2026-11-26,0
 jingyaogong/minimind,2026-11-27,0
+jingyaogong/minimind,2026-11-28,0
 kornia/kornia,2026-11-03,0
 lightpanda-io/browser,2026-11-01,6
 lightpanda-io/browser,2026-11-02,7
 louislam/uptime-kuma,2026-11-15,-4
 lz4/lz4,2026-11-07,-4
-macro-inc/macro,2026-10-31,-2
 mattpocock/skills,2026-11-01,6
 mattpocock/skills,2026-11-03,-9
 mattpocock/skills,2026-11-04,6
@@ -191,6 +195,7 @@ mjmirza/app-store-compliance,2026-11-24,0
 mjmirza/app-store-compliance,2026-11-25,0
 mjmirza/app-store-compliance,2026-11-26,0
 mjmirza/app-store-compliance,2026-11-27,0
+mjmirza/app-store-compliance,2026-11-28,0
 mvanhorn/last30days-skill,2026-11-18,7
 mvanhorn/last30days-skill,2026-11-19,-1
 mvanhorn/last30days-skill,2026-11-20,-7
@@ -201,6 +206,7 @@ mvanhorn/last30days-skill,2026-11-24,0
 mvanhorn/last30days-skill,2026-11-25,0
 mvanhorn/last30days-skill,2026-11-26,0
 mvanhorn/last30days-skill,2026-11-27,0
+mvanhorn/last30days-skill,2026-11-28,0
 nginx/nginx,2026-11-21,0
 nginx/nginx,2026-11-22,0
 nginx/nginx,2026-11-23,0
@@ -208,9 +214,8 @@ nginx/nginx,2026-11-24,0
 nginx/nginx,2026-11-25,0
 nginx/nginx,2026-11-26,0
 nginx/nginx,2026-11-27,0
-nightly-labs/openbot,2026-10-30,3
+nginx/nginx,2026-11-28,0
 nvm-sh/nvm,2026-11-19,-3
-obra/superpowers,2026-10-30,1
 obra/superpowers,2026-10-31,-12
 obra/superpowers,2026-11-01,6
 obra/superpowers,2026-11-18,-1
@@ -223,6 +228,7 @@ obra/superpowers,2026-11-24,0
 obra/superpowers,2026-11-25,0
 obra/superpowers,2026-11-26,0
 obra/superpowers,2026-11-27,0
+obra/superpowers,2026-11-28,0
 openai/codex-security,2026-11-13,7
 openai/codex-security,2026-11-14,-1
 openvinotoolkit/openvino,2026-11-20,5
@@ -233,8 +239,8 @@ openvinotoolkit/openvino,2026-11-24,0
 openvinotoolkit/openvino,2026-11-25,0
 openvinotoolkit/openvino,2026-11-26,0
 openvinotoolkit/openvino,2026-11-27,0
+openvinotoolkit/openvino,2026-11-28,0
 p-e-w/heretic,2026-11-04,9
-pbakaus/impeccable,2026-10-30,4
 pbakaus/impeccable,2026-10-31,0
 pbakaus/impeccable,2026-11-01,-4
 pingdotgg/t3code,2026-11-01,5
@@ -243,7 +249,6 @@ pingdotgg/t3code,2026-11-03,-3
 prometheus/prometheus,2026-11-08,2
 ranxianglei/billion-context,2026-11-09,5
 ranxianglei/billion-context,2026-11-11,-2
-ruvnet/RuView,2026-11-10,5
 scenario-labs/skills,2026-11-06,5
 sherlock-project/sherlock,2026-11-09,7
 sherlock-project/sherlock,2026-11-10,-2
@@ -265,7 +270,7 @@ toeverything/AFFiNE,2026-11-24,0
 toeverything/AFFiNE,2026-11-25,0
 toeverything/AFFiNE,2026-11-26,0
 toeverything/AFFiNE,2026-11-27,0
-togg53192-cmd/jailbreaks,2026-10-30,0
+toeverything/AFFiNE,2026-11-28,0
 togg53192-cmd/jailbreaks,2026-10-31,-3
 togg53192-cmd/jailbreaks,2026-11-02,-1
 tradermonty/claude-trading-skills,2026-11-15,6
@@ -291,3 +296,4 @@ zhouxiaoka/autoclip,2026-11-24,0
 zhouxiaoka/autoclip,2026-11-25,0
 zhouxiaoka/autoclip,2026-11-26,0
 zhouxiaoka/autoclip,2026-11-27,0
+zhouxiaoka/autoclip,2026-11-28,0

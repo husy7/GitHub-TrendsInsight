@@ -17,9 +17,10 @@ AgriciDaniel/claude-seo,2026-11-24,-1
 AgriciDaniel/claude-seo,2026-11-25,-1
 AgriciDaniel/claude-seo,2026-11-26,0
 AgriciDaniel/claude-seo,2026-11-27,0
-DietrichGebert/ponytail,2026-10-30,-1
+AgriciDaniel/claude-seo,2026-11-28,0
 Ebony-Vinyl/dsh-our-free-model,2026-11-26,0
 Ebony-Vinyl/dsh-our-free-model,2026-11-27,0
+Ebony-Vinyl/dsh-our-free-model,2026-11-28,0
 HKUDS/DeepTutor,2026-11-07,0
 HKUDS/DeepTutor,2026-11-09,1
 HKUDS/DeepTutor,2026-11-10,3
@@ -40,6 +41,7 @@ HKUDS/DeepTutor,2026-11-24,0
 HKUDS/DeepTutor,2026-11-25,-1
 HKUDS/DeepTutor,2026-11-26,0
 HKUDS/DeepTutor,2026-11-27,0
+HKUDS/DeepTutor,2026-11-28,0
 Jakeschincariol/instagram-agent-skill,2026-11-21,0
 Jakeschincariol/instagram-agent-skill,2026-11-22,0
 Jakeschincariol/instagram-agent-skill,2026-11-23,0
@@ -47,7 +49,7 @@ Jakeschincariol/instagram-agent-skill,2026-11-24,0
 Jakeschincariol/instagram-agent-skill,2026-11-25,0
 Jakeschincariol/instagram-agent-skill,2026-11-26,0
 Jakeschincariol/instagram-agent-skill,2026-11-27,0
-Leonxlnx/taste-skill,2026-10-30,-1
+Jakeschincariol/instagram-agent-skill,2026-11-28,0
 Leonxlnx/taste-skill,2026-10-31,1
 Leonxlnx/taste-skill,2026-11-01,0
 Leonxlnx/taste-skill,2026-11-02,2
@@ -60,7 +62,6 @@ Leonxlnx/taste-skill,2026-11-16,-1
 Leonxlnx/taste-skill,2026-11-17,1
 Leonxlnx/taste-skill,2026-11-18,-1
 Leonxlnx/taste-skill,2026-11-19,-3
-NationalSecurityAgency/ghidra,2026-10-30,0
 NationalSecurityAgency/ghidra,2026-10-31,-2
 NationalSecurityAgency/ghidra,2026-11-01,6
 NationalSecurityAgency/ghidra,2026-11-02,-1
@@ -73,7 +74,6 @@ NationalSecurityAgency/ghidra,2026-11-09,-2
 NationalSecurityAgency/ghidra,2026-11-10,1
 NationalSecurityAgency/ghidra,2026-11-11,0
 NationalSecurityAgency/ghidra,2026-11-12,-5
-Nutlope/hallmark,2026-10-30,8
 Nutlope/hallmark,2026-10-31,4
 Nutlope/hallmark,2026-11-01,4
 Nutlope/hallmark,2026-11-02,0
@@ -102,17 +102,15 @@ Nutlope/hallmark,2026-11-24,0
 Nutlope/hallmark,2026-11-25,0
 Nutlope/hallmark,2026-11-26,0
 Nutlope/hallmark,2026-11-27,0
-Panniantong/Agent-Reach,2026-10-30,-1
+Nutlope/hallmark,2026-11-28,0
 Panniantong/Agent-Reach,2026-10-31,-3
 Vincentwei1021/video-shotcraft,2026-11-16,1
 Vincentwei1021/video-shotcraft,2026-11-17,-1
 Vincentwei1021/video-shotcraft,2026-11-19,-2
-affaan-m/ECC,2026-10-30,-4
 affaan-m/ECC,2026-10-31,-2
 affaan-m/ECC,2026-11-01,-1
 android/skills,2026-11-01,2
 android/skills,2026-11-02,1
-anthropics/claude-plugins-official,2026-10-30,1
 anthropics/claude-plugins-official,2026-10-31,-2
 anthropics/claude-plugins-official,2026-11-01,-2
 anthropics/claude-plugins-official,2026-11-02,0
@@ -124,7 +122,6 @@ anthropics/claude-plugins-official,2026-11-11,3
 anthropics/claude-plugins-official,2026-11-12,0
 anthropics/claude-plugins-official,2026-11-13,-1
 anthropics/claude-plugins-official,2026-11-14,-3
-anthropics/knowledge-work-plugins,2026-10-30,0
 anthropics/knowledge-work-plugins,2026-10-31,0
 anthropics/knowledge-work-plugins,2026-11-01,-1
 anthropics/knowledge-work-plugins,2026-11-02,-1
@@ -156,6 +153,7 @@ anthropics/skills,2026-11-24,0
 anthropics/skills,2026-11-25,0
 anthropics/skills,2026-11-26,0
 anthropics/skills,2026-11-27,0
+anthropics/skills,2026-11-28,0
 backnotprop/plannotator,2026-11-18,5
 backnotprop/plannotator,2026-11-19,-1
 backnotprop/plannotator,2026-11-20,1
@@ -166,12 +164,12 @@ backnotprop/plannotator,2026-11-24,0
 backnotprop/plannotator,2026-11-25,0
 backnotprop/plannotator,2026-11-26,0
 backnotprop/plannotator,2026-11-27,0
+backnotprop/plannotator,2026-11-28,0
 boykopovar/AnyPS5,2026-11-06,0
 boykopovar/AnyPS5,2026-11-07,-1
 boykopovar/AnyPS5,2026-11-08,-2
 boykopovar/AnyPS5,2026-11-09,-4
 boykopovar/AnyPS5,2026-11-10,-3
-cloudflare/security-audit-skill,2026-10-30,1
 cloudflare/security-audit-skill,2026-10-31,0
 cloudflare/security-audit-skill,2026-11-01,0
 cloudflare/security-audit-skill,2026-11-02,0
@@ -200,11 +198,10 @@ cloudflare/security-audit-skill,2026-11-24,0
 cloudflare/security-audit-skill,2026-11-25,0
 cloudflare/security-audit-skill,2026-11-26,0
 cloudflare/security-audit-skill,2026-11-27,0
-cursor/plugins,2026-10-30,-2
+cloudflare/security-audit-skill,2026-11-28,0
 cursor/plugins,2026-10-31,-4
 cursor/plugins,2026-11-01,-1
 cursor/plugins,2026-11-02,-1
-debpalash/VoiceStudio,2026-10-30,0
 debpalash/VoiceStudio,2026-10-31,1
 debpalash/VoiceStudio,2026-11-01,0
 debpalash/VoiceStudio,2026-11-02,1
@@ -221,7 +218,6 @@ debpalash/VoiceStudio,2026-11-12,-1
 debpalash/VoiceStudio,2026-11-13,-1
 debpalash/VoiceStudio,2026-11-14,-1
 debpalash/VoiceStudio,2026-11-15,-2
-earthtojake/text-to-cad,2026-10-30,0
 earthtojake/text-to-cad,2026-10-31,-2
 earthtojake/text-to-cad,2026-11-01,-1
 earthtojake/text-to-cad,2026-11-02,0
@@ -235,6 +231,7 @@ elementalsouls/Claude-BugHunter,2026-11-24,-1
 elementalsouls/Claude-BugHunter,2026-11-25,-1
 elementalsouls/Claude-BugHunter,2026-11-26,0
 elementalsouls/Claude-BugHunter,2026-11-27,0
+elementalsouls/Claude-BugHunter,2026-11-28,0
 flutter/flutter,2026-10-31,-2
 flutter/flutter,2026-11-01,0
 flutter/flutter,2026-11-02,2
@@ -245,7 +242,7 @@ google-labs-code/stitch-skills,2026-11-24,-1
 google-labs-code/stitch-skills,2026-11-25,-1
 google-labs-code/stitch-skills,2026-11-26,0
 google-labs-code/stitch-skills,2026-11-27,0
-heygen-com/hyperframes,2026-10-30,-1
+google-labs-code/stitch-skills,2026-11-28,0
 heygen-com/hyperframes,2026-10-31,0
 heygen-com/hyperframes,2026-11-01,0
 heygen-com/hyperframes,2026-11-02,0
@@ -274,6 +271,7 @@ heygen-com/hyperframes,2026-11-24,-1
 heygen-com/hyperframes,2026-11-25,-1
 heygen-com/hyperframes,2026-11-26,0
 heygen-com/hyperframes,2026-11-27,0
+heygen-com/hyperframes,2026-11-28,0
 kajisho5/ffmpeg-skill,2026-11-21,0
 kajisho5/ffmpeg-skill,2026-11-22,0
 kajisho5/ffmpeg-skill,2026-11-23,0
@@ -281,6 +279,7 @@ kajisho5/ffmpeg-skill,2026-11-24,-1
 kajisho5/ffmpeg-skill,2026-11-25,-1
 kajisho5/ffmpeg-skill,2026-11-26,0
 kajisho5/ffmpeg-skill,2026-11-27,0
+kajisho5/ffmpeg-skill,2026-11-28,0
 michael-denyer/pstack-claude,2026-11-04,-3
 milind-soni/OpenMausBot,2026-11-20,2
 milind-soni/OpenMausBot,2026-11-21,0
@@ -290,7 +289,7 @@ milind-soni/OpenMausBot,2026-11-24,0
 milind-soni/OpenMausBot,2026-11-25,0
 milind-soni/OpenMausBot,2026-11-26,0
 milind-soni/OpenMausBot,2026-11-27,0
-mksglu/context-mode,2026-10-30,1
+milind-soni/OpenMausBot,2026-11-28,0
 mksglu/context-mode,2026-10-31,-3
 mksglu/context-mode,2026-11-01,-1
 mksglu/context-mode,2026-11-02,0
@@ -310,7 +309,6 @@ morluto/rea,2026-11-13,0
 morluto/rea,2026-11-14,-1
 morluto/rea,2026-11-15,-1
 mvschwarz/openrig,2026-11-01,-5
-pbakaus/impeccable,2026-10-30,0
 pbakaus/impeccable,2026-10-31,1
 pbakaus/impeccable,2026-11-01,-2
 pbakaus/impeccable,2026-11-02,0
@@ -339,7 +337,7 @@ pbakaus/impeccable,2026-11-24,-1
 pbakaus/impeccable,2026-11-25,-1
 pbakaus/impeccable,2026-11-26,0
 pbakaus/impeccable,2026-11-27,0
-pingdotgg/t3code,2026-10-30,0
+pbakaus/impeccable,2026-11-28,0
 pingdotgg/t3code,2026-10-31,1
 pingdotgg/t3code,2026-11-01,3
 pingdotgg/t3code,2026-11-02,-1
@@ -368,6 +366,7 @@ pingdotgg/t3code,2026-11-24,0
 pingdotgg/t3code,2026-11-25,0
 pingdotgg/t3code,2026-11-26,0
 pingdotgg/t3code,2026-11-27,0
+pingdotgg/t3code,2026-11-28,0
 ranxianglei/billion-context,2026-11-04,0
 ranxianglei/billion-context,2026-11-11,-4
 sherlock-project/sherlock,2026-11-16,3
@@ -382,10 +381,10 @@ sherlock-project/sherlock,2026-11-24,-1
 sherlock-project/sherlock,2026-11-25,-1
 sherlock-project/sherlock,2026-11-26,0
 sherlock-project/sherlock,2026-11-27,0
+sherlock-project/sherlock,2026-11-28,0
 storytold/artcraft,2026-11-08,-1
 storytold/artcraft,2026-11-09,-1
 storytold/artcraft,2026-11-10,-6
-tashfeenahmed/freellmapi,2026-10-30,-1
 tashfeenahmed/freellmapi,2026-10-31,-3
 tashfeenahmed/freellmapi,2026-11-02,3
 tashfeenahmed/freellmapi,2026-11-03,2
@@ -393,7 +392,6 @@ tashfeenahmed/freellmapi,2026-11-04,1
 tashfeenahmed/freellmapi,2026-11-11,2
 tester-army/e2e,2026-11-04,-8
 tester-army/e2e,2026-11-05,-4
-thedotmack/claude-mem,2026-10-30,0
 thedotmack/claude-mem,2026-10-31,0
 thedotmack/claude-mem,2026-11-01,0
 thedotmack/claude-mem,2026-11-02,2
@@ -422,6 +420,7 @@ thedotmack/claude-mem,2026-11-24,0
 thedotmack/claude-mem,2026-11-25,0
 thedotmack/claude-mem,2026-11-26,0
 thedotmack/claude-mem,2026-11-27,0
+thedotmack/claude-mem,2026-11-28,0
 vercel-labs/agent-browser,2026-11-15,0
 vercel-labs/agent-browser,2026-11-16,1
 vercel-labs/agent-browser,2026-11-17,-1
@@ -435,7 +434,9 @@ vercel-labs/agent-browser,2026-11-24,-1
 vercel-labs/agent-browser,2026-11-25,-1
 vercel-labs/agent-browser,2026-11-26,0
 vercel-labs/agent-browser,2026-11-27,0
+vercel-labs/agent-browser,2026-11-28,0
 vercel-labs/skills,2026-11-02,3
 yetone/magpie,2026-11-25,-1
 yetone/magpie,2026-11-26,0
 yetone/magpie,2026-11-27,0
+yetone/magpie,2026-11-28,0
